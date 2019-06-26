@@ -1,0 +1,208 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:top100/model/details.dart';
+
+final imageList = [
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+];
+
+final colorList = [
+  Colors.grey.shade900,
+  Colors.brown,
+  Colors.blue,
+  Colors.blueGrey,
+];
+
+class SeriesCarousalPage extends StatefulWidget {
+  @override
+  _SeriesCarousalPageState createState() => _SeriesCarousalPageState();
+}
+
+class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
+  int currentPage = 0;
+  PageController _pageController;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(
+      initialPage: currentPage,
+      keepPage: false,
+      viewportFraction: 0.8,
+    );
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          AnimatedContainer(
+            duration: Duration(milliseconds: 500),
+            color: colorList[currentPage],
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Container(
+                height: 600,
+                child: PageView.builder(
+                  itemBuilder: (context, index) {
+                    return itemBuilder(index);
+                  },
+                  controller: _pageController,
+                  pageSnapping: true,
+                  onPageChanged: _onPageChanged,
+                  itemCount: 4,
+                  physics: ClampingScrollPhysics(),
+                ),
+              ),
+              _detailsBuilder(currentPage),
+            ],
+          ),
+        ],
+      ),
+      backgroundColor: Colors.grey.shade300,
+    );
+  }
+
+  Widget _detailsBuilder(index) {
+    return AnimatedBuilder(
+      animation: _pageController,
+      builder: (context, child) {
+        double value = 1;
+        if (_pageController.position.haveDimensions) {
+          value = _pageController.page - index;
+          value = (1 - (value.abs() * 0.5)).clamp(0.0, 1.0);
+        }
+        return Expanded(
+          child: Transform.translate(
+            offset: Offset(0, 250 + (-value * 250)),
+            child: Opacity(
+              opacity: value,
+              child: Container(
+                padding: EdgeInsets.all(20.0),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image.asset(
+                          "images/tv.png",
+                          height: 35,
+                        ),
+                        Text(
+                          detailsList[index].title,
+                          style: TextStyle(
+                              fontSize: 45.0,
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic,
+                              fontFamily: "Title"),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 25.0,
+                    ),
+                    Image.asset(
+                      "images/rate.png",
+                      height: 30,
+                    ),
+                    Text(
+                      detailsList[index].rating.toString(),
+                      style: TextStyle(
+                          fontSize: 25.0, fontStyle: FontStyle.italic),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Text(
+                      detailsList[index].description,
+                      style:
+                          TextStyle(fontSize: 18.0, fontFamily: "Description"),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Container(
+                      height: 5.0,
+                      width: 190.0,
+                      color: Colors.black,
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget itemBuilder(index) {
+    return AnimatedBuilder(
+      animation: _pageController,
+      builder: (context, child) {
+        double value = 1;
+        if (_pageController.position.haveDimensions) {
+          value = _pageController.page - index;
+          value = (1 - (value.abs() * 0.5)).clamp(0.0, 1.0);
+          return Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              child: child,
+              height: Curves.easeIn.transform(value) * 600,
+              margin: const EdgeInsets.only(left: 20, right: 20, bottom: 10),
+            ),
+          );
+        } else {
+          return Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              child: child,
+              height:
+                  Curves.easeIn.transform(index == 0 ? value : value * 0.5) *
+                      600,
+              margin: const EdgeInsets.only(left: 20, right: 20, bottom: 10),
+            ),
+          );
+        }
+      },
+      child: Material(
+          elevation: 6,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(30.0),
+              bottomRight: Radius.circular(30.0),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+            child: ClipRRect(
+              child: Image.asset(imageList[index], fit: BoxFit.fitHeight),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(30.0),
+                bottomRight: Radius.circular(30.0),
+              ),
+            ),
+          )),
+    );
+  }
+
+  _onPageChanged(int index) {
+    setState(() {
+      print(index);
+      currentPage = index;
+    });
+  }
+}
