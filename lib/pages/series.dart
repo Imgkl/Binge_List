@@ -226,7 +226,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                             minWidth: 1,
                             height: 30.0,
                             child: FlatButton(
-                              splashColor: Colors.white,
+                              splashColor: Colors.transparent,
                               color: Colors.grey.shade900,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(110)),
@@ -256,7 +256,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                           ButtonTheme(
                             height: 30.0,
                             child: FlatButton(
-                              splashColor: Colors.white,
+                              splashColor: Colors.transparent,
                               color: Colors.grey.shade900,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(110)),
