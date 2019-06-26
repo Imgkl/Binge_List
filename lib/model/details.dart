@@ -5,6 +5,7 @@ class Detail {
   String stream;
   String status;
   int seasons;
+  String genre;
 
   Detail(
       {this.title,
@@ -12,7 +13,8 @@ class Detail {
       this.rating,
       this.stream,
       this.status,
-      this.seasons});
+      this.seasons,
+      this.genre});
 }
 
 final detailsList = [
@@ -23,7 +25,8 @@ final detailsList = [
       rating: 9.6,
       stream: "Hotstar",
       status: "Completed",
-      seasons: 1),
+      seasons: 1,
+      genre: "Drama, History"),
   Detail(
       title: "Breaking Bad",
       description:
@@ -31,7 +34,8 @@ final detailsList = [
       rating: 9.5,
       stream: "Netflix",
       status: "Completed",
-      seasons: 5),
+      seasons: 5,
+      genre: "Crime, Drama, Thriller"),
   Detail(
       title: "Game of Thrones",
       description:
@@ -39,7 +43,8 @@ final detailsList = [
       rating: 9.4,
       stream: "Amazon Prime",
       status: "Completed",
-      seasons: 8),
+      seasons: 8,
+      genre: "Drama, Adventure"),
   Detail(
       title: "The Wire",
       description:
@@ -47,7 +52,8 @@ final detailsList = [
       rating: 9.3,
       stream: "Hotstar",
       status: "Completed",
-      seasons: 5),
+      seasons: 5,
+      genre: "Crime, Drama, Thriller"),
   
   Detail(
     title: "F.R.I.E.N.D.S",
@@ -57,6 +63,7 @@ final detailsList = [
     stream: "Netflix",
     status: "Completed",
     seasons: 10,
+    genre: "Comedy, Sitcom",
   ),
   Detail(
       title: "Dexter",
@@ -65,7 +72,8 @@ final detailsList = [
       rating: 8.9,
       stream: "Hotstar",
       status: "Completed",
-      seasons: 8),
+      seasons: 8,
+      genre: "Mystery, Crime"),
   Detail(
       title: "Black Mirror",
       description:
@@ -73,7 +81,8 @@ final detailsList = [
       rating: 8.9,
       stream: "Netflix",
       status: "Ongoing",
-      seasons: 5),
+      seasons: 5,
+      genre: "Sci-Fi, Thriller, Drama"),
   Detail(
       title: "Stranger Things",
       description:
@@ -81,5 +90,6 @@ final detailsList = [
       rating: 8.9,
       stream: "Netflix",
       status: "Ongoing",
-      seasons: 3),
+      seasons: 3,
+      genre: "Fantasy, Horror"),
 ];

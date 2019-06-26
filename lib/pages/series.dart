@@ -122,14 +122,29 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                     SizedBox(
                       height: 10.0,
                     ),
-                    Image.asset(
-                      "images/rate.png",
-                      height: 30,
-                    ),
-                    Text(
-                      detailsList[index].rating.toString(),
-                      style: TextStyle(
-                          fontSize: 25.0, fontStyle: FontStyle.italic),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image.asset(
+                          "images/rate.png",
+                          height: 30,
+                        ),
+                        Text(
+                          detailsList[index].rating.toString(),
+                          style: TextStyle(
+                              fontSize: 25.0, fontStyle: FontStyle.italic),
+                        ),
+                        SizedBox(
+                          width: 45,
+                        ),
+                        Image.asset("images/genre.png",height: 30.0,),
+                        Text(
+                          detailsList[index].genre,
+                          style: TextStyle(
+                              fontSize: 25.0, fontStyle: FontStyle.italic),
+                        ),
+
+                      ],
                     ),
                     SizedBox(
                       height: 8.0,
