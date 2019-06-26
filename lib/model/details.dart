@@ -41,7 +41,7 @@ final detailsList = [
       description:
           "Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. Meanwhile, a force is rising after millenniums and threatens the existence of living men.",
       rating: 9.4,
-      stream: "Amazon Prime",
+      stream: "Hotstar",
       status: "Completed",
       seasons: 8,
       genre: "Drama, Adventure"),

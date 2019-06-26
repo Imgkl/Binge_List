@@ -47,22 +47,16 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
       body: Stack(
         children: <Widget>[
           Opacity(
-            opacity: 0.3,
+            opacity: 0.25,
             child: AnimatedContainer(
               
               duration: Duration(milliseconds: 500),
 
               //color: colorList[currentPage],
-              child: BackdropFilter(
-                filter: ui.ImageFilter.blur(
-                  sigmaX: 15.0,
-                  sigmaY: 15.0,
-                ),
-                child: Image.asset(
-                  imageList[currentPage],
-                  fit: BoxFit.fitHeight,
-                  height: double.infinity,
-                ),
+              child: Image.asset(
+                imageList[currentPage],
+                fit: BoxFit.fitHeight,
+                height: double.infinity,
               ),
             ),
           ),
@@ -168,7 +162,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                         style: TextStyle(
                             fontSize: 18.0,
                             fontFamily: "Description",
-                            letterSpacing: 2,
+                            letterSpacing: 1.5,
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
