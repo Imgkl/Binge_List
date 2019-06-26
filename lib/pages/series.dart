@@ -1,3 +1,4 @@
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:top100/model/details.dart';
@@ -11,17 +12,6 @@ final imageList = [
   "images/6.jpg",
   "images/7.jpg",
   "images/8.jpg",
-];
-
-final colorList = [
-  Colors.blueGrey,
-  Colors.grey.shade500,
-  Colors.brown,
-  Colors.blue,
-  Colors.white,
-  Colors.redAccent,
-  Colors.grey.shade700,
-  Colors.deepOrangeAccent,
 ];
 
 class SeriesCarousalPage extends StatefulWidget {
@@ -54,9 +44,24 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          AnimatedContainer(
-            duration: Duration(milliseconds: 500),
-            color: colorList[currentPage],
+          Opacity(
+            opacity: 0.3,
+            child: AnimatedContainer(
+              duration: Duration(milliseconds: 800),
+
+              //color: colorList[currentPage],
+              child: BackdropFilter(
+                filter: ui.ImageFilter.blur(
+                  sigmaX: 15.0,
+                  sigmaY: 15.0,
+                ),
+                child: Image.asset(
+                  imageList[currentPage],
+                  fit: BoxFit.fitHeight,
+                  height: double.infinity,
+                ),
+              ),
+            ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,7 +85,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
           ),
         ],
       ),
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.grey.shade100,
     );
   }
 
@@ -100,170 +105,174 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
               opacity: value,
               child: Container(
                 padding: EdgeInsets.all(20.0),
-                child: Column(
-                  children: <Widget>[
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Image.asset(
-                          "images/tv.png",
-                          height: 35,
-                        ),
-                        Text(
-                          detailsList[index].title,
-                          style: TextStyle(
-                              fontSize: 45.0,
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic,
-                              fontFamily: "Title"),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Image.asset(
-                          "images/rate.png",
-                          height: 30,
-                        ),
-                        Text(
-                          detailsList[index].rating.toString(),
-                          style: TextStyle(
-                              fontSize: 25.0, fontStyle: FontStyle.italic),
-                        ),
-                        SizedBox(
-                          width: 45,
-                        ),
-                        Image.asset("images/genre.png",height: 30.0,),
-                        Text(
-                          detailsList[index].genre,
-                          style: TextStyle(
-                              fontSize: 25.0, fontStyle: FontStyle.italic),
-                        ),
-
-                      ],
-                    ),
-                    SizedBox(
-                      height: 8.0,
-                    ),
-                    Text(
-                      detailsList[index].description,
-                      style: TextStyle(
-                          fontSize: 18.0,
-                          fontFamily: "Description",
-                          fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Container(
-                      height: 5.0,
-                      width: 190.0,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Text(
-                          "Stream it on:",
-                          style: TextStyle(
-                              fontSize: 25.0,
-                              fontFamily: "description",
-                              fontStyle: FontStyle.italic),
-                        ),
-                        SizedBox(
-                          width: 5.0,
-                        ),
-                        ButtonTheme(
-                          height: 30.0,
-                          child: RaisedButton(
-                            elevation: 10,
-                            splashColor: Colors.white,
-                            color: Colors.grey.shade900,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(110)),
-                            onPressed: () {},
-                            child: Text(
-                              detailsList[index].stream,
-                              style: TextStyle(
-                                color: Colors.white,
+                child: Container(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image.asset(
+                            "images/tv.png",
+                            height: 35,
+                          ),
+                          Text(
+                            detailsList[index].title,
+                            style: TextStyle(
+                                fontSize: 45.0,
                                 fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontFamily: "Title"),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image.asset(
+                            "images/rate.png",
+                            height: 30,
+                          ),
+                          Text(
+                            detailsList[index].rating.toString(),
+                            style: TextStyle(
+                                fontSize: 25.0, fontStyle: FontStyle.italic),
+                          ),
+                          SizedBox(
+                            width: 45,
+                          ),
+                          Image.asset(
+                            "images/genre.png",
+                            height: 30.0,
+                          ),
+                          Text(
+                            detailsList[index].genre,
+                            style: TextStyle(
+                                fontSize: 25.0, fontStyle: FontStyle.italic),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 8.0,
+                      ),
+                      Text(
+                        detailsList[index].description,
+                        style: TextStyle(
+                            fontSize: 18.0,
+                            fontFamily: "Description",
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                      Container(
+                        height: 5.0,
+                        width: 190.0,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Text(
+                            "Stream it on:",
+                            style: TextStyle(
+                                fontSize: 25.0,
+                                fontFamily: "description",
+                                fontStyle: FontStyle.italic),
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          ButtonTheme(
+                            height: 30.0,
+                            child: RaisedButton(
+                              elevation: 10,
+                              splashColor: Colors.white,
+                              color: Colors.grey.shade900,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(110)),
+                              onPressed: () {},
+                              child: Text(
+                                detailsList[index].stream,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Text(
+                            "Seasons:",
+                            style: TextStyle(
+                                fontSize: 25.0,
+                                fontFamily: "description",
+                                fontStyle: FontStyle.italic),
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          ButtonTheme(
+                            minWidth: 1,
+                            height: 30.0,
+                            child: RaisedButton(
+                              elevation: 10,
+                              splashColor: Colors.white,
+                              color: Colors.grey.shade900,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(110)),
+                              onPressed: () {},
+                              child: Text(
+                                detailsList[index].seasons.toString(),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Text(
-                          "Seasons:",
-                          style: TextStyle(
-                              fontSize: 25.0,
-                              fontFamily: "description",
-                              fontStyle: FontStyle.italic),
-                        ),
-                        SizedBox(
-                          width: 5.0,
-                        ),
-                        ButtonTheme(
-                          minWidth: 1,
-                          height: 30.0,
-                          child: RaisedButton(
-                            elevation: 10,
-                            splashColor: Colors.white,
-                            color: Colors.grey.shade900,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(110)),
-                            onPressed: () {},
-                            child: Text(
-                              detailsList[index].seasons.toString(),
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Text(
+                            "Status:",
+                            style: TextStyle(
+                                fontSize: 25.0,
+                                fontFamily: "description",
+                                fontStyle: FontStyle.italic),
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          ButtonTheme(
+                            height: 30.0,
+                            child: RaisedButton(
+                              elevation: 10,
+                              splashColor: Colors.white,
+                              color: Colors.grey.shade900,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(110)),
+                              onPressed: () {},
+                              child: Text(
+                                detailsList[index].status,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 30,
-                        ),
-                        Text(
-                          "Status:",
-                          style: TextStyle(
-                              fontSize: 25.0,
-                              fontFamily: "description",
-                              fontStyle: FontStyle.italic),
-                        ),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        ButtonTheme(
-                          height: 30.0,
-                          child: RaisedButton(
-                            elevation: 10,
-                            splashColor: Colors.white,
-                            color: Colors.grey.shade900,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(110)),
-                            onPressed: () {},
-                            child: Text(
-                              detailsList[index].status,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
