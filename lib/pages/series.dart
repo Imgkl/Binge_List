@@ -192,7 +192,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                             child: RaisedButton(
                               elevation: 10,
                               splashColor: Colors.white,
-                              color: Colors.grey.shade900,
+                              color: Colors.redAccent.shade700,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(110)),
                               onPressed: () {},
@@ -222,8 +222,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                           ButtonTheme(
                             minWidth: 1,
                             height: 30.0,
-                            child: RaisedButton(
-                              elevation: 10,
+                            child: FlatButton(
                               splashColor: Colors.white,
                               color: Colors.grey.shade900,
                               shape: RoundedRectangleBorder(
@@ -253,8 +252,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                           ),
                           ButtonTheme(
                             height: 30.0,
-                            child: RaisedButton(
-                              elevation: 10,
+                            child: FlatButton(
                               splashColor: Colors.white,
                               color: Colors.grey.shade900,
                               shape: RoundedRectangleBorder(
