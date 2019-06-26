@@ -14,14 +14,14 @@ final imageList = [
 ];
 
 final colorList = [
+  Colors.blueGrey,
   Colors.grey.shade500,
   Colors.brown,
   Colors.blue,
-  Colors.blueGrey,
   Colors.white,
   Colors.redAccent,
   Colors.grey.shade700,
-  Colors.deepOrangeAccent.shade700,
+  Colors.deepOrangeAccent,
 ];
 
 class SeriesCarousalPage extends StatefulWidget {
@@ -120,7 +120,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                       ],
                     ),
                     SizedBox(
-                      height: 15.0,
+                      height: 10.0,
                     ),
                     Image.asset(
                       "images/rate.png",
@@ -132,7 +132,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                           fontSize: 25.0, fontStyle: FontStyle.italic),
                     ),
                     SizedBox(
-                      height: 20.0,
+                      height: 8.0,
                     ),
                     Text(
                       detailsList[index].description,
@@ -177,10 +177,75 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                               detailsList[index].stream,
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
                         )
+                      ],
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Text(
+                          "Seasons:",
+                          style: TextStyle(
+                              fontSize: 25.0,
+                              fontFamily: "description",
+                              fontStyle: FontStyle.italic),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        ButtonTheme(
+                          minWidth: 1,
+                          height: 30.0,
+                          child: RaisedButton(
+                            elevation: 10,
+                            splashColor: Colors.white,
+                            color: Colors.grey.shade900,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(110)),
+                            onPressed: () {},
+                            child: Text(
+                              detailsList[index].seasons.toString(),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 30,
+                        ),
+                        Text(
+                          "Status:",
+                          style: TextStyle(
+                              fontSize: 25.0,
+                              fontFamily: "description",
+                              fontStyle: FontStyle.italic),
+                        ),
+                        SizedBox(
+                          width: 10.0,
+                        ),
+                        ButtonTheme(
+                          height: 30.0,
+                          child: RaisedButton(
+                            elevation: 10,
+                            splashColor: Colors.white,
+                            color: Colors.grey.shade900,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(110)),
+                            onPressed: () {},
+                            child: Text(
+                              detailsList[index].status,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ],
