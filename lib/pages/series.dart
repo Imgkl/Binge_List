@@ -11,7 +11,6 @@ final imageList = [
   "images/6.jpg",
   "images/7.jpg",
   "images/8.jpg",
-
 ];
 
 final colorList = [
@@ -39,8 +38,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
     super.initState();
     _pageController = PageController(
       initialPage: currentPage,
-      keepPage: false,
-      viewportFraction: 0.8,
+      keepPage: true,
+      viewportFraction: 0.9,
     );
   }
 
@@ -121,7 +120,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                       ],
                     ),
                     SizedBox(
-                      height: 25.0,
+                      height: 15.0,
                     ),
                     Image.asset(
                       "images/rate.png",
@@ -137,8 +136,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                     ),
                     Text(
                       detailsList[index].description,
-                      style:
-                          TextStyle(fontSize: 18.0, fontFamily: "Description", fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 18.0,
+                          fontFamily: "Description",
+                          fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 20.0,
@@ -147,7 +148,41 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                       height: 5.0,
                       width: 190.0,
                       color: Colors.black,
-                    )
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Text(
+                          "Stream it on:",
+                          style: TextStyle(
+                              fontSize: 25.0,
+                              fontFamily: "description",
+                              fontStyle: FontStyle.italic),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        ButtonTheme(
+                          height: 30.0,
+                          child: RaisedButton(
+                            elevation: 10,
+                            splashColor: Colors.white,
+                            color: Colors.grey.shade900,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(110)),
+                            onPressed: () {},
+                            child: Text(
+                              detailsList[index].stream,
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
