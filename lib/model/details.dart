@@ -27,4 +27,14 @@ final detailsList = [
       description:
           "Chernobyl is a historical drama television miniseries created and written by Craig Mazin and directed by Johan Renck. The series was produced by HBO in association with Sky UK, depicting the Chernobyl nuclear disaster of April 1986 and the unprecedented cleanup efforts that followed.",
       rating: 9.6),
+  Detail(
+      title: "F.R.I.E.N.D.S",
+      description:
+          "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+      rating: 8.9),
+  Detail(
+      title: "Dexter",
+      description:
+          "By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
+      rating: 8.9),
 ];
