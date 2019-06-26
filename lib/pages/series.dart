@@ -8,7 +8,10 @@ final imageList = [
   "images/3.jpg",
   "images/4.jpg",
   "images/5.jpg",
-  "images/6.jpg"
+  "images/6.jpg",
+  "images/7.jpg",
+  "images/8.jpg",
+
 ];
 
 final colorList = [
@@ -18,6 +21,8 @@ final colorList = [
   Colors.blueGrey,
   Colors.white,
   Colors.redAccent,
+  Colors.grey.shade700,
+  Colors.deepOrangeAccent.shade700,
 ];
 
 class SeriesCarousalPage extends StatefulWidget {
@@ -67,7 +72,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                   controller: _pageController,
                   pageSnapping: true,
                   onPageChanged: _onPageChanged,
-                  itemCount: 6,
+                  itemCount: 8,
                   physics: ClampingScrollPhysics(),
                 ),
               ),
@@ -133,7 +138,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                     Text(
                       detailsList[index].description,
                       style:
-                          TextStyle(fontSize: 18.0, fontFamily: "Description"),
+                          TextStyle(fontSize: 18.0, fontFamily: "Description", fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 20.0,

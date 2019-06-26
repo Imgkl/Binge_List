@@ -37,4 +37,14 @@ final detailsList = [
       description:
           "By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
       rating: 8.9),
+  Detail(
+      title: "Black Mirror",
+      description:
+          "An anthology series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.",
+      rating: 8.9),
+  Detail(
+      title: "Stranger Things",
+      description:
+          "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
+      rating: 8.9),
 ];
