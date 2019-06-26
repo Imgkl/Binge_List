@@ -54,6 +54,15 @@ final detailsList = [
       status: "Completed",
       seasons: 5,
       genre: "Crime, Drama, Thriller"),
+  Detail(
+      title: "Rick and Morty",
+      description:
+          "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
+      rating: 9.2,
+      stream: "Netflix",
+      status: "Ongoing",
+      seasons: 4,
+      genre: "Animation, Comedy Adventure"),
   
   Detail(
     title: "F.R.I.E.N.D.S",
@@ -92,4 +101,5 @@ final detailsList = [
       status: "Ongoing",
       seasons: 3,
       genre: "Fantasy, Horror"),
+  
 ];

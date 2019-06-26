@@ -8,10 +8,12 @@ final imageList = [
   "images/2.jpg",
   "images/3.jpg",
   "images/4.jpg",
-  "images/5.jpg",
+  "images/5.png",
   "images/6.jpg",
   "images/7.jpg",
   "images/8.jpg",
+  "images/9.jpg",
+  
 ];
 
 class SeriesCarousalPage extends StatefulWidget {
@@ -47,7 +49,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
           Opacity(
             opacity: 0.3,
             child: AnimatedContainer(
-              duration: Duration(milliseconds: 800),
+              
+              duration: Duration(milliseconds: 500),
 
               //color: colorList[currentPage],
               child: BackdropFilter(
@@ -76,8 +79,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                   controller: _pageController,
                   pageSnapping: true,
                   onPageChanged: _onPageChanged,
-                  itemCount: 8,
-                  physics: ClampingScrollPhysics(),
+                  itemCount: 9,
+                  
+                  
                 ),
               ),
               _detailsBuilder(currentPage),
@@ -106,7 +110,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
               child: Container(
                 padding: EdgeInsets.all(20.0),
                 child: Container(
+                
                   child: Column(
+                    
                     children: <Widget>[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -162,6 +168,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                         style: TextStyle(
                             fontSize: 18.0,
                             fontFamily: "Description",
+                            letterSpacing: 2,
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
@@ -313,7 +320,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
         }
       },
       child: Material(
-          elevation: 6,
+          elevation: 4,
+          
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(30.0),
