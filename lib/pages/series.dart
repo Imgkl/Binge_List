@@ -168,9 +168,12 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                         height: 20.0,
                       ),
                       Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: new BorderRadius.circular(90),
+                        ),
                         height: 5.0,
                         width: 190.0,
-                        color: Colors.black,
                       ),
                       SizedBox(
                         height: 10.0,
