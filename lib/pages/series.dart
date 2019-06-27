@@ -1,4 +1,3 @@
-import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:top100/model/details.dart';
@@ -13,7 +12,6 @@ final imageList = [
   "images/7.jpg",
   "images/8.jpg",
   "images/9.jpg",
-  
 ];
 
 class SeriesCarousalPage extends StatefulWidget {
@@ -49,7 +47,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
           Opacity(
             opacity: 0.25,
             child: AnimatedContainer(
-              
               duration: Duration(milliseconds: 500),
 
               //color: colorList[currentPage],
@@ -74,8 +71,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
                   pageSnapping: true,
                   onPageChanged: _onPageChanged,
                   itemCount: 9,
-                  
-                  
                 ),
               ),
               _detailsBuilder(currentPage),
@@ -104,9 +99,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
               child: Container(
                 padding: EdgeInsets.all(20.0),
                 child: Container(
-                
                   child: Column(
-                    
                     children: <Widget>[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -315,7 +308,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
       },
       child: Material(
           elevation: 4,
-          
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(30.0),
