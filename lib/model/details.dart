@@ -63,7 +63,6 @@ final detailsList = [
       status: "Ongoing",
       seasons: 4,
       genre: "Animation, Comedy Adventure"),
-  
   Detail(
     title: "F.R.I.E.N.D.S",
     description:
@@ -101,5 +100,4 @@ final detailsList = [
       status: "Ongoing",
       seasons: 3,
       genre: "Fantasy, Horror"),
-  
 ];

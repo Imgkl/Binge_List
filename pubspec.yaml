@@ -65,5 +65,9 @@ flutter:
     - family: Description
       fonts:
         - asset: fonts/fontaa.ttf
+
+    - family: Menu
+      fonts:
+        - asset: fonts/Caveat-Bold.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

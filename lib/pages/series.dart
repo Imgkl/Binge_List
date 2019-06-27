@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:top100/model/details.dart';
@@ -19,9 +20,19 @@ class SeriesCarousalPage extends StatefulWidget {
   _SeriesCarousalPageState createState() => _SeriesCarousalPageState();
 }
 
-class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
+class _SeriesCarousalPageState extends State<SeriesCarousalPage>
+    with SingleTickerProviderStateMixin {
+  bool isCollapsed = true;
+
+  double screenWidth, screenHeight;
+  final Duration duration = const Duration(milliseconds: 300);
   int currentPage = 0;
   PageController _pageController;
+  AnimationController _controller;
+  //Animation<double> _scaleAnimation;
+  Animation<double> _menuScaleAnimation;
+  Animation<Offset> _slideAnimation;
+  int selectedTab = 0;
 
   @override
   void initState() {
@@ -31,55 +42,198 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage> {
       keepPage: true,
       viewportFraction: 0.9,
     );
+    _controller = AnimationController(vsync: this, duration: duration);
+    //_scaleAnimation = Tween<double>(begin: 1, end: 0.6).animate(_controller);
+    _menuScaleAnimation =
+        Tween<double>(begin: 0.5, end: 1).animate(_controller);
+    _slideAnimation = Tween<Offset>(begin: Offset(-1, 0), end: Offset(0, 0))
+        .animate(_controller);
+  }
+
+  Color hexToColor(String code) {
+    return new Color(int.parse(code.substring(1, 7), radix: 16) + 0xFF000000);
   }
 
   @override
   void dispose() {
+    _controller.dispose();
     _pageController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    screenHeight = size.height;
+    screenWidth = size.width;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: <Widget>[
-          Opacity(
-            opacity: 0.25,
-            child: AnimatedContainer(
-              duration: Duration(milliseconds: 500),
+          menu(context),
+          dashboard(context),
+        ],
+      ),
+    );
+  }
 
-              //color: colorList[currentPage],
-              child: Image.asset(
-                imageList[currentPage],
-                fit: BoxFit.fitHeight,
-                height: double.infinity,
+  Widget dashboard(context) {
+    return AnimatedPositioned(
+      duration: duration,
+      top: 0,
+      bottom: 0,
+      left: isCollapsed ? 0 : 0.5 * screenWidth,
+      right: isCollapsed ? 0 : -0.5 * screenWidth,
+      // child: ScaleTransition(
+      // scale: _scaleAnimation,
+      child: Material(
+        elevation: 2,
+        child: Container(
+          child: Stack(
+            children: <Widget>[
+              Opacity(
+                opacity: 0.25,
+                child: AnimatedContainer(
+                  duration: Duration(milliseconds: 500),
+                  child: Image.asset(
+                    imageList[currentPage],
+                    fit: BoxFit.fitHeight,
+                    height: double.infinity,
+                  ),
+                ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Container(
+                    height: 600,
+                    child: PageView.builder(
+                      itemBuilder: (context, index) {
+                        return itemBuilder(index);
+                      },
+                      controller: _pageController,
+                      pageSnapping: true,
+                      onPageChanged: _onPageChanged,
+                      // TODO Here is where the itemcount is increased.
+                      itemCount: 9,
+                    ),
+                  ),
+                  _detailsBuilder(currentPage),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 48, left: 15),
+                child: InkWell(
+                  enableFeedback: true,
+                  child: Icon(
+                    Icons.menu,
+                    size: 40,
+                  ),
+                  onTap: () {
+                    setState(() {
+                      if (isCollapsed) {
+                        _controller.forward();
+                      } else {
+                        _controller.reverse();
+                      }
+                      isCollapsed = !isCollapsed;
+                    });
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 48, left: 400),
+                child: InkWell(
+                  enableFeedback: true,
+                  child: Icon(
+                    Icons.search,
+                    size: 40,
+                  ),
+                  onTap: () {
+                    setState(() {
+                      if (isCollapsed) {
+                        _controller.forward();
+                      } else {
+                        _controller.reverse();
+                      }
+                      isCollapsed = !isCollapsed;
+                    });
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget menu(context) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Colors.amber.shade500,
+              Colors.pink.shade500,
+            ]),
+      ),
+      child: SlideTransition(
+        position: _slideAnimation,
+        child: ScaleTransition(
+          scale: _menuScaleAnimation,
+          child: Padding(
+            padding: EdgeInsets.only(left: 18.0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(left: 16),
+                      child: CircleAvatar(
+                        radius: 50,
+                        backgroundColor: Colors.grey.shade500,
+                        child: Image.asset(
+                          "images/slide.png",
+                          width: 44,
+                          height: 64,
+                        ),
+                      ),
+                    ),
+                    Text(
+                      "Binge",
+                      style: TextStyle(
+                        fontSize: 79,
+                        letterSpacing: 8,
+                        fontFamily: "menu",
+                      ),
+                    ),
+                    Text(
+                      "Stream | Download",
+                      style: TextStyle(
+                        fontSize: 20,
+                        letterSpacing: 1,
+                        fontFamily: "description",
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              Container(
-                height: 600,
-                child: PageView.builder(
-                  itemBuilder: (context, index) {
-                    return itemBuilder(index);
-                  },
-                  controller: _pageController,
-                  pageSnapping: true,
-                  onPageChanged: _onPageChanged,
-                  itemCount: 9,
-                ),
-              ),
-              _detailsBuilder(currentPage),
-            ],
-          ),
-        ],
+        ),
       ),
-      backgroundColor: Colors.grey.shade100,
     );
+  }
+
+  onTabTap(int index) {
+    setState(() {
+      selectedTab = index;
+    });
   }
 
   Widget _detailsBuilder(index) {
