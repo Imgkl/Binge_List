@@ -1,4 +1,3 @@
-
 class Detail {
   String title;
   String description;
@@ -7,6 +6,7 @@ class Detail {
   String status;
   int seasons;
   String genre;
+  String url;
 
   Detail(
       {this.title,
@@ -15,7 +15,8 @@ class Detail {
       this.stream,
       this.status,
       this.seasons,
-      this.genre});
+      this.genre,
+      this.url});
 }
 
 final detailsList = [
@@ -27,7 +28,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Completed",
       seasons: 1,
-      genre: "Drama, History"),
+      genre: "Drama, History",
+      url: "https://www.hotstar.com/tv/chernobyl/s-2146"),
   Detail(
       title: "Breaking Bad",
       description:
@@ -36,7 +38,8 @@ final detailsList = [
       stream: "Netflix",
       status: "Completed",
       seasons: 5,
-      genre: "Crime, Drama, Thriller"),
+      genre: "Crime, Drama, Thriller",
+      url: "https://www.netflix.com/title/70143836"),
   Detail(
       title: "Game of Thrones",
       description:
@@ -45,7 +48,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Completed",
       seasons: 8,
-      genre: "Drama, Adventure"),
+      genre: "Drama, Adventure",
+      url: "https://www.hotstar.com/tv/game-of-thrones/s-510"),
   Detail(
       title: "The Wire",
       description:
@@ -54,7 +58,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Completed",
       seasons: 5,
-      genre: "Crime, Drama, Thriller"),
+      genre: "Crime, Drama, Thriller",
+      url: "https://www.hotstar.com/tv/the-wire/s-527"),
   Detail(
       title: "Rick and Morty",
       description:
@@ -63,17 +68,18 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 4,
-      genre: "Animation, Comedy Adventure"),
+      genre: "Animation, Comedy Adventure",
+      url: "https://www.netflix.com/title/80014749"),
   Detail(
-    title: "F.R.I.E.N.D.S",
-    description:
-        "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
-    rating: 8.9,
-    stream: "Netflix",
-    status: "Completed",
-    seasons: 10,
-    genre: "Comedy, Sitcom",
-  ),
+      title: "F.R.I.E.N.D.S",
+      description:
+          "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+      rating: 8.9,
+      stream: "Netflix",
+      status: "Completed",
+      seasons: 10,
+      genre: "Comedy, Sitcom",
+      url: "https://www.netflix.com/title/70153404"),
   Detail(
       title: "Dexter",
       description:
@@ -82,7 +88,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Completed",
       seasons: 8,
-      genre: "Mystery, Crime"),
+      genre: "Mystery, Crime",
+      url: "https://www.hotstar.com/tv/dexter/s-1187"),
   Detail(
       title: "Black Mirror",
       description:
@@ -91,7 +98,8 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 5,
-      genre: "Sci-Fi, Thriller, Drama"),
+      genre: "Sci-Fi, Thriller, Drama",
+      url: "https://www.netflix.com/title/70264888"),
   Detail(
       title: "Stranger Things",
       description:
@@ -100,5 +108,6 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 3,
-      genre: "Fantasy, Horror"),
+      genre: "Fantasy, Horror",
+      url: "https://www.netflix.com/title/80057281"),
 ];

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:top100/model/details.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 final imageList = [
   "images/1.jpg",
@@ -346,7 +347,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               color: Colors.redAccent.shade700,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(110)),
-                              onPressed: () {},
+                              onPressed: _launchURL,
                               child: Text(
                                 detailsList[index].stream,
                                 style: TextStyle(
@@ -355,7 +356,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                 ),
                               ),
                             ),
-                          )
+                          ),
                         ],
                       ),
                       Row(
@@ -429,6 +430,15 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         );
       },
     );
+  }
+
+  _launchURL() async {
+    String url = detailsList[currentPage].url;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 
   Widget itemBuilder(index) {
