@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:top100/model/details.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 
 final imageList = [
   "images/1.jpg",
@@ -17,60 +15,6 @@ final imageList = [
   "images/8.jpg",
   "images/9.jpg",
 ];
-
-Future<Map> getTopRatedMovies() async {
-  var url =
-      "https://api.themoviedb.org/3/movie/top_rated?api_key=244918b5a12691e2ff18b34c7cd79691";
-  http.Response response = await http.get(url);
-  if (response.statusCode == 200) {
-    return json.decode(response.body);
-  } else {
-    return Future.error("Failed to establish connection");
-  }
-}
-
-Future<Map> getTopRatedTVShows() async {
-  var url =
-      "https://api.themoviedb.org/3/tv/popular?api_key=244918b5a12691e2ff18b34c7cd79691";
-  http.Response response = await http.get(url);
-  if (response.statusCode == 200) {
-    return json.decode(response.body);
-  } else {
-    return Future.error("Failed to establish connection");
-  }
-}
-
-Future<Map> getNowPlayingMovies() async {
-  var url =
-      'https://api.themoviedb.org/3/trending/all/day?api_key=244918b5a12691e2ff18b34c7cd79691';
-  http.Response response = await http.get(url);
-  if (response.statusCode == 200) {
-    return json.decode(response.body);
-  } else {
-    return Future.error("Failed to establish connection");
-  }
-}
-
-Future<Map> fetchMovies(int pageNumber, String query) async {
-  http.Response response = await http.get(
-      'https://api.themoviedb.org/3/search/multi?api_key=244918b5a12691e2ff18b34c7cd79691&language=en-US&query=$query&page=$pageNumber');
-  if (response.statusCode == 200) {
-    return json.decode(response.body);
-  } else {
-    return Future.error("Failed to establish connection");
-  }
-}
-
-Future<Map> getTVAiringToday() async {
-  var url =
-      "https://api.themoviedb.org/3/tv/airing_today?api_key=244918b5a12691e2ff18b34c7cd79691";
-  http.Response response = await http.get(url);
-  if (response.statusCode == 200) {
-    return json.decode(response.body);
-  } else {
-    throw Exception('Failed to establish Connection');
-  }
-}
 
 class SeriesCarousalPage extends StatefulWidget {
   @override
@@ -91,16 +35,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
   Animation<Offset> _slideAnimation;
   int selectedTab = 0;
   final cardHeight = 0.67;
-  Future<Map> _getMovies;
-  Future<Map> _getTopMovies;
-  Future<Map> _getTopTv;
-  Future<Map> _getNow;
-  Future<Map> _getAir;
-  var _movies;
-  var _topRatedMovies;
-  var _topRatedTvShows;
-  var _nowPlaying;
-  var _airToday;
 
   @override
   void initState() {
