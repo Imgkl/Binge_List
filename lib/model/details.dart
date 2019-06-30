@@ -7,6 +7,7 @@ class Detail {
   int seasons;
   String genre;
   String url;
+  String vid;
 
   Detail(
       {this.title,
@@ -16,7 +17,8 @@ class Detail {
       this.status,
       this.seasons,
       this.genre,
-      this.url});
+      this.url,
+      this.vid});
 }
 
 final detailsList = [
@@ -29,7 +31,8 @@ final detailsList = [
       status: "Completed",
       seasons: 1,
       genre: "Drama, History",
-      url: "https://www.hotstar.com/tv/chernobyl/s-2146"),
+      url: "https://www.hotstar.com/tv/chernobyl/s-2146",
+      vid: "s9APLXM9Ei8"),
   Detail(
       title: "Breaking Bad",
       description:
@@ -39,7 +42,8 @@ final detailsList = [
       status: "Completed",
       seasons: 5,
       genre: "Crime, Drama, Thriller",
-      url: "https://www.netflix.com/title/70143836"),
+      url: "https://www.netflix.com/title/70143836",
+      vid: "HhesaQXLuRY"),
   Detail(
       title: "Game of Thrones",
       description:
@@ -49,7 +53,8 @@ final detailsList = [
       status: "Completed",
       seasons: 8,
       genre: "Drama, Adventure",
-      url: "https://www.hotstar.com/tv/game-of-thrones/s-510"),
+      url: "https://www.hotstar.com/tv/game-of-thrones/s-510",
+      vid: "BpJYNVhGf1s"),
   Detail(
       title: "The Wire",
       description:
@@ -59,7 +64,8 @@ final detailsList = [
       status: "Completed",
       seasons: 5,
       genre: "Crime, Drama, Thriller",
-      url: "https://www.hotstar.com/tv/the-wire/s-527"),
+      url: "https://www.hotstar.com/tv/the-wire/s-527",
+      vid: "9qK-VGjMr8g"),
   Detail(
       title: "Rick and Morty",
       description:
@@ -69,7 +75,8 @@ final detailsList = [
       status: "Ongoing",
       seasons: 4,
       genre: "Animation, Comedy Adventure",
-      url: "https://www.netflix.com/title/80014749"),
+      url: "https://www.netflix.com/title/80014749",
+      vid: "WNhH00OIPP0"),
   Detail(
       title: "F.R.I.E.N.D.S",
       description:
@@ -79,7 +86,8 @@ final detailsList = [
       status: "Completed",
       seasons: 10,
       genre: "Comedy, Sitcom",
-      url: "https://www.netflix.com/title/70153404"),
+      url: "https://www.netflix.com/title/70153404",
+      vid: "Eibl9JIpcKk"),
   Detail(
       title: "Dexter",
       description:
@@ -89,7 +97,8 @@ final detailsList = [
       status: "Completed",
       seasons: 8,
       genre: "Mystery, Crime",
-      url: "https://www.hotstar.com/tv/dexter/s-1187"),
+      url: "https://www.hotstar.com/tv/dexter/s-1187",
+      vid: "x9aGJeL_BRc"),
   Detail(
       title: "Black Mirror",
       description:
@@ -99,7 +108,8 @@ final detailsList = [
       status: "Ongoing",
       seasons: 5,
       genre: "Sci-Fi, Thriller, Drama",
-      url: "https://www.netflix.com/title/70264888"),
+      url: "https://www.netflix.com/title/70264888",
+      vid: "nSDviEdvw4U"),
   Detail(
       title: "Stranger Things",
       description:
@@ -109,5 +119,6 @@ final detailsList = [
       status: "Ongoing",
       seasons: 3,
       genre: "Fantasy, Horror",
-      url: "https://www.netflix.com/title/80057281"),
+      url: "https://www.netflix.com/title/80057281",
+      vid: "b9EkMc79ZSU"),
 ];
