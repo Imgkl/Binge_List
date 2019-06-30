@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:top100/model/details.dart';
+import 'package:top100/models/details.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final imageList = [
