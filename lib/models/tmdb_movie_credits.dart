@@ -1,4 +1,4 @@
-import 'package:cine_reel/models/tmdb_movie_basic.dart';
+import 'package:top100/models/tmdb_movie_basic.dart';
 import 'package:intl/intl.dart';
 
 class TMDBMovieCredits {

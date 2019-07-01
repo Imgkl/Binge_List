@@ -1,4 +1,4 @@
-import 'package:cine_reel/models/tmdb_movie_basic.dart';
+import 'package:top100/models/tmdb_movie_basic.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'tmdb_movies_response.g.dart';
