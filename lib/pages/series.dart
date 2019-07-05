@@ -2,19 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:top100/models/details.dart';
+import 'package:top100/models/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final imageList = [
-  "images/1.jpg",
-  "images/2.jpg",
-  "images/3.jpg",
-  "images/4.jpg",
-  "images/5.jpg",
-  "images/6.jpg",
-  "images/7.jpg",
-  "images/8.jpg",
-  "images/9.jpg",
-];
 
 class SeriesCarousalPage extends StatefulWidget {
   @override
@@ -86,8 +76,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
       bottom: 0,
       left: isCollapsed ? 0 : 0.85 * screenWidth,
       right: isCollapsed ? 0 : -0.85 * screenWidth,
-      // child: ScaleTransition(
-      // scale: _scaleAnimation,
       child: Material(
         elevation: 2,
         child: Container(
@@ -116,9 +104,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       },
                       controller: _pageController,
                       pageSnapping: true,
+                      physics: BouncingScrollPhysics(),
                       onPageChanged: _onPageChanged,
                       // TODO Here is where the itemcount is increased.
-                      itemCount: 9,
+                      itemCount: 60,
                     ),
                   ),
                   _detailsBuilder(currentPage),
@@ -253,7 +242,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               Text(
                                 detailsList[index].title,
                                 style: TextStyle(
-                                    fontSize: 45.0,
+                                    fontSize: 40.0,
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FontStyle.italic,
                                     fontFamily: "Title"),
@@ -430,9 +419,11 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                   color: Colors.redAccent.shade700,
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(110)),
-                                  onPressed: _launchURL,
+                                  onPressed: (){
+                                    _launchURLYT();
+                                  },
                                   child: Text(
-                                    detailsList[index].stream,
+                                    "Youtube",
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
@@ -461,6 +452,17 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
       await launch(url);
     } else {
       throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLYT() async {
+    String vid =
+        "https://www.youtube.com/watch?v=" + detailsList[currentPage].vid;
+    if (await canLaunch(vid)) {
+      await launch(vid);
+      print(vid);
+    } else {
+      throw 'Could not launch $vid';
     }
   }
 
