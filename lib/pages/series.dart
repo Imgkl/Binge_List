@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:top100/models/details.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:top100/models/details_list.dart';
 import 'package:top100/models/images.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 
 class SeriesCarousalPage extends StatefulWidget {
   @override
@@ -24,6 +24,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
   Animation<double> _menuScaleAnimation;
   Animation<Offset> _slideAnimation;
   int selectedTab = 0;
+
   final cardHeight = 0.67;
 
   @override
@@ -97,7 +98,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Container(
-                    height: 600,
+                    height: screenHeight - 385,
                     child: PageView.builder(
                       itemBuilder: (context, index) {
                         return itemBuilder(index);
@@ -179,22 +180,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             alignment: Alignment.centerLeft,
             child: Stack(
               children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(left: 16),
-                  child: Column(
-                    children: <Widget>[
-                      Container(
-                        color: Colors.pink,
-                      ),
-                      Container(
-                        color: Colors.cyan,
-                      ),
-                      Container(
-                        color: Colors.deepPurple,
-                      ),
-                    ],
-                  ),
-                ),
+                //TODO: Populate the menu
               ],
             ),
           ),
@@ -225,6 +211,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
               opacity: value,
               child: ListView(
                 scrollDirection: Axis.vertical,
+                padding: EdgeInsets.only(top: 5),
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.only(
@@ -402,7 +389,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                           Row(
                             children: <Widget>[
                               Text(
-                                " Watch Trailer:",
+                                "Watch Trailer:",
                                 style: TextStyle(
                                     fontSize: 25.0,
                                     fontFamily: "description",
@@ -413,21 +400,17 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               ),
                               ButtonTheme(
                                 height: 30.0,
-                                child: RaisedButton(
-                                  elevation: 10,
-                                  splashColor: Colors.white,
-                                  color: Colors.redAccent.shade700,
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(110)),
-                                  onPressed: (){
-                                    _launchURLYT();
-                                  },
-                                  child: Text(
-                                    "Youtube",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
+                                child: Center(
+                                  child: IconButton(
+                                    icon: Icon(
+                                      FontAwesomeIcons.youtube,
                                     ),
+                                    splashColor: Color(0xff282828),
+                                    iconSize: 35,
+                                    color: Color(0xffff0000),
+                                    onPressed: () {
+                                      _launchURLYT();
+                                    },
                                   ),
                                 ),
                               ),
@@ -489,7 +472,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
               child: child,
               height:
                   Curves.easeIn.transform(index == 0 ? value : value * 0.5) *
-                      600,
+                          screenHeight -
+                      385,
               margin: const EdgeInsets.only(left: 20, right: 20, bottom: 10),
             ),
           );
