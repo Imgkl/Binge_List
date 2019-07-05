@@ -6,6 +6,7 @@ import 'package:top100/models/details_list.dart';
 import 'package:top100/models/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 class SeriesCarousalPage extends StatefulWidget {
   @override
   _SeriesCarousalPageState createState() => _SeriesCarousalPageState();
@@ -25,7 +26,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
   Animation<Offset> _slideAnimation;
   int selectedTab = 0;
 
-  final cardHeight = 0.67;
+  // final cardHeight = 0.67;
 
   @override
   void initState() {
@@ -114,8 +115,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                   _detailsBuilder(currentPage),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 48, left: 15),
+              Positioned(
+                top: 48,
+                left: 15,
                 child: InkWell(
                   enableFeedback: true,
                   child: Icon(
@@ -134,8 +136,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 48, left: 400),
+              Positioned(
+                top: 48,
+                right: 15,
                 child: InkWell(
                   enableFeedback: true,
                   child: Icon(
@@ -177,11 +180,70 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         child: ScaleTransition(
           scale: _menuScaleAnimation,
           child: Align(
-            alignment: Alignment.centerLeft,
-            child: Stack(
-              children: <Widget>[
-                //TODO: Populate the menu
-              ],
+            alignment: Alignment.center,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 55.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  //TODO: Populate the menu
+             
+                  
+                   Container(
+                      width: 260,
+                      height: 260,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(155)),
+                        elevation: 20,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            Text("Shows \nadded:",
+                                style: TextStyle(
+                                    fontSize: 40,
+                                    fontFamily: "description",
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2.5)),
+                            Text(
+                              "60",
+                              style: TextStyle(
+                                  fontSize: 65,
+                                  fontFamily: "description",
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey.shade900),
+                            ),
+                          ],
+                        ),
+                        color: Colors.amber,
+                      ),
+                    ),
+                  
+                  Column(
+                    children: <Widget>[
+                      RaisedButton(
+                        child: Text(
+                          "Request shows or contribute",
+                          style: TextStyle(
+                              fontSize: 30,
+                              fontFamily: "title",
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      RaisedButton(
+                        child: Text(
+                          "Rate it on Google Play",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontFamily: "title",
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ),
@@ -223,7 +285,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Image.asset(
-                                "images/tv.png",
+                                "images/slide.png",
                                 height: 35,
                               ),
                               Text(
@@ -245,6 +307,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               Image.asset(
                                 "images/rate.png",
                                 height: 30,
+                              ),
+                              SizedBox(
+                                width: 5,
                               ),
                               Text(
                                 detailsList[index].rating.toString(),
@@ -480,6 +545,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         }
       },
       child: Material(
+          color: Colors.white,
           elevation: 4,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -490,7 +556,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           child: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
             child: ClipRRect(
-              child: Image.asset(imageList[index], fit: BoxFit.fitHeight),
+              child: Image.asset(
+                imageList[index],
+                fit: BoxFit.fitHeight,
+              ),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(30.0),
                 bottomRight: Radius.circular(30.0),
