@@ -41,7 +41,7 @@ final imageList = [
   "images/40.jpg",
   "images/41.jpg",
   "images/42.jpg",
-  "images/43.png",
+  "images/43.jpg",
   "images/44.jpg",
   "images/45.jpg",
   "images/46.jpg",
@@ -49,7 +49,7 @@ final imageList = [
   "images/48.jpg",
   "images/49.jpg",
   "images/50.jpg",
-  "images/51.png",
+  "images/51.jpg",
   "images/52.jpg",
   "images/53.jpg",
   "images/54.png",
@@ -59,4 +59,5 @@ final imageList = [
   "images/58.jpg",
   "images/59.jpg",
   "images/60.jpg",
+  "images/61.jpg",
 ];

@@ -6,7 +6,6 @@ import 'package:top100/models/details_list.dart';
 import 'package:top100/models/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
 class SeriesCarousalPage extends StatefulWidget {
   @override
   _SeriesCarousalPageState createState() => _SeriesCarousalPageState();
@@ -109,7 +108,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       physics: BouncingScrollPhysics(),
                       onPageChanged: _onPageChanged,
                       // TODO Here is where the itemcount is increased.
-                      itemCount: 60,
+                      itemCount: 61,
                     ),
                   ),
                   _detailsBuilder(currentPage),
@@ -187,58 +186,67 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   //TODO: Populate the menu
-             
-                  
-                   Container(
-                      width: 260,
-                      height: 260,
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(155)),
-                        elevation: 20,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: <Widget>[
-                            Text("Shows \nadded:",
-                                style: TextStyle(
-                                    fontSize: 40,
-                                    fontFamily: "description",
-                                    fontWeight: FontWeight.bold,
-                                    letterSpacing: 2.5)),
-                            Text(
-                              "60",
+
+                  Container(
+                    width: 260,
+                    height: 260,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(155)),
+                      elevation: 20,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Text("Shows \nadded:",
                               style: TextStyle(
-                                  fontSize: 65,
+                                  fontSize: 40,
                                   fontFamily: "description",
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.grey.shade900),
-                            ),
-                          ],
-                        ),
-                        color: Colors.amber,
+                                  letterSpacing: 2.5)),
+                          Text(
+                            "61",
+                            style: TextStyle(
+                                fontSize: 65,
+                                fontFamily: "description",
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey.shade900),
+                          ),
+                        ],
                       ),
+                      color: Colors.amber,
                     ),
-                  
+                  ),
+
                   Column(
                     children: <Widget>[
                       RaisedButton(
+                        color: Colors.transparent,
                         child: Text(
                           "Request shows or contribute",
                           style: TextStyle(
                               fontSize: 30,
                               fontFamily: "title",
+                              color: Colors.white.withOpacity(0.9),
                               fontWeight: FontWeight.bold),
                         ),
+                        onPressed: () {
+                          //TODO: Contribute function
+                        },
                       ),
                       RaisedButton(
+                        color: Colors.transparent,
                         child: Text(
                           "Rate it on Google Play",
                           style: TextStyle(
                             fontSize: 30,
                             fontFamily: "title",
+                            color: Colors.white.withOpacity(0.9),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        onPressed: () {
+                          //TODO: Rate it on Google Play
+                        },
                       ),
                     ],
                   )

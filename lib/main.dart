@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/series.dart';
-
+import 'package:top100/pages/series.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
