@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:top100/pages/series.dart';
+import 'package:intro_views_flutter/intro_views_flutter.dart';
+
+import 'models/onboarding.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,7 +12,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SeriesCarousalPage(),
+      home: Builder(
+        builder: (context) => IntroViewsFlutter(
+              pages,
+              onTapDoneButton: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SeriesCarousalPage(),
+                  ), //MaterialPageRoute
+                );
+              },
+              pageButtonTextStyles: TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+              ),
+            ), //IntroViewsFlutter
+      ),
       theme: ThemeData.light(),
       builder: (BuildContext context, Widget widget) {
         ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
