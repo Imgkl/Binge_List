@@ -107,8 +107,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       pageSnapping: true,
                       physics: BouncingScrollPhysics(),
                       onPageChanged: _onPageChanged,
-                      // TODO Here is where the itemcount is increased.
-                      itemCount: 61,
+                      
+                      itemCount: detailsList.length,
                     ),
                   ),
                   _detailsBuilder(currentPage),
@@ -185,71 +185,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  //TODO: Populate the menu
-
-                  Container(
-                    width: 260,
-                    height: 260,
-                    child: Card(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(155)),
-                      elevation: 20,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Text("Shows \nadded:",
-                              style: TextStyle(
-                                  fontSize: 40,
-                                  fontFamily: "description",
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 2.5)),
-                          Text(
-                            "61",
-                            style: TextStyle(
-                                fontSize: 65,
-                                fontFamily: "description",
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey.shade900),
-                          ),
-                        ],
-                      ),
-                      color: Colors.amber,
-                    ),
-                  ),
-
-                  Column(
-                    children: <Widget>[
-                      RaisedButton(
-                        color: Colors.transparent,
-                        child: Text(
-                          "Request shows or contribute",
-                          style: TextStyle(
-                              fontSize: 30,
-                              fontFamily: "title",
-                              color: Colors.white.withOpacity(0.9),
-                              fontWeight: FontWeight.bold),
-                        ),
-                        onPressed: () {
-                          //TODO: Contribute function
-                        },
-                      ),
-                      RaisedButton(
-                        color: Colors.transparent,
-                        child: Text(
-                          "Rate it on Google Play",
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontFamily: "title",
-                            color: Colors.white.withOpacity(0.9),
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        onPressed: () {
-                          //TODO: Rate it on Google Play
-                        },
-                      ),
-                    ],
-                  )
+                 
+                  
                 ],
               ),
             ),
