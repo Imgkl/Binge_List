@@ -73,8 +73,8 @@ flutter:
       fonts:
         - asset: fonts/fontaa.ttf
 
-    - family: Menu
+    - family: Onboard
       fonts:
-        - asset: fonts/Caveat-Bold.ttf
+        - asset: fonts/onboard.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

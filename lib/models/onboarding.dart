@@ -10,15 +10,18 @@ final pages = [
     body: Text(
       'Welcome to CommuniTV',
       style: TextStyle(
-        fontFamily: "Menu",
-        fontSize: 45,
+        fontFamily: "Onboard",
+        fontSize: 35,
       ),
     ),
     title: Text(
       'CommuniTV',
     ),
     textStyle: TextStyle(
-        fontFamily: 'Title', color: Colors.black,letterSpacing: 2, fontWeight: FontWeight.bold),
+        fontFamily: 'Title',
+        color: Colors.black,
+        letterSpacing: 2,
+        fontWeight: FontWeight.bold),
     mainImage: Image.asset(
       'images/onboard1.png',
       height: 985.0,
@@ -43,25 +46,32 @@ final pages = [
     ),
     mainImage: Image.asset(
       'images/onboard2.png',
-      height: 385.0,
-      width: 385.0,
+      height: 485.0,
+      width: 485.0,
       alignment: Alignment.center,
     ),
-    textStyle: TextStyle(fontFamily: 'Menu', color: Colors.white,fontSize: 30),
+    textStyle: TextStyle(fontFamily: 'Onboard', color: Colors.white, fontSize: 20),
   ),
   PageViewModel(
-    pageColor: Colors.red,
+    pageColor: Colors.black,
     iconImageAssetPath: 'images/onboard3.png',
     body: Text(
       'We do not provide torrent links since it is an violation of Play Store Policy. We added links to streaming services so you watch the shows legally and enjoy.',
     ),
-    title: Text('Stream',style: TextStyle(fontSize: 45, letterSpacing: 2, fontFamily: "Title", fontWeight: FontWeight.bold),),
+    title: Text(
+      'Stream',
+      style: TextStyle(
+          fontSize: 45,
+          letterSpacing: 2,
+          fontFamily: "Title",
+          fontWeight: FontWeight.bold),
+    ),
     mainImage: Image.asset(
       'images/onboard3.png',
       height: double.infinity,
       width: 285.0,
       alignment: Alignment.center,
     ),
-    textStyle: TextStyle(fontFamily: 'Menu', color: Colors.white, fontSize: 35),
+    textStyle: TextStyle(fontFamily: 'Onboard', color: Colors.white, fontSize: 20),
   ),
 ];
