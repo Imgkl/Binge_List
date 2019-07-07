@@ -230,8 +230,12 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Image.asset(
-                                "images/slide.png",
+                                "images/show.png",
                                 height: 35,
+                                width: 35,
+                              ),
+                              SizedBox(
+                                width: 5,
                               ),
                               Text(
                                 detailsList[index].title,
@@ -268,6 +272,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               Image.asset(
                                 "images/genre.png",
                                 height: 30.0,
+                              ),
+                              SizedBox(
+                                width: 4,
                               ),
                               Text(
                                 detailsList[index].genre,

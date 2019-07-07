@@ -54,7 +54,7 @@ final pages = [
   ),
   PageViewModel(
     pageColor: Colors.black,
-    iconImageAssetPath: 'images/onboard3.png',
+    iconImageAssetPath: 'images/tv.png',
     body: Text(
       'We do not provide torrent links since it is an violation of Play Store Policy. We added links to streaming services so you watch the shows legally and enjoy.',
     ),
@@ -67,7 +67,7 @@ final pages = [
           fontWeight: FontWeight.bold),
     ),
     mainImage: Image.asset(
-      'images/onboard3.png',
+      'images/tv.png',
       height: double.infinity,
       width: 285.0,
       alignment: Alignment.center,

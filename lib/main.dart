@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               ),
             ), //IntroViewsFlutter
       ),
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       builder: (BuildContext context, Widget widget) {
         ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
           return getErrorWidget(context, errorDetails);
