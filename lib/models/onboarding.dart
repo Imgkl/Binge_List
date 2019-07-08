@@ -4,7 +4,7 @@ import 'package:intro_views_flutter/Models/page_view_model.dart';
 
 final pages = [
   PageViewModel(
-    pageColor: Colors.white,
+    pageColor: Colors.amber.shade600,
     // iconImageAssetPath: 'images/air-hostess.png',
     bubble: Image.asset('images/onboard1.png'),
     body: Text(
