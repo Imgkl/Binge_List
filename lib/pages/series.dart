@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:top100/models/details_list.dart';
 import 'package:top100/models/images.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class SeriesCarousalPage extends StatefulWidget {
@@ -61,6 +62,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
     screenWidth = size.width;
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomPadding: false,
       body: Stack(
         children: <Widget>[
           menu(context),
@@ -107,7 +109,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       pageSnapping: true,
                       physics: BouncingScrollPhysics(),
                       onPageChanged: _onPageChanged,
-                      
                       itemCount: detailsList.length,
                     ),
                   ),
@@ -121,27 +122,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                   enableFeedback: true,
                   child: Icon(
                     Icons.menu,
-                    size: 40,
-                  ),
-                  onTap: () {
-                    setState(() {
-                      if (isCollapsed) {
-                        _controller.forward();
-                      } else {
-                        _controller.reverse();
-                      }
-                      isCollapsed = !isCollapsed;
-                    });
-                  },
-                ),
-              ),
-              Positioned(
-                top: 48,
-                right: 15,
-                child: InkWell(
-                  enableFeedback: true,
-                  child: Icon(
-                    Icons.search,
                     size: 40,
                   ),
                   onTap: () {
@@ -179,14 +159,96 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         child: ScaleTransition(
           scale: _menuScaleAnimation,
           child: Align(
-            alignment: Alignment.center,
+            alignment: Alignment.centerLeft,
             child: Padding(
               padding: const EdgeInsets.only(right: 55.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
+                padding: EdgeInsets.fromLTRB(20, 35, 20, 20),
                 children: <Widget>[
-                 
-                  
+                  RaisedButton(
+                    elevation: 10,
+                    child: Text("Chernobyl"),
+                    onPressed: () {
+                      setState(
+                        () {
+                          currentPage = 0;
+                         
+                          isCollapsed = true;
+                        },
+                      );
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("Breaking Bad"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 1;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("Band of Brothers"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 2;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("Game of thrones"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 3;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("The wire"),
+                    onPressed: () {
+                      setState(() {
+                        currentPage = 4;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("The wire"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 4;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("The wire"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 4;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("The wire"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 4;
+                      });
+                    },
+                  ),
+                  FlatButton(
+                    child: Text("The wire"),
+                    onPressed: () {
+                      setState(() {
+                        isCollapsed = true;
+                        currentPage = 4;
+                      });
+                    },
+                  ),
                 ],
               ),
             ),
@@ -194,12 +256,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
       ),
     );
-  }
-
-  onTabTap(int index) {
-    setState(() {
-      selectedTab = index;
-    });
   }
 
   Widget _detailsBuilder(index) {
@@ -235,7 +291,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                 width: 35,
                               ),
                               SizedBox(
-                                width: 5,
+                                width: 4.73,
                               ),
                               Text(
                                 detailsList[index].title,
@@ -498,7 +554,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
       },
       child: Material(
           color: Colors.white,
-          elevation: 4,
+          elevation: 5,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(30.0),
