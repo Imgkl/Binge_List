@@ -68,7 +68,7 @@ final pages = [
     ),
     mainImage: Image.asset(
       'images/tv.png',
-      height: double.infinity,
+      height: 285.0,
       width: 285.0,
       alignment: Alignment.center,
     ),
