@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:top100/pages/series.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
 
 import 'models/onboarding.dart';
 
-void main() => runApp(MyApp());
+
+void main() {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+    .then((_) {
+      runApp(new MyApp());
+    });
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -12,6 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      
       home: Builder(
         builder: (context) => IntroViewsFlutter(
               pages,
