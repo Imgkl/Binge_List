@@ -1095,8 +1095,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                             minWidth: 150.0,
                             child: RaisedButton(
                               elevation: 10,
-                              splashColor: Colors.white,
-                              color: Colors.redAccent.shade700,
+                              splashColor: Colors.black,
+                              color: Colors.red.shade900.withOpacity(0.7),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(110)),
                               onPressed: _showModelSheet,
