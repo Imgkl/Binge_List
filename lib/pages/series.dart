@@ -696,7 +696,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Modern Family"),
                     onPressed: () {
@@ -709,7 +709,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Person of Interest"),
                     onPressed: () {
@@ -722,7 +722,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Sex Education"),
                     onPressed: () {
@@ -735,7 +735,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Banshee"),
                     onPressed: () {
@@ -748,7 +748,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("24"),
                     onPressed: () {
@@ -761,7 +761,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Scrubs"),
                     onPressed: () {
@@ -774,7 +774,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Boston Legal"),
                     onPressed: () {
@@ -787,7 +787,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Spooks"),
                     onPressed: () {
@@ -800,7 +800,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Atypical"),
                     onPressed: () {
@@ -813,7 +813,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("How I met Your mother"),
                     onPressed: () {
@@ -826,7 +826,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Californication"),
                     onPressed: () {
@@ -839,7 +839,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("The Walking dead"),
                     onPressed: () {
@@ -852,7 +852,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Orphan Black"),
                     onPressed: () {
@@ -865,7 +865,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Jack Ryan"),
                     onPressed: () {
@@ -878,7 +878,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("The Good Place"),
                     onPressed: () {
@@ -891,7 +891,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Big Bang Theory"),
                     onPressed: () {
@@ -904,7 +904,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("Orange Is The New Black"),
                     onPressed: () {
@@ -917,7 +917,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("American Horror Story"),
                     onPressed: () {
@@ -930,7 +930,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("End of the F****ing World"),
                     onPressed: () {
@@ -943,7 +943,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       });
                     },
                   ),
-                   RaisedButton(
+                  RaisedButton(
                     color: Colors.transparent,
                     child: Text("13 Reasons Why"),
                     onPressed: () {
@@ -1003,7 +1003,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               Text(
                                 detailsList[index].title,
                                 style: TextStyle(
-                                    fontSize: 40.0,
+                                    fontSize: 35.0,
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FontStyle.italic,
                                     fontFamily: "Title"),
@@ -1071,6 +1071,35 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                           ),
                           SizedBox(
                             height: 10.0,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          //TODO: Cast bottom sheet
+                          ButtonTheme(
+                            height: 50.0,
+                            minWidth: 150.0,
+                            child: RaisedButton(
+                              elevation: 10,
+                              splashColor: Colors.white,
+                              color: Colors.redAccent.shade700,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(110)),
+                              onPressed: null,
+                              child: Text(
+                                "Cast",
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  color: Colors.white,
+                                  fontFamily: "description",
+                                  letterSpacing: 2,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 10,
                           ),
                           Row(
                             children: <Widget>[
