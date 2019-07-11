@@ -14,7 +14,6 @@ class SeriesCarousalPage extends StatefulWidget {
 class _SeriesCarousalPageState extends State<SeriesCarousalPage>
     with SingleTickerProviderStateMixin {
   bool isCollapsed = true;
-
   double screenWidth, screenHeight;
   final Duration duration = const Duration(milliseconds: 300);
   int currentPage = 0;
@@ -30,6 +29,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
   @override
   void initState() {
     super.initState();
+
     _pageController = PageController(
       initialPage: currentPage,
       keepPage: true,
@@ -41,6 +41,20 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         Tween<double>(begin: 0.5, end: 1).animate(_controller);
     _slideAnimation = Tween<Offset>(begin: Offset(-1, 0), end: Offset(0, 0))
         .animate(_controller);
+  }
+
+  void _showModelSheet() {
+    showModalBottomSheet(
+        context: context,
+        builder: (builder) {
+          return new Container(
+            height: screenHeight/3.5,
+            child: Center(
+              child: Text("Cast Sheet"),
+            ),
+            color: Colors.amber,
+          );
+        });
   }
 
   Color hexToColor(String code) {
@@ -1085,7 +1099,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                               color: Colors.redAccent.shade700,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(110)),
-                              onPressed: null,
+                              onPressed: _showModelSheet,
                               child: Text(
                                 "Cast",
                                 style: TextStyle(
@@ -1096,6 +1110,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              
                             ),
                           ),
                           SizedBox(
