@@ -48,9 +48,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         context: context,
         builder: (builder) {
           return new Container(
-            height: screenHeight/3.5,
-            child: Center(
-              child: Text("Cast Sheet"),
+            height: screenHeight / 3.5,
+            child: ListView(
+             scrollDirection: Axis.horizontal,
             ),
             color: Colors.amber,
           );
@@ -1110,7 +1110,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              
                             ),
                           ),
                           SizedBox(
