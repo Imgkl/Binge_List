@@ -48,16 +48,18 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         context: context,
         builder: (builder) {
           return new Container(
-            height: screenHeight / 3.5,
+            height: screenHeight / 5,
             child: Center(
               child: Text(
                 detailsList[currentPage].title + " cast's image",
-                style: TextStyle(color: Colors.black, fontSize: 35),
+                style: TextStyle(color: Colors.black, fontSize: 35,
+                ),
               ),
             ),
             color: Colors.amber,
           );
-        });
+        }
+        );
   }
 
   Color hexToColor(String code) {
