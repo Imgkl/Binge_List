@@ -48,16 +48,17 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         context: context,
         builder: (builder) {
           return new Container(
-            height: screenHeight / 5,
-            child: Center(
-              child: Text(
-                detailsList[currentPage].title + " cast's image",
-                style: TextStyle(color: Colors.black, fontSize: 35,
-                ),
-              ),
-            ),
-            color: Colors.amber,
-          );
+                height: screenHeight / 4,
+                child: new Container(
+                    decoration: new BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: new BorderRadius.only(
+                            topLeft: const Radius.circular(20.0),
+                            topRight: const Radius.circular(20.0))),
+                    child: new Center(
+                      child: new Text("This is a modal sheet"),
+                    )),
+              );
         }
         );
   }

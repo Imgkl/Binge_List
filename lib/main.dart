@@ -5,12 +5,11 @@ import 'package:intro_views_flutter/intro_views_flutter.dart';
 
 import 'models/onboarding.dart';
 
-
 void main() {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-    .then((_) {
-      runApp(new MyApp());
-    });
+      .then((_) {
+    runApp(new MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -19,23 +18,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      
       home: Builder(
         builder: (context) => IntroViewsFlutter(
-              pages,
-              onTapDoneButton: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => SeriesCarousalPage(),
-                  ), //MaterialPageRoute
-                );
-              },
-              pageButtonTextStyles: TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-              ),
-            ), //IntroViewsFlutter
+          pages,
+          onTapDoneButton: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SeriesCarousalPage(),
+              ), //MaterialPageRoute
+            );
+          },
+          pageButtonTextStyles: TextStyle(
+            color: Colors.white,
+            fontSize: 18.0,
+          ),
+        ), //IntroViewsFlutter
       ),
       theme: ThemeData.dark(),
       builder: (BuildContext context, Widget widget) {
