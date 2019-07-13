@@ -8,6 +8,7 @@ class Detail {
   String genre;
   String url;
   String vid;
+  String cast;
 
   Detail(
       {this.title,
@@ -18,5 +19,6 @@ class Detail {
       this.seasons,
       this.genre,
       this.url,
+      this.cast,
       this.vid});
 }
