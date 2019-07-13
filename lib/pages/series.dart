@@ -20,12 +20,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
   int currentPage = 0;
   PageController _pageController;
   AnimationController _controller;
-  //Animation<double> _scaleAnimation;
+
   Animation<double> _menuScaleAnimation;
   Animation<Offset> _slideAnimation;
   int selectedTab = 0;
-
-  // final cardHeight = 0.67;
 
   @override
   void initState() {
@@ -37,7 +35,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
       viewportFraction: 0.9,
     );
     _controller = AnimationController(vsync: this, duration: duration);
-    //_scaleAnimation = Tween<double>(begin: 1, end: 0.6).animate(_controller);
+
     _menuScaleAnimation =
         Tween<double>(begin: 0.5, end: 1).animate(_controller);
     _slideAnimation = Tween<Offset>(begin: Offset(-1, 0), end: Offset(0, 0))
@@ -1050,7 +1048,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                 SizedBox(
                   height: 10,
                 ),
-                //TODO: Cast bottom sheet
+
                 ButtonTheme(
                   height: 50.0,
                   minWidth: 150.0,
