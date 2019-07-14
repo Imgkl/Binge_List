@@ -204,8 +204,11 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           color: Colors.black,
         ),
         RaisedButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           color: Colors.transparent,
-          child: Text("13 Reasons Why"),
+          child: Text("13 Reasons Why",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -216,8 +219,11 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           color: Colors.transparent,
-          child: Text("24"),
+          child: Text("24",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -238,7 +244,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("American Horror Story"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("American Horror Story",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -250,7 +259,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Arrested Development"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Arrested Development",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -262,7 +274,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Atypical"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Atypical",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -274,7 +289,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Avatar: Last Airbender"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Avatar: Last Airbender",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -294,7 +312,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Band of Brothers"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Band of Brothers",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(
               () {
@@ -308,7 +329,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Banshee"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Banshee",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -320,7 +344,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Big Bang Theory"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Big Bang Theory",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -331,8 +358,11 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           color: Colors.transparent,
-          child: Text("Black Mirrior"),
+          child: Text("Black Mirrior",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -343,8 +373,11 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           color: Colors.transparent,
-          child: Text("Boston Legal"),
+          child: Text("Boston Legal",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -356,7 +389,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Breaking Bad"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Breaking Bad",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(
               () {
@@ -370,7 +406,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Broadwalk Empire"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Broadwalk Empire",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -382,7 +421,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Brooklyn Nine Nine"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Brooklyn Nine Nine",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -403,7 +445,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Californication"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Californication",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -415,7 +460,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Chernobyl"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Chernobyl",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(
               () {
@@ -438,7 +486,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Death Note"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Death Note",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -450,7 +501,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Dexter"),
+          child: Text("Dexter",style: TextStyle(fontSize: 25, fontFamily: "description"),),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -462,7 +516,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Doctor Who"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Doctor Who",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -482,8 +539,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           color: Colors.black,
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("End of the F****ing World"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("End of the F****ing World",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -494,8 +553,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Entourage"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Entourage",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -516,7 +577,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Fargo"),
+          child: Text("Fargo",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -528,7 +591,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("FireFly"),
+          child: Text("FireFly",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -540,7 +605,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("F.R.I.E.N.D.S"),
+          child: Text("F.R.I.E.N.D.S",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -561,7 +628,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Game of thrones"),
+          child: Text("Game of thrones",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -582,7 +651,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Hannibal"),
+          child: Text("Hannibal",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -594,7 +665,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("House"),
+          child: Text("House",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -606,7 +679,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("House of Cards"),
+          child: Text("House of Cards",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -618,7 +693,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("How I met Your mother"),
+          child: Text("How I met Your mother",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -639,7 +716,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Jack Ryan"),
+          child: Text("Jack Ryan",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -660,7 +739,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Lost"),
+          child: Text("Lost",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -681,7 +762,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Modern Family"),
+          child: Text("Modern Family",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -692,8 +775,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Money heist"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Money heist",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -703,9 +788,11 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             });
           },
         ),
-        RaisedButton(
+        RaisedButton( shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           color: Colors.transparent,
-          child: Text("Mr. Robot"),
+          child: Text("Mr. Robot",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -725,8 +812,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           color: Colors.black,
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Narcos"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Narcos",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -746,8 +835,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           color: Colors.black,
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Orange Is The New Black"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Orange Is The New Black",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -758,8 +849,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Orphan Black"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Orphan Black",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -779,8 +872,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           color: Colors.black,
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Peaky Builders"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Peaky Builders",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -791,8 +886,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Person of Interest"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Person of Interest",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -803,8 +900,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Prison Break"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Prison Break",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -824,8 +923,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           color: Colors.black,
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Rick and Morty"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Rick and Morty",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -845,7 +946,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Scrubs"),
+          child: Text("Scrubs",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -857,7 +960,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Sex Education"),
+          child: Text("Sex Education",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -868,8 +973,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Shameless"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Shameless",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -880,8 +987,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Sherlock"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Sherlock",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -892,8 +1001,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Six Feet Under"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Six Feet Under",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -904,8 +1015,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("South Park"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("South Park",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -917,7 +1030,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Spooks"),
+          child: Text("Spooks",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -929,7 +1044,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Suits"),
+          child: Text("Suits",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -940,8 +1057,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Supernatural"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Supernatural",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -952,8 +1071,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("Stranger Things"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("Stranger Things",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(
               () {
@@ -977,7 +1098,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Good Place"),
+          child: Text("The Good Place",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -989,7 +1112,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Office (US\)"),
+          child: Text("The Office (US\)",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1001,7 +1126,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Simpsons"),
+          child: Text("The Simpsons",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1013,7 +1140,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Sopranos"),
+          child: Text("The Sopranos",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1024,7 +1153,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Spartacus"),
+          child: Text("The Spartacus",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1035,8 +1166,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("The Walking dead"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("The Walking dead",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1047,8 +1180,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("The Wire"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("The Wire",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               _pageController.animateToPage(4,
@@ -1058,8 +1193,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           },
         ),
         RaisedButton(
-          color: Colors.transparent,
-          child: Text("True Detective"),
+          color: Colors.transparent, shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text("True Detective",style: TextStyle(fontSize: 25, fontFamily: "description"),),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1080,7 +1217,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Vikings"),
+          child: Text("Vikings",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
@@ -1101,7 +1240,9 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Westworld"),
+          child: Text("Westworld",style: TextStyle(fontSize: 25, fontFamily: "description"),), shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
           onPressed: () {
             setState(() {
               isCollapsed = true;
