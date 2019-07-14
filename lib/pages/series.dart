@@ -49,14 +49,12 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           return new Container(
             height: screenHeight / 2.3,
             child: new Container(
-              decoration: new BoxDecoration(
-                  color: Colors.transparent,
-                  borderRadius: new BorderRadius.only(
-                      topLeft: const Radius.circular(20.0),
-                      topRight: const Radius.circular(20.0))),
               child: Container(
-                child: WebView(
-                    initialUrl: detailsList[currentPage].cast),
+                child: WebView(initialUrl: detailsList[currentPage].cast),
+                decoration: new BoxDecoration(
+                    borderRadius: new BorderRadius.only(
+                        topLeft: const Radius.circular(20.0),
+                        topRight: const Radius.circular(20.0))),
               ),
             ),
           );
@@ -193,220 +191,59 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
     return ListView(
       padding: EdgeInsets.symmetric(vertical: 30, horizontal: 30),
       children: <Widget>[
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Chernobyl"),
-          onPressed: () {
-            setState(
-              () {
-                _pageController.animateToPage(0,
-                    duration: Duration(milliseconds: 1000),
-                    curve: Curves.linear);
-                isCollapsed = true;
-              },
-            );
-          },
+        SizedBox(
+          height: 50,
+        ),
+        Text(
+          "#",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Breaking Bad"),
-          onPressed: () {
-            setState(
-              () {
-                isCollapsed = true;
-                _pageController.animateToPage(1,
-                    duration: Duration(milliseconds: 1000),
-                    curve: Curves.linear);
-              },
-            );
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Band of Brothers"),
-          onPressed: () {
-            setState(
-              () {
-                isCollapsed = true;
-                _pageController.animateToPage(2,
-                    duration: Duration(milliseconds: 1000),
-                    curve: Curves.linear);
-              },
-            );
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Game of thrones"),
+          child: Text("13 Reasons Why"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(3,
+              _pageController.animateToPage(60,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The wire"),
-          onPressed: () {
-            setState(() {
-              _pageController.animateToPage(4,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-              isCollapsed = true;
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Rick and Morty"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-              _pageController.animateToPage(5,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Avatar: Last Airbender"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-              _pageController.animateToPage(6,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("The Sopranos"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-              _pageController.animateToPage(7,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Sherlock"),
+          child: Text("24"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(8,
+              _pageController.animateToPage(45,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Death Note"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(9,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
+        Text(
+          "A",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("FireFly"),
+          child: Text("American Horror Story"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(10,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("True Detective"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(11,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Fargo"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(12,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Black Mirrior"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(13,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Stranger Things"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(14,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("F.R.I.E.N.D.S"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(15,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Westworld"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(16,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("The Office US"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(17,
+              _pageController.animateToPage(58,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -425,72 +262,188 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Peaky Builders"),
+          child: Text("Atypical"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(19,
+              _pageController.animateToPage(49,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Narcos"),
+          child: Text("Avatar: Last Airbender"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+              _pageController.animateToPage(6,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "B",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Band of Brothers"),
+          onPressed: () {
+            setState(
+              () {
+                isCollapsed = true;
+                _pageController.animateToPage(2,
+                    duration: Duration(milliseconds: 1000),
+                    curve: Curves.linear);
+              },
+            );
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Banshee"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(20,
+              _pageController.animateToPage(44,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("House of Cards"),
+          child: Text("Big Bang Theory"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(21,
+              _pageController.animateToPage(56,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("South Park"),
+          child: Text("Black Mirrior"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(22,
+              _pageController.animateToPage(13,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Six Feet Under"),
+          child: Text("Boston Legal"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(23,
+              _pageController.animateToPage(47,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Shameless"),
+          child: Text("Breaking Bad"),
+          onPressed: () {
+            setState(
+              () {
+                isCollapsed = true;
+                _pageController.animateToPage(1,
+                    duration: Duration(milliseconds: 1000),
+                    curve: Curves.linear);
+              },
+            );
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Broadwalk Empire"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(24,
+              _pageController.animateToPage(31,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Brooklyn Nine Nine"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(39,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "C",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Californication"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(51,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Chernobyl"),
+          onPressed: () {
+            setState(
+              () {
+                _pageController.animateToPage(0,
+                    duration: Duration(milliseconds: 1000),
+                    curve: Curves.linear);
+                isCollapsed = true;
+              },
+            );
+          },
+        ),
+        Text(
+          "D",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Death Note"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(9,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -519,6 +472,126 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             });
           },
         ),
+        Text(
+          "E",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("End of the F****ing World"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(59,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Entourage"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(36,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "F",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Fargo"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(12,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("FireFly"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(10,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("F.R.I.E.N.D.S"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(15,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "G",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Game of thrones"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(3,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "H",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Hannibal"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(32,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
         RaisedButton(
           color: Colors.transparent,
           child: Text("House"),
@@ -533,12 +606,87 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Simpsons"),
+          child: Text("House of Cards"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(28,
+              _pageController.animateToPage(21,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("How I met Your mother"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(50,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "J",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Jack Ryan"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(54,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "L",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Lost"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(40,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "M",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Modern Family"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(41,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -557,54 +705,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Vikings"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(30,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Broadwalk Empire"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(31,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Hannibal"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(32,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("The Spartacus"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(33,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
           child: Text("Mr. Robot"),
           onPressed: () {
             setState(() {
@@ -615,86 +715,77 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             });
           },
         ),
+        Text(
+          "N",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Suits"),
+          child: Text("Narcos"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(35,
+              _pageController.animateToPage(20,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        Text(
+          "O",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Orange Is The New Black"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(57,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Entourage"),
+          child: Text("Orphan Black"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(36,
+              _pageController.animateToPage(53,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Supernatural"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(37,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
+        Text(
+          "P",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Prison Break"),
+          child: Text("Peaky Builders"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(38,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Brooklyn Nine Nine"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(39,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Lost"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(40,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Modern Family"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(41,
+              _pageController.animateToPage(19,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -713,39 +804,44 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Sex Education"),
+          child: Text("Prison Break"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(43,
+              _pageController.animateToPage(38,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
+        Text(
+          "R",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Banshee"),
+          child: Text("Rick and Morty"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
-
-              _pageController.animateToPage(44,
+              _pageController.animateToPage(5,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("24"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(45,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
+        Text(
+          "S",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
         ),
         RaisedButton(
           color: Colors.transparent,
@@ -761,12 +857,60 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Boston Legal"),
+          child: Text("Sex Education"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(47,
+              _pageController.animateToPage(43,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Shameless"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(24,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Sherlock"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(8,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("Six Feet Under"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(23,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("South Park"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(22,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -785,36 +929,107 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Atypical"),
+          child: Text("Suits"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(49,
+              _pageController.animateToPage(35,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("How I met Your mother"),
+          child: Text("Supernatural"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(50,
+              _pageController.animateToPage(37,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Californication"),
+          child: Text("Stranger Things"),
+          onPressed: () {
+            setState(
+              () {
+                isCollapsed = true;
+
+                _pageController.animateToPage(14,
+                    duration: Duration(milliseconds: 1000),
+                    curve: Curves.linear);
+              },
+            );
+          },
+        ),
+        Text(
+          "T",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("The Good Place"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(51,
+              _pageController.animateToPage(55,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("The Office (US\)"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(17,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("The Simpsons"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(28,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("The Sopranos"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+              _pageController.animateToPage(7,
+                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
+            });
+          },
+        ),
+        RaisedButton(
+          color: Colors.transparent,
+          child: Text("The Spartacus"),
+          onPressed: () {
+            setState(() {
+              isCollapsed = true;
+
+              _pageController.animateToPage(33,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -833,96 +1048,65 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Orphan Black"),
+          child: Text("The Wire"),
           onPressed: () {
             setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(53,
+              _pageController.animateToPage(4,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
+              isCollapsed = true;
             });
           },
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Jack Ryan"),
+          child: Text("True Detective"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(54,
+              _pageController.animateToPage(11,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
+        Text(
+          "V",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
+        ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("The Good Place"),
+          child: Text("Vikings"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(55,
+              _pageController.animateToPage(30,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
         ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("Big Bang Theory"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(56,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
+        Text(
+          "W",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "description"),
+        ),
+        Divider(
+          height: 1,
+          color: Colors.black,
         ),
         RaisedButton(
           color: Colors.transparent,
-          child: Text("Orange Is The New Black"),
+          child: Text("Westworld"),
           onPressed: () {
             setState(() {
               isCollapsed = true;
 
-              _pageController.animateToPage(57,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("American Horror Story"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(58,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("End of the F****ing World"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(59,
-                  duration: Duration(milliseconds: 1000), curve: Curves.linear);
-            });
-          },
-        ),
-        RaisedButton(
-          color: Colors.transparent,
-          child: Text("13 Reasons Why"),
-          onPressed: () {
-            setState(() {
-              isCollapsed = true;
-
-              _pageController.animateToPage(60,
+              _pageController.animateToPage(16,
                   duration: Duration(milliseconds: 1000), curve: Curves.linear);
             });
           },
@@ -1048,7 +1232,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                 SizedBox(
                   height: 10,
                 ),
-
                 ButtonTheme(
                   height: 50.0,
                   minWidth: 150.0,
