@@ -47,7 +47,8 @@ final detailsList = [
       rating: 9.4,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=ngMqXZeIN9uuvgTy35qQCw&q=game+of+thrones+cast&oq=ga+cast&gs_l=psy-ab.3.0.0i7i30l10.119980.120246..121235...0.0..0.123.238.0j2......0....1..gws-wiz.......0i71.AcjW_JMfFN0",
+      cast:
+          "https://www.google.co.in/search?ei=ngMqXZeIN9uuvgTy35qQCw&q=game+of+thrones+cast&oq=ga+cast&gs_l=psy-ab.3.0.0i7i30l10.119980.120246..121235...0.0..0.123.238.0j2......0....1..gws-wiz.......0i71.AcjW_JMfFN0",
       seasons: 8,
       genre: "Drama, Adventure",
       url: "https://www.hotstar.com/tv/game-of-thrones/s-510",
@@ -61,7 +62,8 @@ final detailsList = [
       status: "Completed",
       seasons: 5,
       genre: "Crime, Drama, Thriller",
-      cast: "https://www.google.co.in/search?ei=5-8pXb_OHMX0vgS6kqOADQ&q=the+wire+cast&oq=the+w+cast&gs_l=psy-ab.3.1.0i7i30l10.4970206.4971391..4972653...0.0..0.247.947.0j2j3......0....1..gws-wiz.......0i71j0i67j0.2MY9097Z8E0",
+      cast:
+          "https://www.google.co.in/search?ei=5-8pXb_OHMX0vgS6kqOADQ&q=the+wire+cast&oq=the+w+cast&gs_l=psy-ab.3.1.0i7i30l10.4970206.4971391..4972653...0.0..0.247.947.0j2j3......0....1..gws-wiz.......0i71j0i67j0.2MY9097Z8E0",
       url: "https://www.hotstar.com/tv/the-wire/s-527",
       vid: "9qK-VGjMr8g"),
   Detail(
@@ -71,7 +73,8 @@ final detailsList = [
       rating: 9.2,
       stream: "Netflix",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=VgMqXcXzIZHMvwTU8r-YDQ&q=rick+and+morty+cast&oq=Rick+cast&gs_l=psy-ab.3.0.0i7i30l5j0i7i10i30j0i7i30l4.20066.24218..27862...0.0..0.355.859.0j4j0j1......0....1..gws-wiz.......0i71j35i39j0i67.FVWm9x--oKU",
+      cast:
+          "https://www.google.co.in/search?ei=VgMqXcXzIZHMvwTU8r-YDQ&q=rick+and+morty+cast&oq=Rick+cast&gs_l=psy-ab.3.0.0i7i30l5j0i7i10i30j0i7i30l4.20066.24218..27862...0.0..0.355.859.0j4j0j1......0....1..gws-wiz.......0i71j35i39j0i67.FVWm9x--oKU",
       seasons: 4,
       genre: "Animation,Comedy,Adventure",
       url: "https://www.netflix.com/title/80014749",
@@ -83,7 +86,8 @@ final detailsList = [
       rating: 9.2,
       stream: "Torrent",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=dAMqXZ3fEorQvgSJmYKICw&q=avatar+the+last+airbender+cast&oq=ava+cast&gs_l=psy-ab.3.1.0i7i30l3j0i7i10i30j0i7i30l6.35457.38749..40434...3.0..0.416.1061.0j5j4-1......0....1..gws-wiz.......0i71j0i67j0.j-yYsVGfiWA",
+      cast:
+          "https://www.google.co.in/search?ei=dAMqXZ3fEorQvgSJmYKICw&q=avatar+the+last+airbender+cast&oq=ava+cast&gs_l=psy-ab.3.1.0i7i30l3j0i7i10i30j0i7i30l6.35457.38749..40434...3.0..0.416.1061.0j5j4-1......0....1..gws-wiz.......0i71j0i67j0.j-yYsVGfiWA",
       seasons: 3,
       genre: " Animation, Action, Adventure",
       url: "",
@@ -95,7 +99,8 @@ final detailsList = [
       rating: 9.2,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=GQQqXanZOcuCvQTxnKfoCw&q=the+sopranos+cast&oq=the+s+cast&gs_l=psy-ab.3.1.0i7i30l10.11132.11701..13264...0.0..0.253.677.1j3j1......0....1..gws-wiz.......0i71j0i67.FDJkG8cGUV4",
+      cast:
+          "https://www.google.co.in/search?ei=GQQqXanZOcuCvQTxnKfoCw&q=the+sopranos+cast&oq=the+s+cast&gs_l=psy-ab.3.1.0i7i30l10.11132.11701..13264...0.0..0.253.677.1j3j1......0....1..gws-wiz.......0i71j0i67.FDJkG8cGUV4",
       seasons: 6,
       genre: "Crime, Drama",
       url: "https://www.hotstar.com/tv/the-sopranos/s-934",
@@ -106,7 +111,8 @@ final detailsList = [
           "Dr. Watson, a former army doctor, finds himself sharing a flat with Sherlock Holmes, an eccentric individual with a knack for solving crimes. Together, they take on the most unusual cases.",
       rating: 9.1,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=KAQqXf_JNYf5vgTXoYr4Dw&q=sherlock+cast&oq=sherlock+cast&gs_l=psy-ab.3..0i7i30l10.12677.25847..26616...1.0..0.137.1780.1j14......0....1..gws-wiz.......0i71j0i7i10i30j0i10j0i13i30j0i8i7i30j0i13.4xp9BEzYa58",
+      cast:
+          "https://www.google.co.in/search?ei=KAQqXf_JNYf5vgTXoYr4Dw&q=sherlock+cast&oq=sherlock+cast&gs_l=psy-ab.3..0i7i30l10.12677.25847..26616...1.0..0.137.1780.1j14......0....1..gws-wiz.......0i71j0i7i10i30j0i10j0i13i30j0i8i7i30j0i13.4xp9BEzYa58",
       status: "Ongoing",
       seasons: 4,
       genre: " Crime, Drama, Mystery",
@@ -118,7 +124,8 @@ final detailsList = [
           "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
       rating: 9.0,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=ggQqXfy3EYfnvgTUmbGYCQ&q=death+note+anime+cast&oq=death+note+anime+cast&gs_l=psy-ab.3..0l2j0i22i30l8.5705.6915..7107...0.0..0.235.701.0j4j1......0....1..gws-wiz.......0i71j0i67j0i20i263.NkDoHzFyvcQ",
+      cast:
+          "https://www.google.co.in/search?ei=ggQqXfy3EYfnvgTUmbGYCQ&q=death+note+anime+cast&oq=death+note+anime+cast&gs_l=psy-ab.3..0l2j0i22i30l8.5705.6915..7107...0.0..0.235.701.0j4j1......0....1..gws-wiz.......0i71j0i67j0i20i263.NkDoHzFyvcQ",
       status: "Completed",
       seasons: 1,
       genre: " Animation,Suspense,Chilling",
@@ -130,8 +137,9 @@ final detailsList = [
           "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out to get them.",
       rating: 9.0,
       stream: "Torrents",
-      status: "Completed",
-      cast: "https://www.google.co.in/search?ei=iwQqXZOcCI2YvQT3_KbQDQ&q=firefly+cast&oq=fire+cast&gs_l=psy-ab.3.0.0i7i30l10.10596.11097..12306...0.0..0.116.441.0j4......0....1..gws-wiz.......0i71j0i20i263.bxy--Ce6wlY",
+      status: "Cancelled",
+      cast:
+          "https://www.google.co.in/search?ei=iwQqXZOcCI2YvQT3_KbQDQ&q=firefly+cast&oq=fire+cast&gs_l=psy-ab.3.0.0i7i30l10.10596.11097..12306...0.0..0.116.441.0j4......0....1..gws-wiz.......0i71j0i20i263.bxy--Ce6wlY",
       seasons: 1,
       genre: " Adventure, Drama, Sci-Fi",
       url: "",
@@ -144,7 +152,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Ongoing",
       seasons: 3,
-      cast: "https://www.google.co.in/search?ei=mQQqXb6WF8z6vASC-ZWABA&q=true+detective+cast&oq=true+cast&gs_l=psy-ab.3.4.0i7i30l10.1954273.1965169..1971775...0.0..0.142.469.0j4......0....1..gws-wiz.......0i71j0i67.fEczu2boNVE",
+      cast:
+          "https://www.google.co.in/search?ei=mQQqXb6WF8z6vASC-ZWABA&q=true+detective+cast&oq=true+cast&gs_l=psy-ab.3.4.0i7i30l10.1954273.1965169..1971775...0.0..0.142.469.0j4......0....1..gws-wiz.......0i71j0i67.fEczu2boNVE",
       genre: "Crime, Mystery, Anthology",
       url: "https://www.hotstar.com/tv/true-detective/s-528",
       vid: "fVQUcaO4AvE"),
@@ -153,7 +162,8 @@ final detailsList = [
       description:
           "Various chronicles of deception, intrigue and murder in and around frozen Minnesota. Yet all of these tales mysteriously lead back one way or another to Fargo, North Dakota.",
       rating: 9,
-      cast: "https://google.co.in/search?ei=awwqXfCHLcLSvwSpj5jwDQ&q=fargo+cast&oq=fargo+cast&gs_l=psy-ab.3..35i39j0i7i30l9.4231.4231..9109...0.0..0.104.104.0j1......0....1..gws-wiz.......0i71.9CO43_g0MZA",
+      cast:
+          "https://google.co.in/search?ei=awwqXfCHLcLSvwSpj5jwDQ&q=fargo+cast&oq=fargo+cast&gs_l=psy-ab.3..35i39j0i7i30l9.4231.4231..9109...0.0..0.104.104.0j1......0....1..gws-wiz.......0i71.9CO43_g0MZA",
       stream: "Netflix",
       status: "Ongoing",
       seasons: 4,
@@ -168,7 +178,8 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 5,
-      cast: "https://www.google.co.in/search?ei=XA0qXaLIO4nnvAS--qTQDA&q=black+mirror+cast+&oq=black+mirror+cast+&gs_l=psy-ab.3..35i39j0i67l3j0l2j0i67j0l3.6605.13965..15964...3.0..0.126.226.0j2......0....1..gws-wiz.....10..0i71.2YqGxCAgzxE",
+      cast:
+          "https://www.google.co.in/search?ei=XA0qXaLIO4nnvAS--qTQDA&q=black+mirror+cast+&oq=black+mirror+cast+&gs_l=psy-ab.3..35i39j0i67l3j0l2j0i67j0l3.6605.13965..15964...3.0..0.126.226.0j2......0....1..gws-wiz.....10..0i71.2YqGxCAgzxE",
       genre: "Drama, Sci-Fi, Thriller ",
       url: "https://www.netflix.com/title/70264888",
       vid: "nSDviEdvw4U"),
@@ -178,7 +189,8 @@ final detailsList = [
           "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
       rating: 8.9,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=bg0qXcKxN8eRwgPt-IEg&q=stranger+things+cast&oq=s+cast&gs_l=psy-ab.3.0.0i7i30l10.11956.14647..16473...1.0..0.139.549.0j4......0....1..gws-wiz.......0i71j0i67j0j35i39.b0GOz-p6IRE",
+      cast:
+          "https://www.google.co.in/search?ei=bg0qXcKxN8eRwgPt-IEg&q=stranger+things+cast&oq=s+cast&gs_l=psy-ab.3.0.0i7i30l10.11956.14647..16473...1.0..0.139.549.0j4......0....1..gws-wiz.......0i71j0i67j0j35i39.b0GOz-p6IRE",
       status: "Ongoing",
       seasons: 3,
       genre: "Drama, Fantasy, Horror",
@@ -191,7 +203,8 @@ final detailsList = [
       rating: 8.9,
       stream: "Netflix",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=gA0qXYO1M9C4vgSd4LHQAQ&q=friends+cast&oq=friends+cast&gs_l=psy-ab.3.1.0i7i30j0j0i7i30j0j0i7i30l3j0j0i7i30j0.209218.210763..212702...0.0..0.214.1126.0j7j1......0....1..gws-wiz.......0i71j0i13.kF8Ro13wUgs",
+      cast:
+          "https://www.google.co.in/search?ei=gA0qXYO1M9C4vgSd4LHQAQ&q=friends+cast&oq=friends+cast&gs_l=psy-ab.3.1.0i7i30j0j0i7i30j0j0i7i30l3j0j0i7i30j0.209218.210763..212702...0.0..0.214.1126.0j7j1......0....1..gws-wiz.......0i71j0i13.kF8Ro13wUgs",
       seasons: 10,
       genre: "Comedy, Sitcom",
       url: "https://www.netflix.com/title/70153404",
@@ -204,7 +217,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Ongoing",
       seasons: 3,
-      cast: "https://www.google.co.in/search?ei=Vw4qXe_RE4vLvgSngZ_ABg&q=westworld+cast&oq=wescast&gs_l=psy-ab.3.0.0i7i30l10.26758.27178..28426...0.0..0.130.355.0j3......0....1..gws-wiz.......0i71j0i7i10i30.bf2mcNyPqOk",
+      cast:
+          "https://www.google.co.in/search?ei=Vw4qXe_RE4vLvgSngZ_ABg&q=westworld+cast&oq=wescast&gs_l=psy-ab.3.0.0i7i30l10.26758.27178..28426...0.0..0.130.355.0j3......0....1..gws-wiz.......0i71j0i7i10i30.bf2mcNyPqOk",
       genre: "Drama, Mystery, Sci-Fi",
       url: "https://www.hotstar.com/tv/westworld/s-825",
       vid: "kEkZdgWu7mM"),
@@ -213,7 +227,8 @@ final detailsList = [
       description:
           "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
       rating: 8.8,
-      cast: "https://www.google.co.in/search?ei=dQ4qXevEIoaWwgPRhaToDg&q=the+office+cast&oq=the+cast&gs_l=psy-ab.3.0.0i7i30l5j0l3j0i7i30j0.11010.11444..12323...0.0..0.134.495.0j4......0....1..gws-wiz.......0i71.qVUBf7JViIE  ",
+      cast:
+          "https://www.google.co.in/search?ei=dQ4qXevEIoaWwgPRhaToDg&q=the+office+cast&oq=the+cast&gs_l=psy-ab.3.0.0i7i30l5j0l3j0i7i30j0.11010.11444..12323...0.0..0.134.495.0j4......0....1..gws-wiz.......0i71.qVUBf7JViIE  ",
       stream: "Prime Video",
       status: "Completed",
       seasons: 9,
@@ -222,13 +237,27 @@ final detailsList = [
           "https://www.primevideo.com/detail/The-Office/0H7JFOPK2QO9WVZ8D9D0J5ZRQN",
       vid: "jz1omRneAGg"),
   Detail(
+      title: "Attack of Titan",
+      description:
+          "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the humans' safe zone. During the carnage that follows, soldier Eren Jaeger sees one of the creatures devour his mother, which leads him to vow that he will kill every Titan. He enlists some friends who survived to help him, and that group is humanity's last hope for avoiding extinction at the hands of the monsters.",
+      rating: 8.8,
+      stream: "Torrent",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?ei=Ae5GXfWaLc28vASh5YqwAg&q=attack+on+titan+cast&oq=attack+on+titan+cast&gs_l=psy-ab.3.0.0i20i263j0l2j0i20i263j0l6.6332.12786..13733...4.0..0.133.1266.1j10......0....1..gws-wiz.......0i71j0i67j35i39.JPaztluvdQk",
+      seasons: 3,
+      genre: "Animation, Action, Adventure",
+      url: "",
+      vid: "6scZ1qj2w38"),
+  Detail(
       title: "Arrested Development",
       description:
           "Level-headed son Michael Bluth takes over family affairs after his father is imprisoned. But the rest of his spoiled, dysfunctional family are making his job unbearable.",
       rating: 8.8,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=gw4qXcmjMsX6vATSzqeQCw&q=arrested+development+cast&oq=arr+cast&gs_l=psy-ab.3.1.0i7i30l10.18545.19031..20328...0.0..0.134.377.0j3......0....1..gws-wiz.......0i71j0i67j0.cKBdgkNjWNs",
+      cast:
+          "https://www.google.co.in/search?ei=gw4qXcmjMsX6vATSzqeQCw&q=arrested+development+cast&oq=arr+cast&gs_l=psy-ab.3.1.0i7i30l10.18545.19031..20328...0.0..0.134.377.0j3......0....1..gws-wiz.......0i71j0i67j0.cKBdgkNjWNs",
       seasons: 5,
       genre: "Comedy",
       url: "https://www.hotstar.com/tv/arrested-development/s-913",
@@ -242,7 +271,8 @@ final detailsList = [
       status: "Ongoing",
       seasons: 5,
       genre: "Crime, Drama",
-      cast: "https://www.google.co.in/search?ei=mg4qXaD_KInUvASMhY3YAg&q=peaky+blinders+cast&oq=pea+cast&gs_l=psy-ab.3.0.0i7i30l10.13211.13629..15438...0.0..0.113.321.0j3......0....1..gws-wiz.55GeeRAIeR8",
+      cast:
+          "https://www.google.co.in/search?ei=mg4qXaD_KInUvASMhY3YAg&q=peaky+blinders+cast&oq=pea+cast&gs_l=psy-ab.3.0.0i7i30l10.13211.13629..15438...0.0..0.113.321.0j3......0....1..gws-wiz.55GeeRAIeR8",
       url: "https://www.netflix.com/title/80003008",
       vid: "oVzVdvGIC7U"),
   Detail(
@@ -251,7 +281,8 @@ final detailsList = [
           "Netflix chronicles the rise of the cocaine trade in Colombia and the gripping real-life stories of drug kingpins of the late '80s in this raw, gritty original series. Also detailed are the actions taken by law enforcement as they battle in the war on drugs, targeting notorious and powerful figures that include drug lord Pablo Escobar. As efforts are made to control cocaine, one of the world's most valuable commodities, the many entities involved -- legal, political, police, military and civilian -- find themselves in conflict.",
       rating: 8.8,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=rA4qXeGyEoaWvQT4nr2QDg&q=narcos+cast&oq=narc+cast&gs_l=psy-ab.3.1.0i7i30l10.12828.13437..14977...0.0..0.143.508.0j4......0....1..gws-wiz.......0i71.TNhhExFO7Ug",
+      cast:
+          "https://www.google.co.in/search?ei=rA4qXeGyEoaWvQT4nr2QDg&q=narcos+cast&oq=narc+cast&gs_l=psy-ab.3.1.0i7i30l10.12828.13437..14977...0.0..0.143.508.0j4......0....1..gws-wiz.......0i71.TNhhExFO7Ug",
       status: "Completed",
       seasons: 3,
       genre: "Biography, Crime, Drama",
@@ -263,19 +294,47 @@ final detailsList = [
           "Frank Underwood is a Democrat appointed as the secretary of state. Along with his wife, he sets out on a quest to seek revenge on the people who betrayed him while successfully rising to supremacy.",
       rating: 8.8,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=vQ4qXa2rCcyKvQTw46iwCg&q=house+of+cards+cast&oq=House++cast&gs_l=psy-ab.3.0.0i7i30l10.16353.17370..17895...0.0..0.165.762.0j6......0....1..gws-wiz.......0i71j0i7i10i30j0.x03MrSaDw3U",
+      cast:
+          "https://www.google.co.in/search?ei=vQ4qXa2rCcyKvQTw46iwCg&q=house+of+cards+cast&oq=House++cast&gs_l=psy-ab.3.0.0i7i30l10.16353.17370..17895...0.0..0.165.762.0j6......0....1..gws-wiz.......0i71j0i7i10i30j0.x03MrSaDw3U",
       status: "Completed",
       seasons: 6,
       genre: "Drama, Action, History",
       url: "https://www.netflix.com/title/70178217",
       vid: "ULwUzF1q5w4"),
   Detail(
+      title: "Dark",
+      description:
+          "When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town's troubled history -- whether they know it or not. The story includes supernatural elements that tie back to the same town in 1986. \"Dark\" represents the first German original series produced for Netflix.",
+      rating: 8.7,
+      stream: "Netflix",
+      cast:
+          "https://www.google.co.in/search?q=dark+(tv+series)+cast&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwuNksvqciOV0LlaollJ1vpl5QBUXxBUX56UWKuVXJicckiVtGUxKJsBY2SMoXi1KLM1GJNBZD4DlZGABRtrEpTAAAA&sa=X&ved=2ahUKEwjA0raRsunjAhUIRo8KHXOZCugQMSgAMDp6BAgZEAE&biw=1242&bih=608",
+      status: "Ongoing",
+      seasons: 2,
+      genre: "Crime, Drama, Mystery",
+      url: "https://www.netflix.com/title/80114792",
+      vid: "BZ5OCIJVErw"),
+  Detail(
+      title: "Daredevil",
+      description:
+          "\"Daredevil\" follows Matt Murdock, attorney by day and vigilante by night. Blinded in an accident as a child, Murdock uses his heightened senses as Daredevil to fight crime on the streets of New York after the sun goes down. While Murdock's day job requires him to believe in the criminal justice system, his alter ego does not follow suit, leading him to take the law into his own hands to protect his Hell's Kitchen neighborhood and the surrounding communities.",
+      rating: 8.7,
+      stream: "Netflix",
+      cast:
+          "https://www.google.co.in/search?sa=X&q=daredevil+cast&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQoKC8wjFdC5miJZSdb6ZeUAVF8QVF-elFirlVyYnHJIla-lMSi1JTUsswcBZDADlZGAG430VtIAAAA&ved=2ahUKEwi3uobgvenjAhWWiHAKHYtoBpYQMSgAMDZ6BAgXEAE&biw=1242&bih=564",
+      status: "Cancelled",
+      seasons: 3,
+      genre: "Crime, Drama, Action",
+      url: "https://www.netflix.com/title/80018191",
+      vid: "jAy6NJ_D5vU"),
+  Detail(
       title: "South Park",
       description:
           "Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.",
       rating: 8.7,
       stream: "Torrent",
-      cast: "https://www.google.co.in/search?ei=0A4qXeadN4fyvgSE-rSACQ&q=south+park+cast&oq=sou+cast&gs_l=psy-ab.3.6.0i7i30l10.35128.35502..38458...0.0..0.138.363.0j3......0....1..gws-wiz.......0i71.6-8KIdzh9ks",
+      cast:
+          "https://www.google.co.in/search?ei=0A4qXeadN4fyvgSE-rSACQ&q=south+park+cast&oq=sou+cast&gs_l=psy-ab.3.6.0i7i30l10.35128.35502..38458...0.0..0.138.363.0j3......0....1..gws-wiz.......0i71.6-8KIdzh9ks",
       status: "Ongoing",
       seasons: 23,
       genre: " Animation, Comedy ",
@@ -288,7 +347,8 @@ final detailsList = [
       rating: 8.7,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=Dw8qXf88w_S8BJ_kl-AM&q=six+feet+under+cast&oq=six+fe+cast&gs_l=psy-ab.3.0.0i7i30l9j0i13.1504.1504..3794...0.0..0.123.123.0j1......0....1..gws-wiz.......0i71.llIT5oXlUTE",
+      cast:
+          "https://www.google.co.in/search?ei=Dw8qXf88w_S8BJ_kl-AM&q=six+feet+under+cast&oq=six+fe+cast&gs_l=psy-ab.3.0.0i7i30l9j0i13.1504.1504..3794...0.0..0.123.123.0j1......0....1..gws-wiz.......0i71.llIT5oXlUTE",
       seasons: 5,
       genre: "Comedy, Drama",
       url: "https://www.hotstar.com/tv/six-feet-under/s-1928",
@@ -300,7 +360,8 @@ final detailsList = [
       rating: 8.7,
       stream: "Prime Video",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=FA8qXeXdMIOuvgSpybl4&q=shameless+cast&oq=sha+cast&gs_l=psy-ab.3.0.0i7i30l10.13741.14033..16035...0.0..0.128.367.0j3......0....1..gws-wiz.......0i71.CVhs8hmTSiQ",
+      cast:
+          "https://www.google.co.in/search?ei=FA8qXeXdMIOuvgSpybl4&q=shameless+cast&oq=sha+cast&gs_l=psy-ab.3.0.0i7i30l10.13741.14033..16035...0.0..0.128.367.0j3......0....1..gws-wiz.......0i71.CVhs8hmTSiQ",
       seasons: 10,
       genre: "Comedy, Drama",
       url:
@@ -312,7 +373,8 @@ final detailsList = [
           "By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
       rating: 8.7,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=Jg8qXf7RKYvNvgSexKqwDw&q=dexter+cast&oq=dex+cast&gs_l=psy-ab.3.0.0i7i30l10.10737.11032..11859...0.0..0.128.348.0j3......0....1..gws-wiz.......0i71.wF0gcBMkVr8",
+      cast:
+          "https://www.google.co.in/search?ei=Jg8qXf7RKYvNvgSexKqwDw&q=dexter+cast&oq=dex+cast&gs_l=psy-ab.3.0.0i7i30l10.10737.11032..11859...0.0..0.128.348.0j3......0....1..gws-wiz.......0i71.wF0gcBMkVr8",
       status: "Completed",
       seasons: 8,
       genre: " Crime, Drama, Mystery",
@@ -325,7 +387,8 @@ final detailsList = [
       rating: 8.7,
       stream: "Prime Video",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=NA8qXafTJ8favAT0s6boCA&q=doctor+who+cast&oq=doctor+w+cast&gs_l=psy-ab.3.0.0i7i30l10.10285.15285..16921...0.0..0.134.743.0j6......0....1..gws-wiz.......0i71.TRZSLCpIBYo",
+      cast:
+          "https://www.google.co.in/search?ei=NA8qXafTJ8favAT0s6boCA&q=doctor+who+cast&oq=doctor+w+cast&gs_l=psy-ab.3.0.0i7i30l10.10285.15285..16921...0.0..0.134.743.0j6......0....1..gws-wiz.......0i71.TRZSLCpIBYo",
       seasons: 12,
       genre: "Adventure, Drama, Family ",
       url: "https://www.primevideo.com/detail/0M2B9OJDPYPJIB6Y7IVZ5SQ2Q5",
@@ -338,7 +401,8 @@ final detailsList = [
       stream: "Prime Video",
       status: "Completed",
       seasons: 8,
-      cast: "https://www.google.co.in/search?ei=Rw8qXZjCFczTvgTzlqboBQ&q=house+cast&oq=house+cast&gs_l=psy-ab.3..0i7i30l10.12086.12792..12922...0.0..0.189.641.1j4......0....1..gws-wiz.......0i71j0i7i10i30.UuG3IezEhTY",
+      cast:
+          "https://www.google.co.in/search?ei=Rw8qXZjCFczTvgTzlqboBQ&q=house+cast&oq=house+cast&gs_l=psy-ab.3..0i7i30l10.12086.12792..12922...0.0..0.189.641.1j4......0....1..gws-wiz.......0i71j0i7i10i30.UuG3IezEhTY",
       genre: "Drama, Mystery",
       url: "https://www.primevideo.com/detail/0JKSFB85TVXVK28OVC7CVSTQVI",
       vid: "MczMB8nU1sY"),
@@ -349,7 +413,8 @@ final detailsList = [
       rating: 8.7,
       stream: "Torrent",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=Vg8qXYP4E5euvgTWopDADA&q=the+simpsons+cast&oq=the+sim+cast&gs_l=psy-ab.3.0.0i7i30l10.9161.10017..10900...0.0..0.187.923.0j7......0....1..gws-wiz.......0i71j0i67j0.DJA1AjHdoIo",
+      cast:
+          "https://www.google.co.in/search?ei=Vg8qXYP4E5euvgTWopDADA&q=the+simpsons+cast&oq=the+sim+cast&gs_l=psy-ab.3.0.0i7i30l10.9161.10017..10900...0.0..0.187.923.0j7......0....1..gws-wiz.......0i71j0i67j0.DJA1AjHdoIo",
       seasons: 32,
       genre: " Animation,Comedy",
       url: "",
@@ -359,7 +424,8 @@ final detailsList = [
       description:
           "A group of very peculiar robbers assault the Factory of Moneda and Timbre to carry out the most perfect robbery in the history of Spain and take home 2.4 billion euros.",
       rating: 8.6,
-      cast: "https://www.google.co.in/search?ei=Yw8qXbbLFMOmwgODtJ6YDw&q=money+heist+cast&oq=mone+cast&gs_l=psy-ab.3.0.0i7i30l10.10249.10823..12705...0.0..0.130.483.0j4......0....1..gws-wiz.......0i71.yrQUeES7H5E",
+      cast:
+          "https://www.google.co.in/search?ei=Yw8qXbbLFMOmwgODtJ6YDw&q=money+heist+cast&oq=mone+cast&gs_l=psy-ab.3.0.0i7i30l10.10249.10823..12705...0.0..0.130.483.0j4......0....1..gws-wiz.......0i71.yrQUeES7H5E",
       stream: "Netflix",
       status: "Ongoing",
       seasons: 3,
@@ -374,7 +440,8 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 6,
-      cast: "https://www.google.co.in/search?ei=cg8qXaaNDZKuvwTkn4GwCg&q=vikings+cast&oq=vikcast&gs_l=psy-ab.3.0.0i7i30l10.36880.37268..38940...0.0..0.141.364.0j3......0....1..gws-wiz.......0i71.OJzzbl-pmJU",
+      cast:
+          "https://www.google.co.in/search?ei=cg8qXaaNDZKuvwTkn4GwCg&q=vikings+cast&oq=vikcast&gs_l=psy-ab.3.0.0i7i30l10.36880.37268..38940...0.0..0.141.364.0j3......0....1..gws-wiz.......0i71.OJzzbl-pmJU",
       genre: " Action, Adventure, Drama",
       url: "https://www.netflix.com/title/70301854",
       vid: "1j2sXLbzm9U"),
@@ -384,7 +451,8 @@ final detailsList = [
           "Enoch Thompson, the treasurer of Atlantic City, is friends with mobsters and politicians alike, resulting in the federal government taking special interest in him.",
       rating: 8.6,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=mg8qXdyyK4zOvgSHuJPgBQ&q=boardwalk+empire+cast&oq=Broadwalk+cast&gs_l=psy-ab.3.0.0i7i10i30l5j0i10l4j0i8i10i30.10611.15119..16781...0.0..0.143.1155.0j9......0....1..gws-wiz.......0i71j0i7i30j0i13.-qqMkx7JVXU",
+      cast:
+          "https://www.google.co.in/search?ei=mg8qXdyyK4zOvgSHuJPgBQ&q=boardwalk+empire+cast&oq=Broadwalk+cast&gs_l=psy-ab.3.0.0i7i10i30l5j0i10l4j0i8i10i30.10611.15119..16781...0.0..0.143.1155.0j9......0....1..gws-wiz.......0i71j0i7i30j0i13.-qqMkx7JVXU",
       status: "Completed",
       seasons: 5,
       genre: " Crime, Drama, History",
@@ -397,7 +465,8 @@ final detailsList = [
       rating: 8.5,
       stream: "Netflix",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=rQ8qXerPGofgvASf34DoCA&q=hannibal+cast&oq=hann+cast&gs_l=psy-ab.3.2.0i7i30j0i7i10i30j0i7i30l8.19095.19512..22554...0.0..0.127.449.1j3......0....1..gws-wiz.......0i71.2Y0aX6bdu2o",
+      cast:
+          "https://www.google.co.in/search?ei=rQ8qXerPGofgvASf34DoCA&q=hannibal+cast&oq=hann+cast&gs_l=psy-ab.3.2.0i7i30j0i7i10i30j0i7i30l8.19095.19512..22554...0.0..0.127.449.1j3......0....1..gws-wiz.......0i71.2Y0aX6bdu2o",
       seasons: 3,
       genre: " Crime, Drama, Horror",
       url: "https://www.netflix.com/title/70241956",
@@ -408,7 +477,8 @@ final detailsList = [
           "IThe life of Spartacus, the gladiator who lead a rebellion against the Romans. From his time as an ally of the Romans, to his betrayal and becoming a gladiator, to the rebellion he leads and its ultimate outcome.",
       rating: 8.5,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=xQ8qXc3DNZyRwgPI342IBw&q=the+spartacus+cast&oq=the+spartacus+cast&gs_l=psy-ab.3..0i7i30j0i8i30l9.6240.17585..17922...0.0..0.137.1969.4j14......0....1..gws-wiz.......0i71j0i67j0j0i7i10i30j0i13i30j0i7i5i30j0i8i7i30.dj0LFUk5sqI",
+      cast:
+          "https://www.google.co.in/search?ei=xQ8qXc3DNZyRwgPI342IBw&q=the+spartacus+cast&oq=the+spartacus+cast&gs_l=psy-ab.3..0i7i30j0i8i30l9.6240.17585..17922...0.0..0.137.1969.4j14......0....1..gws-wiz.......0i71j0i67j0j0i7i10i30j0i13i30j0i7i5i30j0i8i7i30.dj0LFUk5sqI",
       status: "Completed",
       seasons: 4,
       genre: " Action, Adventure, Biography",
@@ -422,7 +492,8 @@ final detailsList = [
       stream: "Prime Video",
       status: "Ongoing",
       seasons: 4,
-      cast: "https://www.google.co.in/search?ei=2Q8qXfOkL8uFvQTO_qmIBA&q=mr+robot+cast&oq=mr+rcast&gs_l=psy-ab.3.0.0i7i30l10.15231.16606..17530...0.0..0.148.495.0j4......0....1..gws-wiz.......0i71.KFA2I05iH4Y",
+      cast:
+          "https://www.google.co.in/search?ei=2Q8qXfOkL8uFvQTO_qmIBA&q=mr+robot+cast&oq=mr+rcast&gs_l=psy-ab.3.0.0i7i30l10.15231.16606..17530...0.0..0.148.495.0j4......0....1..gws-wiz.......0i71.KFA2I05iH4Y",
       genre: " Crime, Drama, Thriller",
       url:
           "https://www.primevideo.com/detail/Mr-Robot/0ND5POOAYD6A4THTH7C1TD3TYE",
@@ -434,7 +505,8 @@ final detailsList = [
       rating: 8.5,
       stream: "Prime Video",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=7Q8qXYT_EYm8vwTvipmwDQ&q=suits+cast&oq=suitscast&gs_l=psy-ab.3.0.0i7i30l10.34983.36427..39346...1.0..0.282.1019.0j4j2......0....1..gws-wiz.......0i71j0i13.20ilwClAQeM",
+      cast:
+          "https://www.google.co.in/search?ei=7Q8qXYT_EYm8vwTvipmwDQ&q=suits+cast&oq=suitscast&gs_l=psy-ab.3.0.0i7i30l10.34983.36427..39346...1.0..0.282.1019.0j4j2......0....1..gws-wiz.......0i71j0i13.20ilwClAQeM",
       seasons: 9,
       genre: "Comedy, Drama",
       url: "https://www.primevideo.com/detail/0GM7SPOB9V9RQJ5JD27LKR4WHZ",
@@ -446,7 +518,8 @@ final detailsList = [
       rating: 8.5,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=FhAqXdfHForIvgSxwo6IDA&q=entourage+cast&oq=Ento+cast&gs_l=psy-ab.3.0.0i7i30l10.12614.13271..14192...0.0..0.154.502.0j4......0....1..gws-wiz.......0i71j0i7i10i30j0j0i20i263.CV0lUIOwOfo",
+      cast:
+          "https://www.google.co.in/search?ei=FhAqXdfHForIvgSxwo6IDA&q=entourage+cast&oq=Ento+cast&gs_l=psy-ab.3.0.0i7i30l10.12614.13271..14192...0.0..0.154.502.0j4......0....1..gws-wiz.......0i71j0i7i10i30j0j0i20i263.CV0lUIOwOfo",
       seasons: 8,
       genre: "Comedy, Drama",
       url: "https://www.hotstar.com/tv/entourage/s-1345",
@@ -459,7 +532,8 @@ final detailsList = [
       stream: "Prime Video",
       status: "Ongoing",
       seasons: 15,
-      cast: "https://www.google.co.in/search?ei=JhAqXY69GYiAvgSvxZvQCQ&q=supernatural+cast&oq=Supe+cast&gs_l=psy-ab.3.1.0i7i30l10.9911.10703..11608...0.0..0.116.441.0j4......0....1..gws-wiz.......0i71.NzffKsEsp5Q",
+      cast:
+          "https://www.google.co.in/search?ei=JhAqXY69GYiAvgSvxZvQCQ&q=supernatural+cast&oq=Supe+cast&gs_l=psy-ab.3.1.0i7i30l10.9911.10703..11608...0.0..0.116.441.0j4......0....1..gws-wiz.......0i71.NzffKsEsp5Q",
       genre: " Drama, Fantasy, Horror",
       url: "https://www.netflix.com/title/70202589",
       vid: "xK7S9mrFWL4"),
@@ -470,7 +544,8 @@ final detailsList = [
       rating: 8.4,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=NBAqXcWOAYr-vATriaqQAg&q=prison+break+cast&oq=pr+cast&gs_l=psy-ab.3.1.0i7i30l10.8074.8251..9356...0.0..0.118.225.0j2......0....1..gws-wiz.......0i71.CEevkvD8JYc",
+      cast:
+          "https://www.google.co.in/search?ei=NBAqXcWOAYr-vATriaqQAg&q=prison+break+cast&oq=pr+cast&gs_l=psy-ab.3.1.0i7i30l10.8074.8251..9356...0.0..0.118.225.0j2......0....1..gws-wiz.......0i71.CEevkvD8JYc",
       seasons: 6,
       genre: "Action, Crime, Drama",
       url: "https://www.hotstar.com/tv/prison-break/s-564",
@@ -483,7 +558,8 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 7,
-      cast: "https://www.google.co.in/search?ei=PxAqXfb7Nof-vgTKspzgCw&q=brooklyn+99+cast&oq=Broocast&gs_l=psy-ab.3.0.0i7i30l10.11524.12233..13454...0.0..0.142.485.0j4......0....1..gws-wiz.......0i71.dwuz6XiLPOA",
+      cast:
+          "https://www.google.co.in/search?ei=PxAqXfb7Nof-vgTKspzgCw&q=brooklyn+99+cast&oq=Broocast&gs_l=psy-ab.3.0.0i7i30l10.11524.12233..13454...0.0..0.142.485.0j4......0....1..gws-wiz.......0i71.dwuz6XiLPOA",
       genre: "Comedy, Crime",
       url: "https://www.netflix.com/title/70281562",
       vid: "sEOuJ4z5aTc"),
@@ -495,7 +571,8 @@ final detailsList = [
       stream: "Prime Video",
       status: "Completed",
       seasons: 6,
-      cast: "https://www.google.co.in/search?ei=TxAqXdPBFJLEvwSY7ZTIAw&q=lost+cast&oq=lost+cast&gs_l=psy-ab.3..0i7i30l6j0i67j0i7i30l3.9852.10422..10626...0.0..0.145.524.0j4......0....1..gws-wiz.......0i71.cqDY2wlVT-0",
+      cast:
+          "https://www.google.co.in/search?ei=TxAqXdPBFJLEvwSY7ZTIAw&q=lost+cast&oq=lost+cast&gs_l=psy-ab.3..0i7i30l6j0i67j0i7i30l3.9852.10422..10626...0.0..0.145.524.0j4......0....1..gws-wiz.......0i71.cqDY2wlVT-0",
       genre: "Adventure, Drama, Fantasy ",
       url: "https://www.primevideo.com/detail/0FO5OUZCHNCTGO9127SHE4JFH7",
       vid: "0HQLeAnhGYU"),
@@ -505,7 +582,8 @@ final detailsList = [
           "Three modern-day families from California try to deal with their kids, quirky spouses and jobs in their own unique ways, often resulting in crazy capers.",
       rating: 9.5,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=WxAqXdHWNojGvgTu4LfIBA&q=modern+family+cast&oq=mode+cast&gs_l=psy-ab.3.0.0i7i30l10.12098.12707..13315...0.0..0.172.504.0j4......0....1..gws-wiz.......0i71.cgStgk7uYdg",
+      cast:
+          "https://www.google.co.in/search?ei=WxAqXdHWNojGvgTu4LfIBA&q=modern+family+cast&oq=mode+cast&gs_l=psy-ab.3.0.0i7i30l10.12098.12707..13315...0.0..0.172.504.0j4......0....1..gws-wiz.......0i71.cgStgk7uYdg",
       status: "Completed",
       seasons: 1,
       genre: "Drama, Action, History",
@@ -517,7 +595,8 @@ final detailsList = [
           "An ex-assassin and a wealthy programmer save lives via a surveillance AI that sends them the identities of civilians involved in impending crimes. However, the details of the crimes--including the civilians' roles--are left a mystery.",
       rating: 8.4,
       stream: "Prime Video",
-      cast: "https://www.google.co.in/search?ei=axAqXZOlBN--vATY85DICw&q=person+of+interest+cast&oq=pers+cast&gs_l=psy-ab.3.0.0i7i30l10.8660.10601..11511...1.0..0.130.568.1j4......0....1..gws-wiz.......0i71j0i7i10i30.XaXLJof4FiI",
+      cast:
+          "https://www.google.co.in/search?ei=axAqXZOlBN--vATY85DICw&q=person+of+interest+cast&oq=pers+cast&gs_l=psy-ab.3.0.0i7i30l10.8660.10601..11511...1.0..0.130.568.1j4......0....1..gws-wiz.......0i71j0i7i10i30.XaXLJof4FiI",
       status: "Completed",
       seasons: 5,
       genre: "Crime, Drama, Action",
@@ -529,7 +608,8 @@ final detailsList = [
           "Socially awkward high school student Otis may not have much experience in the lovemaking department, but he gets good guidance on the topic in his personal sex ed course -- living with mom Jean, who is a sex therapist. Being surrounded by manuals, videos and tediously open conversations about sex, Otis has become a reluctant expert on the subject. When his classmates learn about his home life, Otis decides to use his insider knowledge to improve his status at school, so he teams with whip-smart bad girl Maeve to set up an underground sex therapy clinic to deal with their classmates' problems. But through his analysis of teenage sexuality, Otis realizes that he may need some therapy of his own.",
       rating: 8.4,
       stream: "NetFlix",
-      cast: "https://www.google.co.in/search?ei=eBAqXbiwHtOQwgOdw6DYCA&q=sex+education+cast&oq=sex+education+cast&gs_l=psy-ab.3..0i20i263j0l7.8524.13125..13651...0.0..0.134.1713.3j12......0....1..gws-wiz.......0i71j0i67j0i7i30j35i39j0i13j0i10.dgT9UV8Vi0k",
+      cast:
+          "https://www.google.co.in/search?ei=eBAqXbiwHtOQwgOdw6DYCA&q=sex+education+cast&oq=sex+education+cast&gs_l=psy-ab.3..0i20i263j0l7.8524.13125..13651...0.0..0.134.1713.3j12......0....1..gws-wiz.......0i71j0i67j0i7i30j35i39j0i13j0i10.dgT9UV8Vi0k",
       status: "Ongoing",
       seasons: 1,
       genre: "Comedy, Drama",
@@ -541,7 +621,8 @@ final detailsList = [
           "Lucas Hood, an enigmatic former swindler, assumes the identity of a murdered sheriff. But haunted by his past, he finds it difficult to carry on with his devious criminal activities.",
       rating: 8.4,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=iBAqXZS4AceAvgST6ZLYAg&q=banshee+cast&oq=ban+cast&gs_l=psy-ab.3.1.0i7i30l10.9584.9865..11243...0.0..0.132.370.0j3......0....1..gws-wiz.......0i71.1q4mml8LvwA",
+      cast:
+          "https://www.google.co.in/search?ei=iBAqXZS4AceAvgST6ZLYAg&q=banshee+cast&oq=ban+cast&gs_l=psy-ab.3.1.0i7i30l10.9584.9865..11243...0.0..0.132.370.0j3......0....1..gws-wiz.......0i71.1q4mml8LvwA",
       status: "Ended",
       seasons: 4,
       genre: "Action, Crime, Drama ",
@@ -554,7 +635,8 @@ final detailsList = [
       rating: 8.4,
       stream: "Hotstar",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=lBAqXfGUMsXLvgTqwqmoDw&q=24+cast&oq=24+cast&gs_l=psy-ab.3..0i67j0i7i30l9.7086.7501..7686...0.0..0.133.349.0j3......0....1..gws-wiz.......0i71.ilLJNXQh0T4",
+      cast:
+          "https://www.google.co.in/search?ei=lBAqXfGUMsXLvgTqwqmoDw&q=24+cast&oq=24+cast&gs_l=psy-ab.3..0i67j0i7i30l9.7086.7501..7686...0.0..0.133.349.0j3......0....1..gws-wiz.......0i71.ilLJNXQh0T4",
       seasons: 9,
       genre: "Action, Crime, Drama",
       url: "https://www.hotstar.com/tv/24/s-922",
@@ -567,7 +649,8 @@ final detailsList = [
       stream: "Torrent",
       status: "Completed",
       seasons: 9,
-      cast: "https://www.google.co.in/search?ei=qxAqXe_qKcmlwgPHzpvgAg&q=scrubs+cast&oq=scrub+cast&gs_l=psy-ab.3.0.0i7i30l10.1062.1290..2990...0.0..0.167.269.0j2......0....1..gws-wiz.......0i71.mYg4zJRLkg4",
+      cast:
+          "https://www.google.co.in/search?ei=qxAqXe_qKcmlwgPHzpvgAg&q=scrubs+cast&oq=scrub+cast&gs_l=psy-ab.3.0.0i7i30l10.1062.1290..2990...0.0..0.167.269.0j2......0....1..gws-wiz.......0i71.mYg4zJRLkg4",
       genre: "Comedy, Drama",
       url: "",
       vid: "zOgb3KIJDY8"),
@@ -579,7 +662,8 @@ final detailsList = [
       stream: "Hotstar",
       status: "Ended",
       seasons: 5,
-      cast: "https://www.google.co.in/search?ei=sBAqXZa5F8zevgT8qLTQDg&q=boston+legal+cast&oq=bos+cast&gs_l=psy-ab.3.2.0i7i30l10.13820.14202..18123...0.0..0.325.540.0j2j0j1......0....1..gws-wiz.......0i71.uPaDQOSnyrU",
+      cast:
+          "https://www.google.co.in/search?ei=sBAqXZa5F8zevgT8qLTQDg&q=boston+legal+cast&oq=bos+cast&gs_l=psy-ab.3.2.0i7i30l10.13820.14202..18123...0.0..0.325.540.0j2j0j1......0....1..gws-wiz.......0i71.uPaDQOSnyrU",
       genre: "Comedy, Crime, Drama  ",
       url: "https://www.hotstar.com/tv/boston-legal/s-144",
       vid: "9DW7jjwpa0g"),
@@ -589,7 +673,8 @@ final detailsList = [
           "A team of agents in the British security intelligence service work to protect the U.K. from terrorists and other threats to national security. A repackaged version of the BBC series 'Spooks,' 'MI-5' follows a counterterrorism unit based in the highly secure suite of offices called The Grid, where Harry Pearce oversees the team and deals with the often dirty politics of the spy game.",
       rating: 8.3,
       stream: "Torrents",
-      cast: "https://www.google.co.in/search?ei=xBAqXaecFN6kwgPNj4TQCg&q=spooks+cast&oq=spooks+cast&gs_l=psy-ab.3.0.0i67j0i7i30l9.8987.10326..12128...0.0..0.129.662.3j3......0....1..gws-wiz.......0i71j0i7i10i30.jH6bAsKm-wQ",
+      cast:
+          "https://www.google.co.in/search?ei=xBAqXaecFN6kwgPNj4TQCg&q=spooks+cast&oq=spooks+cast&gs_l=psy-ab.3.0.0i67j0i7i30l9.8987.10326..12128...0.0..0.129.662.3j3......0....1..gws-wiz.......0i71j0i7i10i30.jH6bAsKm-wQ",
       status: "Completed",
       seasons: 10,
       genre: " Drama, Thriller",
@@ -602,7 +687,8 @@ final detailsList = [
       rating: 8.3,
       stream: "Netflix",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=0hAqXfX7EITtvATx4a-4Dg&q=atypical+cast&oq=at+cast&gs_l=psy-ab.3.0.0i7i30j0j0i7i30l4j0l3j0i7i30.9241.9668..11126...0.0..0.130.248.0j2......0....1..gws-wiz.......0i71j0i67.cmhbr8zuZ9w",
+      cast:
+          "https://www.google.co.in/search?ei=0hAqXfX7EITtvATx4a-4Dg&q=atypical+cast&oq=at+cast&gs_l=psy-ab.3.0.0i7i30j0j0i7i30l4j0l3j0i7i30.9241.9668..11126...0.0..0.130.248.0j2......0....1..gws-wiz.......0i71j0i67.cmhbr8zuZ9w",
       seasons: 2,
       genre: "Comedy",
       url: "https://www.netflix.com/title/80117540",
@@ -613,7 +699,8 @@ final detailsList = [
           "A father recounts to his children, through a series of flashbacks, the journey he and his four best friends took leading up to him meeting their mother.",
       rating: 8.3,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=3xAqXZe0DsPSvwTjs6eoDQ&q=how+i+met+your+mother+cast&oq=how++cast&gs_l=psy-ab.3.0.0i7i30j0i7i10i30j0i20i263j0j0i7i30j0l3j0i10j0.8902.9633..10443...0.0..0.506.954.0j2j1j5-1......0....1..gws-wiz.......0i71.-ylHSODE-TI",
+      cast:
+          "https://www.google.co.in/search?ei=3xAqXZe0DsPSvwTjs6eoDQ&q=how+i+met+your+mother+cast&oq=how++cast&gs_l=psy-ab.3.0.0i7i30j0i7i10i30j0i20i263j0j0i7i30j0l3j0i10j0.8902.9633..10443...0.0..0.506.954.0j2j1j5-1......0....1..gws-wiz.......0i71.-ylHSODE-TI",
       status: "Completed",
       seasons: 9,
       genre: "Comedy, Sitcom",
@@ -626,7 +713,8 @@ final detailsList = [
       rating: 8.3,
       stream: "Netflix",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=6xAqXcnaGOa6vgS6652QDw&q=californication+cast&oq=calcast&gs_l=psy-ab.3.1.0i7i30l10.9729.10056..11300...0.0..0.125.351.0j3......0....1..gws-wiz.......0i71j0i7i10i30j0j0i10j0i67.IDt0dYXsdf0",
+      cast:
+          "https://www.google.co.in/search?ei=6xAqXcnaGOa6vgS6652QDw&q=californication+cast&oq=calcast&gs_l=psy-ab.3.1.0i7i30l10.9729.10056..11300...0.0..0.125.351.0j3......0....1..gws-wiz.......0i71j0i7i10i30j0j0i10j0i67.IDt0dYXsdf0",
       seasons: 7,
       genre: "Comedy, Drama",
       url: "https://www.netflix.com/title/70140366",
@@ -638,7 +726,8 @@ final detailsList = [
       rating: 8.3,
       stream: "Netflix",
       status: "Ongoing",
-      cast: "https://www.google.co.in/search?ei=-BAqXZbBKo7MvwTotJnwBA&q=the+walking+dead+cast&oq=the+wcast&gs_l=psy-ab.3.0.0i7i30l10.9806.10909..11842...0.0..0.135.597.0j5......0....1..gws-wiz.......0i71j0.yoEHiNCPlRo",
+      cast:
+          "https://www.google.co.in/search?ei=-BAqXZbBKo7MvwTotJnwBA&q=the+walking+dead+cast&oq=the+wcast&gs_l=psy-ab.3.0.0i7i30l10.9806.10909..11842...0.0..0.135.597.0j5......0....1..gws-wiz.......0i71j0.yoEHiNCPlRo",
       seasons: 9,
       genre: "Drama, Horror, Thriller",
       url: "https://www.netflix.com/title/70177057",
@@ -650,7 +739,8 @@ final detailsList = [
       rating: 8.3,
       stream: "Netflix",
       status: "Completed",
-      cast: "https://www.google.co.in/search?ei=BhEqXZ3uJojsvgSgtKqYCw&q=orphan+black+cast&oq=orp+cast&gs_l=psy-ab.3.0.0i7i30l10.8109.9277..10293...1.0..0.263.752.0j2j2......0....1..gws-wiz.......0i71j0i7i10i30j0i30.urSlWq9_mHs",
+      cast:
+          "https://www.google.co.in/search?ei=BhEqXZ3uJojsvgSgtKqYCw&q=orphan+black+cast&oq=orp+cast&gs_l=psy-ab.3.0.0i7i30l10.8109.9277..10293...1.0..0.263.752.0j2j2......0....1..gws-wiz.......0i71j0i7i10i30j0i30.urSlWq9_mHs",
       seasons: 5,
       genre: "Action, Drama, Sci-Fi",
       url: "https://www.netflix.com/title/70276033",
@@ -663,7 +753,8 @@ final detailsList = [
       stream: "Prime Video",
       status: "Ongoing",
       seasons: 2,
-      cast: "https://www.google.co.in/search?ei=ExEqXa6EAszhvATAhbzQDA&q=jack+ryan+cast&oq=jackcast&gs_l=psy-ab.3.0.0i7i30l10.8035.8600..9489...0.0..0.139.494.0j4......0....1..gws-wiz.......0i71.j5VEi-kQlWM",
+      cast:
+          "https://www.google.co.in/search?ei=ExEqXa6EAszhvATAhbzQDA&q=jack+ryan+cast&oq=jackcast&gs_l=psy-ab.3.0.0i7i30l10.8035.8600..9489...0.0..0.139.494.0j4......0....1..gws-wiz.......0i71.j5VEi-kQlWM",
       genre: "Action, Crime, Drama",
       url: "https://www.primevideo.com/detail/0RIEKNKOEEHUNRBHQUH436OHYU",
       vid: "1KsyZF590NM"),
@@ -675,7 +766,8 @@ final detailsList = [
       stream: "Netflix",
       status: "Ongoing",
       seasons: 3,
-      cast: "https://www.google.co.in/search?ei=HhEqXZ_JGIzQvgSurrW4CA&q=good+place+cast&oq=good+pl+cast&gs_l=psy-ab.3.0.0i7i30l10.9306.12726..13590...1.0..0.158.1000.0j8......0....1..gws-wiz.......0i7i10i30.OK9Sy57h1oU",
+      cast:
+          "https://www.google.co.in/search?ei=HhEqXZ_JGIzQvgSurrW4CA&q=good+place+cast&oq=good+pl+cast&gs_l=psy-ab.3.0.0i7i30l10.9306.12726..13590...1.0..0.158.1000.0j8......0....1..gws-wiz.......0i7i10i30.OK9Sy57h1oU",
       genre: " Comedy, Drama",
       url: "https://www.netflix.com/title/80113701",
       vid: "RfBgT5djaQw"),
@@ -685,7 +777,8 @@ final detailsList = [
           "The lives of four socially awkward friends, Leonard, Sheldon, Howard and Raj, take a wild turn when they meet beautiful and free-spirited Penny.",
       rating: 8.2,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=LREqXdKHL5iuvwSl6prQAw&q=big+bang+theory+cast&oq=big+cast&gs_l=psy-ab.3.0.0i7i30l7j0i67j0i7i30l2.9060.9669..10860...0.0..0.127.367.0j3......0....1..gws-wiz.......0i71.HVCOozFweSk",
+      cast:
+          "https://www.google.co.in/search?ei=LREqXdKHL5iuvwSl6prQAw&q=big+bang+theory+cast&oq=big+cast&gs_l=psy-ab.3.0.0i7i30l7j0i67j0i7i30l2.9060.9669..10860...0.0..0.127.367.0j3......0....1..gws-wiz.......0i71.HVCOozFweSk",
       status: "Completed",
       seasons: 12,
       genre: "Comedy, Sitcom",
@@ -697,7 +790,8 @@ final detailsList = [
           "Ten years after transporting drug money to Alex, Piper is imprisoned for the crime. The toughness of prison changes her drastically as an individual, compelling her to do the unthinkable.",
       rating: 8.1,
       stream: "Netflix",
-      cast: "https://www.google.co.in/search?ei=OhEqXaqXFYmGvQSdlYGIBA&q=orange+is+the+new+black+cast&oq=oran+cast&gs_l=psy-ab.3.0.0i7i30l10.8832.9348..10013...0.0..0.183.535.0j4......0....1..gws-wiz.......0i71j0i7i10i30j0i30.Rw1VVner6OA",
+      cast:
+          "https://www.google.co.in/search?ei=OhEqXaqXFYmGvQSdlYGIBA&q=orange+is+the+new+black+cast&oq=oran+cast&gs_l=psy-ab.3.0.0i7i30l10.8832.9348..10013...0.0..0.183.535.0j4......0....1..gws-wiz.......0i71j0i7i10i30j0i30.Rw1VVner6OA",
       status: "Ongoing",
       seasons: 6,
       genre: " Crime, Comedy",
@@ -709,7 +803,8 @@ final detailsList = [
           "An anthology of stories consisting of a house with a deadly secret, a demented asylum, a witch coven, an unusual show, a hotel, a haunted farmhouse, a cult and an apocalypse.",
       rating: 8.1,
       stream: "Hotstar",
-      cast: "https://www.google.co.in/search?ei=RhEqXabiA4nHvgTkiajACg&q=american+horror+story+cast&oq=ame+cast&gs_l=psy-ab.3.1.0i7i30l10.16182.17757..18939...1.0..0.162.726.1j5......0....1..gws-wiz.......0i71j0i7i10i30j0j0i67.70IUpmWz-8c",
+      cast:
+          "https://www.google.co.in/search?ei=RhEqXabiA4nHvgTkiajACg&q=american+horror+story+cast&oq=ame+cast&gs_l=psy-ab.3.1.0i7i30l10.16182.17757..18939...1.0..0.162.726.1j5......0....1..gws-wiz.......0i71j0i7i10i30j0j0i67.70IUpmWz-8c",
       status: "Ongoing",
       seasons: 8,
       genre: " Mystery,Suspense,Chilling",
@@ -721,7 +816,8 @@ final detailsList = [
           "Based on the comic book series by Charles Forsman, \"The End of the F***ing World\" sees two 17-year-old outsiders, James and Alyssa, embark on a road trip to find her estranged father, who left home when she was just a child. James, who is convinced he's a psychopath, has decided it's time to graduate from killing animals to something bigger -- and he already has a target in mind. Alyssa, the embodiment of existential angst, feels like she doesn't fit in at her new school despite being quite popular. Together, they get caught up on a trail of violent events that grow increasingly more ominous as their quest progresses.",
       rating: 8.1,
       stream: "NetFlix",
-      cast: "https://www.google.co.in/search?ei=WhEqXeXRM8rovgTn_6PICw&q=the+end+of+the+fing+world+cast&oq=the+end+of+the+fing+world+cast&gs_l=psy-ab.3...32937.47460..47653...3.0..0.239.4444.4j32j1......0....1..gws-wiz.......0i71j0i7i30j0i13j0i7i10i30j0j0i7i5i10i30j0i8i30j0i22i30.f7AXiYUHEpk",
+      cast:
+          "https://www.google.co.in/search?ei=WhEqXeXRM8rovgTn_6PICw&q=the+end+of+the+fing+world+cast&oq=the+end+of+the+fing+world+cast&gs_l=psy-ab.3...32937.47460..47653...3.0..0.239.4444.4j32j1......0....1..gws-wiz.......0i71j0i7i30j0i13j0i7i10i30j0j0i7i5i10i30j0i8i30j0i22i30.f7AXiYUHEpk",
       status: "Ongoing",
       seasons: 2,
       genre: " Adventure, Comedy, Crime ",
@@ -736,7 +832,8 @@ final detailsList = [
       status: "Ongoing",
       seasons: 2,
       genre: "Drama, Mystery",
-      cast: "https://www.google.co.in/search?ei=jREqXfyFC8quvgTFipXgBw&q=13+reasons+why+cast&oq=13cast&gs_l=psy-ab.3.0.0i7i30l10.9744.9901..11207...0.0..0.123.241.0j2......0....1..gws-wiz.8GYdmZVFF5Y",
+      cast:
+          "https://www.google.co.in/search?ei=jREqXfyFC8quvgTFipXgBw&q=13+reasons+why+cast&oq=13cast&gs_l=psy-ab.3.0.0i7i30l10.9744.9901..11207...0.0..0.123.241.0j2......0....1..gws-wiz.8GYdmZVFF5Y",
       url: "https://www.netflix.com/title/80117470",
       vid: "toj3CyMhBOs"),
 ];
