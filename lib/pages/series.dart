@@ -124,7 +124,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                       },
                       controller: _pageController,
                       pageSnapping: true,
-                      physics: BouncingScrollPhysics(),
+                      physics: ClampingScrollPhysics(),
                       onPageChanged: _onPageChanged,
                       itemCount: detailsList.length,
                     ),

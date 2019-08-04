@@ -237,6 +237,19 @@ final detailsList = [
           "https://www.primevideo.com/detail/The-Office/0H7JFOPK2QO9WVZ8D9D0J5ZRQN",
       vid: "jz1omRneAGg"),
   Detail(
+      title: "it's always sunny in philadelphia",
+      description:
+          "A group of five selfish underachievers co-own a decrepit Irish bar and are involved in various controversies. There is no unity among them as they constantly keep plotting against each other.",
+      rating: 8.8,
+      cast:
+          "https://www.google.co.in/search?sa=X&q=it%27s+always+sunny+in+philadelphia+cast&stick=H4sIAAAAAAAAAONgFuLUz9U3ME8uMahSQjC1xLKTrfRLyoAovqAoP70oMdcqObG4ZBGrWmaJerFCYk55YmWxQnFpXl6lQmaeQkFGZk5iSmoOkE5UACncwcoIAIvYSDdcAAAA&ved=2ahUKEwjChLb72OnjAhUEUI8KHaeeBlgQzTooATA4egQIFRAC&biw=1242&bih=564",
+      stream: "Hotstar",
+      status: "Ongoing",
+      seasons: 14,
+      genre: "Crime, Drama",
+      url: "https://www.hotstar.com/tv/its-always-sunny-in-philadelphia/s-158",
+      vid: "ftL_2HPagU4"),
+  Detail(
       title: "Attack of Titan",
       description:
           "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the humans' safe zone. During the carnage that follows, soldier Eren Jaeger sees one of the creatures devour his mother, which leads him to vow that he will kill every Titan. He enlists some friends who survived to help him, and that group is humanity's last hope for avoiding extinction at the hands of the monsters.",
@@ -249,6 +262,32 @@ final detailsList = [
       genre: "Animation, Action, Adventure",
       url: "",
       vid: "6scZ1qj2w38"),
+  Detail(
+      title: "Freeks and Geeks",
+      description:
+          "Growing up circa 1980, a misfit high-school student and his pals are probably destined to become new media millionaires, but right now they're stuck in school, where all the girls are a foot taller and bullies terrorize the gym class. Meanwhile, his older sister is flirting with the dope-smoking bad boys, cutting classes and questioning the point of getting good grades.",
+      rating: 8.8,
+      stream: "Torrent",
+      status: "Completed",
+      cast:
+          "https://www.google.co.in/search?q=freaks+and+geeks+cast&stick=H4sIAAAAAAAAAONgFuLUz9U3MC6pKi5SQjC1xLKTrfRLyoAovqAoP70oMdcqObG4ZBGraFpRamJ2sUJiXopCemoqkAUS38HKCAC3_JXRSwAAAA&sa=X&ved=2ahUKEwiM7Y7o0-njAhUUbo8KHbWkD8cQzTooATAyegQIERAC&biw=1242&bih=564",
+      seasons: 1,
+      genre: "Comedy, Drama",
+      url: "",
+      vid: "GyK8kVEhXZ0"),
+  Detail(
+      title: "Seinfeld",
+      description:
+          "Stand-up comedian Jerry Seinfeld wrestles with life's most perplexing yet trivial questions with his eccentric friends George, Elaine and Kramer.",
+      rating: 8.8,
+      stream: "Torretns",
+      status: "Completed",
+      cast:
+          "https://www.google.co.in/search?q=seinfeld+cast&stick=H4sIAAAAAAAAAONgFuLQz9U3MDfKLlCCs7TEspOt9EvKgCi-oCg_vSgx1yo5sbhkEStvcWpmXlpqTooCiL-DlREAQO1InEEAAAA&sa=X&ved=2ahUKEwiek93-0unjAhUIM48KHUkID8cQMSgAMDh6BAgVEAE&biw=1242&bih=564",
+      seasons: 9,
+      genre: "Comedy",
+      url: "",
+      vid: "SOsbYJ4CfTA"),
   Detail(
       title: "Arrested Development",
       description:
@@ -616,19 +655,6 @@ final detailsList = [
       url: "https://www.netflix.com/in/title/80197526",
       vid: "o308rJlWKUc"),
   Detail(
-      title: "Banshee",
-      description:
-          "Lucas Hood, an enigmatic former swindler, assumes the identity of a murdered sheriff. But haunted by his past, he finds it difficult to carry on with his devious criminal activities.",
-      rating: 8.4,
-      stream: "Hotstar",
-      cast:
-          "https://www.google.co.in/search?ei=iBAqXZS4AceAvgST6ZLYAg&q=banshee+cast&oq=ban+cast&gs_l=psy-ab.3.1.0i7i30l10.9584.9865..11243...0.0..0.132.370.0j3......0....1..gws-wiz.......0i71.1q4mml8LvwA",
-      status: "Ended",
-      seasons: 4,
-      genre: "Action, Crime, Drama ",
-      url: "https://www.hotstar.com/tv/banshee/s-519",
-      vid: "VI7haj7HTCA"),
-  Detail(
       title: "24",
       description:
           "Jack Bauer, Director of Field Ops for the Counter-Terrorist Unit of Los Angeles, races against the clock to subvert terrorist plots and save his nation from ultimate disaster.",
@@ -654,45 +680,6 @@ final detailsList = [
       genre: "Comedy, Drama",
       url: "",
       vid: "zOgb3KIJDY8"),
-  Detail(
-      title: "Boston Legal",
-      description:
-          "Drama series that follows the personal and professional exploits of a group of brilliant but often emotionally challenged attorneys. Boston Legal is a spin-off of the long-running David E. Kelley series The Practice (1997), following the exploits of former Practice character Alan Shore (James Spader) at the legal firm of Crane, Poole, and Schmidt.",
-      rating: 8.4,
-      stream: "Hotstar",
-      status: "Ended",
-      seasons: 5,
-      cast:
-          "https://www.google.co.in/search?ei=sBAqXZa5F8zevgT8qLTQDg&q=boston+legal+cast&oq=bos+cast&gs_l=psy-ab.3.2.0i7i30l10.13820.14202..18123...0.0..0.325.540.0j2j0j1......0....1..gws-wiz.......0i71.uPaDQOSnyrU",
-      genre: "Comedy, Crime, Drama  ",
-      url: "https://www.hotstar.com/tv/boston-legal/s-144",
-      vid: "9DW7jjwpa0g"),
-  Detail(
-      title: "Spooks",
-      description:
-          "A team of agents in the British security intelligence service work to protect the U.K. from terrorists and other threats to national security. A repackaged version of the BBC series 'Spooks,' 'MI-5' follows a counterterrorism unit based in the highly secure suite of offices called The Grid, where Harry Pearce oversees the team and deals with the often dirty politics of the spy game.",
-      rating: 8.3,
-      stream: "Torrents",
-      cast:
-          "https://www.google.co.in/search?ei=xBAqXaecFN6kwgPNj4TQCg&q=spooks+cast&oq=spooks+cast&gs_l=psy-ab.3.0.0i67j0i7i30l9.8987.10326..12128...0.0..0.129.662.3j3......0....1..gws-wiz.......0i71j0i7i10i30.jH6bAsKm-wQ",
-      status: "Completed",
-      seasons: 10,
-      genre: " Drama, Thriller",
-      url: "",
-      vid: "sz0mQUJxswQ"),
-  Detail(
-      title: "Atypical",
-      description:
-          "This heartfelt comedy follows Sam, a teenager on the autism spectrum, who has decided he is ready for romance. In order to start dating -- and hopefully find love -- Sam will need to be more independent, which also sends his mother (Jennifer Jason Leigh) on her own life-changing path. She and the rest of Sam's family, including a scrappy sister and a father seeking a better understanding of his son, must adjust to change and explore what it means to be 'normal.' The series is created and written by Robia Rashid and Academy Award-winning producer Seth Gordon.",
-      rating: 8.3,
-      stream: "Netflix",
-      status: "Ongoing",
-      cast:
-          "https://www.google.co.in/search?ei=0hAqXfX7EITtvATx4a-4Dg&q=atypical+cast&oq=at+cast&gs_l=psy-ab.3.0.0i7i30j0j0i7i30l4j0l3j0i7i30.9241.9668..11126...0.0..0.130.248.0j2......0....1..gws-wiz.......0i71j0i67.cmhbr8zuZ9w",
-      seasons: 2,
-      genre: "Comedy",
-      url: "https://www.netflix.com/title/80117540",
-      vid: "ieHh4U-QYwU"),
   Detail(
       title: "How I met Your mother",
       description:
