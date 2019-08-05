@@ -6,6 +6,7 @@ import 'package:top100/models/details_list.dart';
 import 'package:top100/models/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:top100/pages/details.dart';
 
 class SeriesCarousalPage extends StatefulWidget {
   @override
@@ -59,6 +60,20 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             ),
           );
         });
+  }
+
+  void _showDetailModelSheet() {
+    showModalBottomSheet(
+      context: context,
+      builder: (builder) {
+        return new Container(
+          height: screenHeight,
+          child: Container(
+            child: Details(),
+          ),
+        );
+      },
+    );
   }
 
   Color hexToColor(String code) {
@@ -153,6 +168,20 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                   },
                 ),
               ),
+              Positioned(
+                top: 48,
+                right: 15,
+                child: InkWell(
+                  enableFeedback: true,
+                  child: Icon(
+                    Icons.details,
+                    size: 40,
+                  ),
+                  onTap: () {
+                    _showDetailModelSheet();
+                  },
+                ),
+              ),
             ],
           ),
         ),
@@ -193,16 +222,26 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                             height: 200,
                             child: Column(
                               children: <Widget>[
-                                Image.asset(
-                                  imageList[index],
-                                  width: 100,
-                                  height: 150,
-                                  fit: BoxFit.cover,
+                                Stack(
+                                  children: <Widget>[
+                                    Image.asset(
+                                      imageList[index],
+                                      width: 100,
+                                      height: 150,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
                                 ),
                                 SizedBox(
                                   height: 10,
                                 ),
-                                Text(detailsList[index].title)
+                                Text(
+                                  detailsList[index].title,
+                                  style: TextStyle(
+                                      fontFamily: "title",
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold),
+                                )
                               ],
                             ),
                           ),
@@ -530,7 +569,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             child: Container(
               child: child,
               height: Curves.easeIn.transform(value) * 600,
-              margin: const EdgeInsets.only(left: 20, right: 20, bottom: 10),
+              margin: const EdgeInsets.only(left: 25, right: 25, bottom: 10),
             ),
           );
         } else {
@@ -564,8 +603,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                 fit: BoxFit.fitHeight,
               ),
               borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(30.0),
-                bottomRight: Radius.circular(30.0),
+                bottomLeft: Radius.circular(20.0),
+                bottomRight: Radius.circular(20.0),
               ),
             ),
           )),
