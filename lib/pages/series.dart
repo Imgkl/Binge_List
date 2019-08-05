@@ -94,8 +94,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
       duration: duration,
       top: 0,
       bottom: 0,
-      left: isCollapsed ? 0 : 0.85 * screenWidth,
-      right: isCollapsed ? 0 : -0.85 * screenWidth,
+      left: isCollapsed ? 0 : 0.35 * screenWidth,
+      right: isCollapsed ? 0 : -0.35 * screenWidth,
       child: Material(
         elevation: 2,
         child: Container(
@@ -167,8 +167,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Colors.amber.shade500,
-              Colors.pink.shade500,
+              Color(0xffd9e7ff),
+              Color(0xffe3ffe7),
             ]),
       ),
       child: SlideTransition(
@@ -176,11 +176,47 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         child: ScaleTransition(
           scale: _menuScaleAnimation,
           child: Align(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.topLeft,
             child: Padding(
-              padding: const EdgeInsets.only(right: 55.0),
-              child: Container(),
-            ),
+                padding: const EdgeInsets.only(right: 300.0, top: 50),
+                child: Container(
+                  width: 450,
+                  child: ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemCount: detailsList.length,
+                    itemBuilder: (context, index) {
+                      return FlatButton(
+                        child: Card(
+                          elevation: 10,
+                          child: Container(
+                            color: Colors.transparent,
+                            height: 200,
+                            child: Column(
+                              children: <Widget>[
+                                Image.asset(
+                                  imageList[index],
+                                  width: 100,
+                                  height: 150,
+                                  fit: BoxFit.cover,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(detailsList[index].title)
+                              ],
+                            ),
+                          ),
+                        ),
+                        onPressed: () {
+                          _pageController.animateToPage(index,
+                              duration: Duration(milliseconds: 500),
+                              curve: Curves.ease);
+                          isCollapsed = true;
+                        },
+                      );
+                    },
+                  ),
+                )),
           ),
         ),
       ),
@@ -231,14 +267,14 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                     SizedBox(
                       width: 4.73,
                     ),
-                    Text(
-                      detailsList[index].title,
-                      style: TextStyle(
-                          fontSize: 35.0,
+                    Text(detailsList[index].title,
+                        style: TextStyle(
+                          fontSize: 32.2,
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic,
-                          fontFamily: "Title"),
-                    ),
+                          fontFamily: "Title",
+                          decoration: TextDecoration.underline,
+                        )),
                   ],
                 ),
                 SizedBox(

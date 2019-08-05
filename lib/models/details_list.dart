@@ -354,6 +354,32 @@ final detailsList = [
       url: "https://www.netflix.com/title/80114792",
       vid: "BZ5OCIJVErw"),
   Detail(
+      title: "Haunting of the Hill House",
+      description:
+          "This modern reimagining of the Shirley Jackson novel follows siblings who, as children, grew up in what would go on to become the most famous haunted house in the country.. Now adults, they are forced back together in the face of tragedy and must finally confront the ghosts of their past. Some of those ghosts still lurk in their minds, while others may actually be stalking the shadows of Hill House. The ensemble cast includes Oscar winner Timothy Hutton, Carla Gugino and Henry Thomas. Mike Flanagan, a veteran of the horror genre, created the series.",
+      rating: 8.7,
+      stream: "Netflix",
+      cast:
+          "https://www.google.co.in/search?q=the+haunting+of+hill+house+cast&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzysgxqjCxUELlaollJ1vpl5QBUXxBUX56UWKuVXJicckiVvmSjFSFjMTSvJLMvHSF_DSFjMycHIWM_NLiVAWQih2sjADE7j-YXQAAAA&sa=X&ved=2ahUKEwjH0p-Zr-zjAhWIKo8KHZEJDe0QzTooATAyegQIFBAC&biw=1242&bih=564&dpr=1.1",
+      status: "Ongoing",
+      seasons: 2,
+      genre: "Drama, Horror, Mystery",
+      url: "https://www.netflix.com/title/80189231",
+      vid: "G9OzG53VwIk"),
+  Detail(
+      title: "Better Call Saul",
+      description:
+          "Ex-con artist Jimmy McGill turns into a small-time attorney and goes through a series of trials and tragedies, as he transforms into his alter ego Saul Goodman, a morally challenged criminal lawyer.",
+      rating: 8.7,
+      stream: "Netflix",
+      cast:
+          "https://www.google.co.in/search?q=better+call+saul+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3qDA0sjA0VEJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVtGk1JKS1CKF5MScHIXixNIcBZD4DlZGAC0z4Y1NAAAA&sa=X&ved=2ahUKEwiP8fPlr-zjAhUOTI8KHTfFAhgQzTooATA5egQIFhAC&biw=1242&bih=564",
+      status: "Ongoing",
+      seasons: 4,
+      genre: "Drama, Crime",
+      url: "https://www.netflix.com/title/80021956",
+      vid: "9q4qzYrHVmI"),
+  Detail(
       title: "Daredevil",
       description:
           "\"Daredevil\" follows Matt Murdock, attorney by day and vigilante by night. Blinded in an accident as a child, Murdock uses his heightened senses as Daredevil to fight crime on the streets of New York after the sun goes down. While Murdock's day job requires him to believe in the criminal justice system, his alter ego does not follow suit, leading him to take the law into his own hands to protect his Hell's Kitchen neighborhood and the surrounding communities.",
@@ -458,6 +484,32 @@ final detailsList = [
       genre: " Animation,Comedy",
       url: "",
       vid: "pzdnq1zFvOY"),
+  Detail(
+      title: "Dragon Ball Z",
+      description:
+          "\"Dragon Ball Z\" follows the adventures of Goku who, along with the Z Warriors, defends the Earth against evil. The action adventures are entertaining and reinforce the concept of good versus evil. \"Dragon Ball Z\" teaches valuable character virtues such as teamwork, loyalty, and trustworthiness.",
+      rating: 8.7,
+      stream: "Torrent",
+      status: "Finished",
+      cast:
+          "https://www.google.co.in/search?q=dragon+ball+z+characters&stick=H4sIAAAAAAAAAONgFuLQz9U3MEoqKFSCs7RkspOt9EvKgCi-oCg_vSgx1yo5I7EoMbkktah4EatESlFien6eQlJiTo5ClQJCagcrIwAuQ7kwUgAAAA&sa=X&ved=2ahUKEwjBkpyVsezjAhWBto8KHZV2DpoQzTooATA2egQIFhAC&biw=1242&bih=564",
+      seasons: 16,
+      genre: "Animation, Action, Adventure ",
+      url: "",
+      vid: "aOPJ6y3HWII"),
+  Detail(
+      title: "Crown",
+      description:
+          "Based on an award-winning play (\"The Audience\") by showrunner Peter Morgan, this lavish, Netflix-original drama chronicles the life of Queen Elizabeth II (Claire Foy) from the 1940s to modern times. The series begins with an inside look at the early reign of the queen, who ascended the throne at age 25 after the death of her father, King George VI. As the decades pass, personal intrigues, romances, and political rivalries are revealed that played a big role in events that shaped the later years of the 20th century.",
+      rating: 8.7,
+      stream: "Netflix",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?ei=WHpIXaCnO4jXvgTb9qDgAQ&q=crown+cast&oq=crown+ca&gs_l=psy-ab.1.1.0j0i20i263j0l8.6920.9154..10377...0.0..0.114.318.1j2......0....1..gws-wiz.......0i71j0i67i70i249j0i67j0i10.OggheVZvcUE",
+      seasons: 4,
+      genre: "Drama, History",
+      url: "https://www.netflix.com/title/80025678",
+      vid: "aOPJ6y3HWII"),
   Detail(
       title: "Money heist",
       description:
