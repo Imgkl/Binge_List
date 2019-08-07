@@ -211,51 +211,66 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                 child: Container(
                   width: 450,
                   child: ListView.builder(
+                    physics: ClampingScrollPhysics(),
                     scrollDirection: Axis.vertical,
                     itemCount: detailsList.length,
                     itemBuilder: (context, index) {
-                      return FlatButton(
-                        child: Card(
-                          elevation: 10,
-                          child: Container(
-                            color: Colors.transparent,
-                            height: 200,
-                            width: 210,
-                            child: Column(
-                              children: <Widget>[
-                                Stack(
-                                  children: <Widget>[
-                                    Image.asset(
-                                      imageList[index],
-                                      width: 115,
-                                      height: 150,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(left: 10),
-                                  child: Text(
-                                    detailsList[index].title,
-                                    style: TextStyle(
-                                        fontFamily: "title",
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.bold),
+                      return Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: FlatButton(
+                          child: Card(
+                            elevation: 5,
+                            child: Container(
+                              color: Colors.black,
+                              height: 212,
+                              width: 220,
+                              child: Column(
+                                children: <Widget>[
+                                  Stack(
+                                    children: <Widget>[
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(90),
+                                        ),
+                                        child: Image.asset(
+                                          imageList[index],
+                                          width: 120,
+                                          height: 150,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                )
-                              ],
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                      right: 10.0,
+                                    ),
+                                    child: Container(
+                                      margin: EdgeInsets.only(left: 10),
+                                      child: Text(
+                                        detailsList[index].title,
+                                        style: TextStyle(
+                                            fontFamily: "title",
+                                            fontSize: 16.7,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
+                          onPressed: () {
+                            _pageController.animateToPage(index,
+                                duration: Duration(milliseconds: 500),
+                                curve: Curves.ease);
+                            isCollapsed = true;
+                          },
                         ),
-                        onPressed: () {
-                          _pageController.animateToPage(index,
-                              duration: Duration(milliseconds: 500),
-                              curve: Curves.ease);
-                          isCollapsed = true;
-                        },
                       );
                     },
                   ),
