@@ -524,6 +524,32 @@ final detailsList = [
       url: "https://www.netflix.com/title/80192098",
       vid: "hMANIarjT50"),
   Detail(
+      title: "Punisher",
+      description:
+          "After exacting revenge on the people responsible for the deaths of his wife and children, Frank Castle uncovers a conspiracy that runs deeper than New York's criminal underworld. Now known as the Punisher, he must dig deep into the conspiracy to discover the truth about injustices that affect more than just him and his family. Assisting the vigilante in his quest to fight criminals are best friend Billy Russo, who runs private military corporation Anvil, and former NSA analyst Micro, who shares common enemies with Castle and helps him as part of a so-called marriage of convenience.",
+      rating: 8.6,
+      stream: "Netflix",
+      status: "Ongoing",
+      seasons: 2,
+      cast:
+          "https://www.google.co.in/search?q=the+punisher+cast&stick=H4sIAAAAAAAAAONgFuLVT9c3NEw2tTAysrAoU0LlaollJ1vpl5QBUXxBUX56UWKuVXJicckiVsGSjFSFgtK8zOKM1CIFkNgOVkYAcLhsc08AAAA&sa=X&ved=2ahUKEwiOz7aQl_HjAhWOfysKHYLXCKcQzTooATAwegQIFhAC&biw=1242&bih=564",
+      genre: "Action, Adventure, Crime",
+      url: "https://www.netflix.com/title/80117498",
+      vid: "C9A-tG_tPP4"),
+  Detail(
+      title: "Big Little Lies",
+      description:
+          "Madeline, Celeste and Jane are a trio of wealthy young women in Monterey, California. Their lives are shattered when a murder takes place in their idyllic town, unravelling a can of worms.",
+      rating: 8.6,
+      stream: "Hotstar",
+      status: "Ongoing",
+      seasons: 2,
+      cast:
+          "https://www.google.co.in/search?sa=X&q=big+little+lies+cast&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2N8zLLVJC5miJZSdb6ZeUAVF8QVF-elFirlVyYnHJIlaRpMx0hZzMkpKcVCCVWqwAEt7ByggASo6jA04AAAA&ved=2ahUKEwjTjsLLmPHjAhWSfn0KHURMAYMQzTooATA2egQIFxAC&biw=1242&bih=564",
+      genre: "Crime, Drama, Mystery",
+      url: "https://www.hotstar.com/tv/big-little-lies/s-1025",
+      vid: "8XgMvMpvCFI"),
+  Detail(
       title: "Vikings",
       description:
           "Ragnar Lothbrok, a legendary Norse hero, is a mere farmer who rises up to become a fearless warrior and commander of the Viking tribes with the support of his equally ferocious family.",
@@ -537,6 +563,19 @@ final detailsList = [
       url: "https://www.netflix.com/title/70301854",
       vid: "1j2sXLbzm9U"),
   Detail(
+      title: "Sons of Anarchy ",
+      description:
+          "Jax Teller, a man in his early 30s, struggles to find a balance in his life between being a new dad and his involvement in a motorcycle gang.",
+      rating: 8.6,
+      stream: "Torrent",
+      status: "Completed",
+      seasons: 7,
+      cast:
+          "https://www.google.co.in/search?q=sons+of+anarchy+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3MEkzy8jIVUJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVpHi_Lxihfw0hcS8xKLkjEoFkPAOVkYATmPabUwAAAA&sa=X&ved=2ahUKEwi23KKvk_HjAhWJfn0KHf5vA8UQzTooATA2egQIFBAC&biw=1242&bih=608&dpr=1.1",
+      genre: "Crime, Drama, Thriller",
+      url: "",
+      vid: "ia4cggzpqYQ"),
+  Detail(
       title: "Broadwalk Empire",
       description:
           "Enoch Thompson, the treasurer of Atlantic City, is friends with mobsters and politicians alike, resulting in the federal government taking special interest in him.",
@@ -549,6 +588,45 @@ final detailsList = [
       genre: " Crime, Drama, History",
       url: "https://www.hotstar.com/tv/boardwalk-empire/s-951",
       vid: "e6z71l6HQwQ"),
+  Detail(
+      title: "Parks and Recreation",
+      description:
+          "Leslie Knope, a mid-level bureaucrat, wishes to help a local nurse, Ann, convert a disused construction site into a community park, but deals with red-tapeism and self-centred neighbours.",
+      rating: 8.6,
+      stream: "Torrent",
+      cast:
+          "https://www.google.co.in/search?q=parks+and+recreation+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3MDU1ryzMUEJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVsmCxKLsYoXEvBSFotTkotTEksz8PAWQ3A5WRgAQYQCcUQAAAA&sa=X&ved=2ahUKEwjG7PDYmvHjAhUSb30KHZ-jAQgQzTooATA0egQIFhAC&biw=1242&bih=564",
+      status: "Completed",
+      seasons: 7,
+      genre: "Comedy",
+      url: "",
+      vid: "9djCOPHOvOw"),
+   Detail(
+      title: "The Handmaid's Tale",
+      description:
+          "June, a fertile woman, lives as a concubine to a Gileadan officer and his wife. While she is forced to agree to their strict rules and conditions, she hopes to be free and reunited with her daughter.",
+      rating: 8.5,
+      stream: "Torrent",
+      cast:
+          "https://www.google.co.in/search?sa=X&q=the+handmaid%27s+tale+cast&stick=H4sIAAAAAAAAAONgFuLVT9c3NEzOM0uqNK0yUULlaollJ1vpl5QBUXxBUX56UWKuVXJicckiVomSjFSFjMS8lNzEzBT1YoWSxJxUBZDUDlZGANOxpyBWAAAA&ved=2ahUKEwjWts3yovHjAhWRaCsKHSaaD7oQzTooATA5egQIFRAC&biw=1242&bih=564",
+      status: "Ongoing",
+      seasons: 3,
+      genre: "Drama, Sci-Fi, Thriller",
+      url: "",
+      vid: "dVLiDETfx1c"),
+     Detail(
+      title: "Mindhunter",
+      description:
+          "Catching a criminal often requires the authorities to get inside the villain's mind to figure out how he thinks. That's the job of FBI agents Holden Ford and Bill Tench. They attempt to understand and catch serial killers by studying their damaged psyches. Along the way, the agents pioneer the development of modern serial-killer profiling. The crime drama has a strong pedigree behind the camera, with Oscar-nominated director David Fincher and Oscar-winning actress Charlize Theron among the show's executive producers.",
+      rating: 8.5,
+      stream: "Netflix",
+      cast:
+          "https://www.google.co.in/search?sa=X&q=mindhunter+cast&stick=H4sIAAAAAAAAAONgFuLVT9c3NEzONchKTykuVELlaollJ1vpl5QBUXxBUX56UWKuVXJicckiVv7czLyUjNK8ktQiBZDIDlZGAE10SURNAAAA&ved=2ahUKEwjSkcn0pvHjAhWGWisKHUv9C0AQzTooATA_egQIGhAC&biw=1242&bih=564",
+      status: "Ongoing",
+      seasons: 2,
+      genre: "Crime, Drama, Thriller",
+      url: "https://www.netflix.com/title/80114855",
+      vid: "dVLiDETfx1c"),
   Detail(
       title: "Hannibal",
       description:
@@ -671,7 +749,7 @@ final detailsList = [
       title: "Modern Family",
       description:
           "Three modern-day families from California try to deal with their kids, quirky spouses and jobs in their own unique ways, often resulting in crazy capers.",
-      rating: 9.5,
+      rating: 8.5,
       stream: "Hotstar",
       cast:
           "https://www.google.co.in/search?ei=WxAqXdHWNojGvgTu4LfIBA&q=modern+family+cast&oq=mode+cast&gs_l=psy-ab.3.0.0i7i30l10.12098.12707..13315...0.0..0.172.504.0j4......0....1..gws-wiz.......0i71.cgStgk7uYdg",

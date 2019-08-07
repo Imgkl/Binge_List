@@ -220,13 +220,14 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                           child: Container(
                             color: Colors.transparent,
                             height: 200,
+                            width: 210,
                             child: Column(
                               children: <Widget>[
                                 Stack(
                                   children: <Widget>[
                                     Image.asset(
                                       imageList[index],
-                                      width: 100,
+                                      width: 115,
                                       height: 150,
                                       fit: BoxFit.cover,
                                     ),
@@ -235,12 +236,15 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                 SizedBox(
                                   height: 10,
                                 ),
-                                Text(
-                                  detailsList[index].title,
-                                  style: TextStyle(
-                                      fontFamily: "title",
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.bold),
+                                Container(
+                                  margin: EdgeInsets.only(left: 10),
+                                  child: Text(
+                                    detailsList[index].title,
+                                    style: TextStyle(
+                                        fontFamily: "title",
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.bold),
+                                  ),
                                 )
                               ],
                             ),
@@ -550,7 +554,6 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
         "https://www.youtube.com/watch?v=" + detailsList[currentPage].vid;
     if (await canLaunch(vid)) {
       await launch(vid);
-      print(vid);
     } else {
       throw 'Could not launch $vid';
     }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Details extends StatelessWidget {
   const Details({Key key}) : super(key: key);
@@ -40,48 +41,70 @@ class Details extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Card(
-              child: Container(
-                width: 50,
-                height: 50,
-                child: Icon(
-                  FontAwesomeIcons.githubSquare,
+            InkWell(
+              child: Card(
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  child: Icon(
+                    FontAwesomeIcons.githubSquare,
+                  ),
                 ),
               ),
+              onTap: () {
+                _launchGit();
+              },
             ),
-            Card(
-              child: Container(
-                width: 50,
-                height: 50,
-                child: Icon(
-                  FontAwesomeIcons.twitter,
+            InkWell(
+              child: Card(
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  child: Icon(
+                    FontAwesomeIcons.twitter,
+                  ),
                 ),
               ),
+              onTap: () {
+                _launchTweet();
+              },
             ),
-            Card(
-              child: Container(
-                width: 50,
-                height: 50,
-                child: Icon(
-                  FontAwesomeIcons.chrome,
+            InkWell(
+              child: Card(
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  child: Icon(
+                    FontAwesomeIcons.chrome,
+                  ),
                 ),
               ),
+              onTap: () {
+                _launchWeb();
+              },
             ),
-            Card(
-              child: Container(
-                width: 50,
-                height: 50,
-                child: Icon(
-                  FontAwesomeIcons.facebookF,
+            InkWell(
+              child: Card(
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  child: Icon(
+                    FontAwesomeIcons.facebookF,
+                  ),
                 ),
               ),
+              onTap: () {
+                _launchFb();
+              },
             ),
-            Card(
-              child: Container(
-                width: 50,
-                height: 50,
-                child: Icon(
-                  FontAwesomeIcons.googlePlay,
+            InkWell(
+              child: Card(
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  child: Icon(
+                    FontAwesomeIcons.googlePlay,
+                  ),
                 ),
               ),
             ),
@@ -89,5 +112,50 @@ class Details extends StatelessWidget {
         )
       ],
     );
+  }
+
+  _launchGit() async {
+    String url = "https://www.github.com/Imgkl";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchTweet() async {
+    String url = "https://twitter.com/im_gkl";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchWeb() async {
+    String url = "https://imgkl.github.io";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchFb() async {
+    String url = "https://www.facebook.com/saigokula.krishnan";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchPlay() async {
+    String url = "";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
