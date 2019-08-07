@@ -601,7 +601,7 @@ final detailsList = [
       genre: "Comedy",
       url: "",
       vid: "9djCOPHOvOw"),
-   Detail(
+  Detail(
       title: "The Handmaid's Tale",
       description:
           "June, a fertile woman, lives as a concubine to a Gileadan officer and his wife. While she is forced to agree to their strict rules and conditions, she hopes to be free and reunited with her daughter.",
@@ -614,7 +614,7 @@ final detailsList = [
       genre: "Drama, Sci-Fi, Thriller",
       url: "",
       vid: "dVLiDETfx1c"),
-     Detail(
+  Detail(
       title: "Mindhunter",
       description:
           "Catching a criminal often requires the authorities to get inside the villain's mind to figure out how he thinks. That's the job of FBI agents Holden Ford and Bill Tench. They attempt to understand and catch serial killers by studying their damaged psyches. Along the way, the agents pioneer the development of modern serial-killer profiling. The crime drama has a strong pedigree behind the camera, with Oscar-nominated director David Fincher and Oscar-winning actress Charlize Theron among the show's executive producers.",
@@ -626,7 +626,20 @@ final detailsList = [
       seasons: 2,
       genre: "Crime, Drama, Thriller",
       url: "https://www.netflix.com/title/80114855",
-      vid: "dVLiDETfx1c"),
+      vid: "oFlKiTwhd38"),
+  Detail(
+      title: "Taboo",
+      description:
+          "James Delaney returns to England after ten years in Africa to attend his father's funeral. He investigates his father's suspicious death while trying to reclaim his family's pride.",
+      rating: 8.5,
+      stream: "Torrent",
+      cast:
+          "https://www.google.co.in/search?q=taboo+cast&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQwLTYqTlNC5miJZSdb6ZeUAVF8QVF-elFirlVyYnHJIlauksSk_HwFEGcHKyMA3V1YDkQAAAA&sa=X&ved=2ahUKEwjW2e_5ufHjAhV0gUsFHTy_DIIQzTooATAzegQIERAC&biw=1242&bih=564",
+      status: "Ongoing",
+      seasons: 2,
+      genre: "Drama, Mystery, Thriller",
+      url: "",
+      vid: "6ZYAQSlIhM4"),
   Detail(
       title: "Hannibal",
       description:
@@ -640,6 +653,47 @@ final detailsList = [
       genre: " Crime, Drama, Horror",
       url: "https://www.netflix.com/title/70241956",
       vid: "Sx9bjEfzV_s"),
+  Detail(
+      title: "Sillicon Valley",
+      description:
+          "Set amidst the high-tech world of the Silicon Valley in USA, the series revolves around the struggles of six programmers who are trying to make a mark in the big, bad world of programming.",
+      rating: 8.5,
+      stream: "Hotstar",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?q=silicon+valley+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3iDfMMzS2UEJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVuHizJzM5Pw8hbLEnJzUSgWQ6A5WRgD5wLalSwAAAA&sa=X&ved=2ahUKEwih25_LvfHjAhVOAHIKHR6PAbAQzTooATA3egQIFRAC&biw=1242&bih=564",
+      seasons: 5,
+      genre: "Comedy",
+      url: "https://www.hotstar.com/tv/silicon-valley/s-509",
+      vid: "Vm4tx1O9GAc"),
+  Detail(
+      title: "Futurama",
+      description:
+          "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery service. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher \"Dr.\" Zoidberg.",
+      rating: 8.5,
+      stream: "Torrent",
+      status: "Completed  ",
+      cast:
+          "https://www.google.co.in/search?biw=1242&bih=564&ei=qydLXdOLMoi89QOLyI6oCg&q=futurama+cast&oq=futurama+cast&gs_l=psy-ab.3..0i20i263j0l9.60320.62654..63244...0.0..0.128.1112.6j5......0....1..gws-wiz.......0i71j0i67j0i22i30j35i39.6_nnerq6qKY&ved=&uact=5",
+      seasons: 7,
+      genre: "Animation, Comedy, Sci-Fi",
+      url: "",
+      vid: "0rY0HJT_CvM"),
+
+    Detail(
+      title: "It Crowd",
+      description:
+          "The show is set in a London office centering around three staff members of its IT department, namely, Maurice, Roy and their department head Jen Barber who knows nothing about IT.",
+      rating: 8.5,
+      stream: "Netflix",
+      status: "Completed",
+      cast:
+          "https://www.google.co.in/search?q=the+it+crowd+cast&stick=H4sIAAAAAAAAAONgFuLUz9U3sKgqS8pSQjC1xLKTrfRLyoAovqAoP70oMdcqObG4ZBGrYElGqkJmiUJyUX55igJIbAcrIwD_OeiPRwAAAA&sa=X&ved=2ahUKEwiq7f7Bw_HjAhXISH0KHdGBCTcQzTooATA0egQIFhAC&biw=1242&bih=564",
+      seasons: 5,
+      genre: "Comedy",
+      url: "https://www.netflix.com/title/70140450",
+      vid: "MwwTfkXk7U0"),
+
   Detail(
       title: "The Spartacus",
       description:
