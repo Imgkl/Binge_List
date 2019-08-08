@@ -810,7 +810,6 @@ final detailsList = [
       genre: "Drama, Mystery, Sci-Fi",
       url: "",
       vid: "29bSzbqZ3xE"),
-    
   Detail(
       title: "Lost",
       description:
@@ -954,8 +953,7 @@ final detailsList = [
       genre: "Action, Drama, Sci-Fi",
       url: "https://www.netflix.com/title/70276033",
       vid: "do_BCA-vR9E"),
-
-     Detail(
+  Detail(
       title: "Ozark",
       description:
           "Created by Bill Dubuque (\"The Accountant,\" \"The Judge\"), this drama series stars Jason Bateman as Marty Byrde, a financial planner who relocates his family from Chicago to a summer resort community in the Ozarks. With wife Wendy and their two kids in tow, Marty is on the move after a money-laundering scheme goes wrong, forcing him to pay off a substantial debt to a Mexican drug lord in order to keep his family safe. While the Byrdes' fate hangs in the balance, the dire circumstances force the fractured family to reconnect.",
@@ -968,8 +966,7 @@ final detailsList = [
       genre: " Crime, Drama, Thriller ",
       url: "https://www.netflix.com/title/80117552",
       vid: "5hAXVqrljbs"),
-
-    Detail(
+  Detail(
       title: "The Orginals",
       description:
           "The Original family of vampires settle down in the city of New Orleans that they helped to construct several decades ago. They encounter old buddies and confront new foes.",
@@ -982,8 +979,7 @@ final detailsList = [
       genre: "Drama, Fantasy, Horror",
       url: "https://www.netflix.com/title/70283261",
       vid: "A7o5b-K4V40"),
-
-      Detail(
+  Detail(
       title: "Family guy",
       description:
           "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
@@ -996,6 +992,32 @@ final detailsList = [
       genre: "Animation, Comedy",
       url: "",
       vid: "wwoq3o_yNMw"),
+  Detail(
+      title: "Lucifer",
+      description:
+          "Lucifer, a demon, returns from hell to reside in Los Angeles and runs a club. He soon gets involved with the local police and assists them in solving tricky criminal cases.",
+      rating: 8.2,
+      stream: "Netflix",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?q=lucifer+(tv+series)+cast&stick=H4sIAAAAAAAAAONgFuLWz9U3MDSqMk7OyFVC5miJZSdb6ZeUAVF8QVF-elFirlVyYnHJIlaJnNLkzLTUIgWNkjKF4tSizNRiTQWQ1A5WRgATdGqSUgAAAA&sa=X&ved=2ahUKEwjEwbu0qPPjAhUjmuYKHWUUD0EQzTooATA9egQIFxAC&biw=1242&bih=608",
+      seasons: 4,
+      genre: "Crime, Drama, Fantasy",
+      url: "https://www.netflix.com/title/80057918",
+      vid: "X4bF_quwNtw"),
+  Detail(
+      title: "Altered Carbon",
+      description:
+          "More than 300 years in the future, society has been transformed by new technology, leading to human bodies being interchangeable and death no longer being permanent. Takeshi Kovacs is the only surviving soldier of a group of elite interstellar warriors who were defeated in an uprising against the new world order. His mind was imprisoned for centuries until impossibly wealthy businessman Laurens Bancroft offers him the chance to live again. Kovacs will have to do something for Bancroft, though, if he wants to be resurrected. Bancroft's request of Kovacs is to solve a murder -- Bancroft's. \"Altered Carbon\" is based on Richard K. Morgan's cyberpunk noir novel of the same name.",
+      rating: 8.2,
+      stream: "Netflix",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?q=altered+carbon+cast&stick=H4sIAAAAAAAAAONgFuLVT9c3NEzOSc8pzCvLUkLlaollJ1vpl5QBUXxBUX56UWKuVXJicckiVuHEnJLUotQUheTEoqT8PAWQ6A5WRgB9HK5_UQAAAA&sa=X&ved=2ahUKEwj2_euVqvPjAhVrILcAHfD5CDsQzTooATA2egQIFhAC&biw=1242&bih=564&dpr=1.1",
+      seasons: 2,
+      genre: "Action, Drama, Sci-Fi",
+      url: "https://www.netflix.com/title/80097140",
+      vid: "vn__F60dd6s"),
   Detail(
       title: "Jack Ryan",
       description:
@@ -1036,6 +1058,19 @@ final detailsList = [
       url: "https://www.hotstar.com/tv/the-big-bang-theory/s-1665",
       vid: "WBb3fojgW0Q"),
   Detail(
+      title: "Chuck",
+      description:
+          "Chuck's life turns upside down after he downloads a few government secrets into his brain. He is then employed by the CIA and the NSA for their secret missions.",
+      rating: 8.2,
+      stream: "Torrent",
+      cast:
+          "https://www.google.co.in/search?q=chuck+(tv+series)+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3MCqotKxMU0Jia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVrHkjNLkbAWNkjKF4tSizNRiTQWQxA5WRgDDT-V5TgAAAA&sa=X&ved=2ahUKEwjG6pT5rPPjAhWhW3wKHWolCEkQzTooATAyegQIEhAC&biw=1242&bih=564",
+      status: "Completed",
+      seasons: 5,
+      genre: "Comedy",
+      url: "",
+      vid: "A-Vy86KECwc"),
+  Detail(
       title: "Orange is the new black",
       description:
           "Ten years after transporting drug money to Alex, Piper is imprisoned for the crime. The toughness of prison changes her drastically as an individual, compelling her to do the unthinkable.",
@@ -1061,6 +1096,19 @@ final detailsList = [
       genre: " Mystery,Suspense,Chilling",
       url: "https://www.hotstar.com/tv/american-horror-story/s-556",
       vid: "9KZr2Vn7CQ"),
+  Detail(
+      title: "Castle",
+      description:
+          "DescriptionWhen a psychopath commits murders based on novelist Castle's books, Detective Beckett seeks his help to solve the case. He decides to work with her and uses his experiences as research for his novels.",
+      rating: 8.1,
+      stream: "Prime Video",
+      cast:
+          "https://www.google.co.in/search?ei=RhEqXabiA4nHvgTkiajACg&q=american+horror+story+cast&oq=ame+cast&gs_l=psy-ab.3.1.0i7i30l10.16182.17757..18939...1.0..0.162.726.1j5......0....1..gws-wiz.......0i71j0i7i10i30j0j0i67.70IUpmWz-8c",
+      status: "Completed",
+      seasons: 8,
+      genre: "Comedy, Crime, Drama ",
+      url: "https://www.primevideo.com/detail/0KAD9HIZMGPDXZC2VJ05WEZ9MY/",
+      vid: "xjrObBtzGYg"),
   Detail(
       title: "End Of The F***king World",
       description:
