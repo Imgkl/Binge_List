@@ -810,6 +810,7 @@ final detailsList = [
       genre: "Drama, Mystery, Sci-Fi",
       url: "",
       vid: "29bSzbqZ3xE"),
+    
   Detail(
       title: "Lost",
       description:
@@ -953,6 +954,48 @@ final detailsList = [
       genre: "Action, Drama, Sci-Fi",
       url: "https://www.netflix.com/title/70276033",
       vid: "do_BCA-vR9E"),
+
+     Detail(
+      title: "Ozark",
+      description:
+          "Created by Bill Dubuque (\"The Accountant,\" \"The Judge\"), this drama series stars Jason Bateman as Marty Byrde, a financial planner who relocates his family from Chicago to a summer resort community in the Ozarks. With wife Wendy and their two kids in tow, Marty is on the move after a money-laundering scheme goes wrong, forcing him to pay off a substantial debt to a Mexican drug lord in order to keep his family safe. While the Byrdes' fate hangs in the balance, the dire circumstances force the fractured family to reconnect.",
+      rating: 8.3,
+      stream: "Netflix",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?biw=1242&bih=564&ei=Pt1LXbajHcnTvAS1oKeIDw&q=ozark+cast&oq=ozark+cast&gs_l=psy-ab.3..0i67j0l9.10524.16766..16961...1.0..0.158.623.0j5......0....1..gws-wiz.....10..0i71j35i39j0i20i263._WYbjavd084&ved=&uact=5",
+      seasons: 3,
+      genre: " Crime, Drama, Thriller ",
+      url: "https://www.netflix.com/title/80117552",
+      vid: "5hAXVqrljbs"),
+
+    Detail(
+      title: "The Orginals",
+      description:
+          "The Original family of vampires settle down in the city of New Orleans that they helped to construct several decades ago. They encounter old buddies and confront new foes.",
+      rating: 8.3,
+      stream: "Netflix",
+      status: "Completed",
+      cast:
+          "https://www.google.co.in/search?q=the+originals+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3KErLyLIoVEJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVqGSjFSF_KLM9My8xJxiBZDgDlZGAJXSc8VKAAAA&sa=X&ved=2ahUKEwjD48m_7PLjAhVJP48KHdZoBdgQzTooATA7egQICxAC&biw=1242&bih=564",
+      seasons: 5,
+      genre: "Drama, Fantasy, Horror",
+      url: "https://www.netflix.com/title/70283261",
+      vid: "A7o5b-K4V40"),
+
+      Detail(
+      title: "Family guy",
+      description:
+          "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+      rating: 8.2,
+      stream: "Torrent",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?q=family+guy+cast&stick=H4sIAAAAAAAAAONgFuLUz9U3MLTMy8tRQjC1xLKTrfRLyoAovqAoP70oMdcqObG4ZBErf1pibmZOpUJ6aaUCSGQHKyMASx3NdUUAAAA&sa=X&ved=2ahUKEwjbrZWV7vLjAhUYY48KHW-kB8kQzTooATA4egQIExAC&biw=1242&bih=564",
+      seasons: 18,
+      genre: "Animation, Comedy",
+      url: "",
+      vid: "wwoq3o_yNMw"),
   Detail(
       title: "Jack Ryan",
       description:
