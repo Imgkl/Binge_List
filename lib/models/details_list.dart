@@ -679,8 +679,7 @@ final detailsList = [
       genre: "Animation, Comedy, Sci-Fi",
       url: "",
       vid: "0rY0HJT_CvM"),
-
-    Detail(
+  Detail(
       title: "It Crowd",
       description:
           "The show is set in a London office centering around three staff members of its IT department, namely, Maurice, Roy and their department head Jen Barber who knows nothing about IT.",
@@ -693,7 +692,6 @@ final detailsList = [
       genre: "Comedy",
       url: "https://www.netflix.com/title/70140450",
       vid: "MwwTfkXk7U0"),
-
   Detail(
       title: "The Spartacus",
       description:
@@ -786,6 +784,32 @@ final detailsList = [
       genre: "Comedy, Crime",
       url: "https://www.netflix.com/title/70281562",
       vid: "sEOuJ4z5aTc"),
+  Detail(
+      title: "Sense 8",
+      description:
+          "Eight strangers around the globe find themselves connected -- first by a violent vision, then by their shared ability to connect with one another's thoughts and actions, and finally by the urgent need to find out what happened and why. Their need to know goes beyond simple curiosity -- as they pursue answers, a mysterious organization hunts them down, intent on destroying them. The intense thriller is the first foray into television (or, more accurately, Netflix) for renowned filmmakers Lana Wachowski and Lilly Wachowski (\"The Matrix Reloaded\"), who created the series with J. Michael Straczynski (\"Thor\"). The international cast includes veteran actors known to U.S. audiences, like Daryl Hannah (\"Kill Bill\") and Naveen Andrews (\"Lost\"), and others well-known in their home countries, like German actor Max Riemelt and Doona Bae of South Korea. In keeping with the global premise of the series, shooting takes place all over the world, including London, Reykjavik, Nairobi and Mumbai.",
+      rating: 8.4,
+      stream: "Netflix",
+      status: "Completed",
+      seasons: 2,
+      cast:
+          "https://www.google.co.in/search?q=sense8+cast&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQozLJIy1VC5miJZSdb6ZeUAVF8QVF-elFirlVyYnHJIlbu4tS84lQLBRBvBysjAGT2JjdFAAAA&sa=X&ved=2ahUKEwjnjbWWrfLjAhW_7nMBHZ1zCb0QzTooATA1egQIGBAC&biw=1242&bih=608",
+      genre: "Drama, Mystery, Sci-Fi",
+      url: "https://www.netflix.com/title/80025744",
+      vid: "iKpKAlbJ7BQ"),
+  Detail(
+      title: "Fringe",
+      description:
+          "An FBI special agent Olivia Dunham must work together with a mad scientist Walter Bishop and his son Peter Bishop to investigate various aspects of fringe science.",
+      rating: 8.4,
+      stream: "Torrent",
+      status: "Completed",
+      seasons: 5,
+      cast:
+          "https://www.google.co.in/search?q=fringe+(tv+series)+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3ME5Os8ypVEJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVvG0osy89FQFjZIyheLUoszUYk0FkMwOVkYAjrRiIk8AAAA&sa=X&ved=2ahUKEwiZyOTWrvLjAhUz7HMBHW3NDugQzTooATAzegQIGBAC&biw=1242&bih=564",
+      genre: "Drama, Mystery, Sci-Fi",
+      url: "",
+      vid: "29bSzbqZ3xE"),
   Detail(
       title: "Lost",
       description:
@@ -890,6 +914,19 @@ final detailsList = [
       genre: "Comedy, Drama",
       url: "https://www.netflix.com/title/70140366",
       vid: "gQ7yaQhXJAI"),
+  Detail(
+      title: "Homeland",
+      description:
+          "CIA operative Carrie Mathison is on the lookout for an American prisoner who may have joined forces with Al-Qaeda. Released from hostage after eight years, Marine Nicholas Brody becomes her suspect.",
+      rating: 8.3,
+      stream: "Hotstar",
+      status: "Ongoing",
+      cast:
+          "https://www.google.co.in/search?sa=X&q=homeland+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3SC8rzjDPUUJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVt6M_NzUnMS8FAUQfwcrIwAlsAhIRQAAAA&ved=2ahUKEwjMnM-SsPLjAhVb8XMBHQZjAG4QzTooATA4egQIGBAC&biw=1242&bih=564&dpr=1.1",
+      seasons: 8,
+      genre: "Crime, Drama, Mystery",
+      url: "https://www.hotstar.com/tv/homeland/s-565",
+      vid: "KyFmS3wRPCQ"),
   Detail(
       title: "the Walking dead",
       description:
