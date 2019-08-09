@@ -1108,7 +1108,7 @@ final detailsList = [
       seasons: 8,
       genre: "Comedy, Crime, Drama ",
       url: "https://www.primevideo.com/detail/0KAD9HIZMGPDXZC2VJ05WEZ9MY/",
-      vid: "xjrObBtzGYg"),
+      vid: "xjrObBtzGYg1"),
   Detail(
       title: "End Of The F***king World",
       description:
