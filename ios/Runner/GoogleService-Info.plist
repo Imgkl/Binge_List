@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>455721982790-4glmc98u9pu51puqt4c1fbpuff38lrj6.apps.googleusercontent.com</string>
+	<string>13786411383-jhllv1v038sp3hvp32fo78gpnbidtf3q.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.455721982790-4glmc98u9pu51puqt4c1fbpuff38lrj6</string>
+	<string>com.googleusercontent.apps.13786411383-jhllv1v038sp3hvp32fo78gpnbidtf3q</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBPgWFY1R8MaSyRaYOyEkE06PGnpch0k3E</string>
+	<string>AIzaSyAhCWbB0eZJD9kB-apy6OdC8bLKOGveKdU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>455721982790</string>
+	<string>13786411383</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.top100</string>
 	<key>PROJECT_ID</key>
-	<string>binge-tests</string>
+	<string>binge-e10da</string>
 	<key>STORAGE_BUCKET</key>
-	<string>binge-tests.appspot.com</string>
+	<string>binge-e10da.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:455721982790:ios:c92d0161ca2988ac</string>
+	<string>1:13786411383:ios:c92d0161ca2988ac</string>
 	<key>DATABASE_URL</key>
-	<string>https://binge-tests.firebaseio.com</string>
+	<string>https://binge-e10da.firebaseio.com</string>
 </dict>
 </plist>
