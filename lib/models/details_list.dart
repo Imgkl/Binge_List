@@ -1121,20 +1121,30 @@ final detailsList = [
       genre: " Crime, Comedy",
       url: "https://www.netflix.com/title/70242311",
       vid: "vY0qzXi5oJg"),
-
-    Detail(
+  Detail(
       title: "The Mentalist",
       description:
           "Patrick Jane is an independent consultant with the California Bureau of Investigation (CBI) who has a remarkable track record for solving serious crimes by using his sharp skills of observation.",
       rating: 8.1,
       stream: "Prime Video",
-      cast:
-          "https://www.google.co.in/search?q=the+mentalist+cast",
+      cast: "https://www.google.co.in/search?q=the+mentalist+cast",
       status: "Completed",
       seasons: 7,
       genre: "Crime, Drama, Mystery",
       url: "https://www.primevideo.com/detail/0FSCV5FA2QRYVH8KEEHM4EKVSK",
       vid: "tCpWApgVqbc"),
+  Detail(
+      title: "Criminal Minds",
+      description:
+          "An elite group of profilers analyse the nation's most dangerous criminal minds to anticipate their next moves before they strike again.",
+      rating: 8.1,
+      stream: "Prime Video",
+      cast: "https://www.google.co.in/search?q=criminal+minds+cast",
+      status: "Ongoing",
+      seasons: 14,
+      genre: "Crime, Drama, Mystery",
+      url: "https://www.primevideo.com/detail/0M6KIX2OIFTS5N51ER5DSW0RWN/",
+      vid: "ZDApmAegCkg"),
   Detail(
       title: "American Horror Story",
       description:
@@ -1159,7 +1169,7 @@ final detailsList = [
       status: "Completed",
       seasons: 8,
       genre: "Comedy, Crime, Drama ",
-      url: "https://www.primevideo.com/detail/0KAD9HIZMGPDXZC2VJ05WEZ9MY/",
+      url: "https://www.primevideo.com/detail/0KAD9HIZMGPDXZC2VJ05WEZ9MY",
       vid: "xjrObBtzGYg"),
   Detail(
       title: "End Of The F***king World",
@@ -1212,6 +1222,18 @@ final detailsList = [
       cast: "https://www.google.co.in/search?q=the+flash+cast",
       url: "https://www.hotstar.com/tv/the-flash/s-1672",
       vid: "KxnMK90wjFg"),
+    Detail(
+      title: "Gotham",
+      description:
+          "Detective James Gordon is a new recruit assigned to investigate the murder of Thomas and Martha Wayne. The case acquaints him with the slain couple's son and future crusader, Bruce.",
+      rating: 7.8,
+      stream: "Netflix",
+      status: "Ongoing",
+      seasons: 5,
+      genre: " Action, Adventure, Drama ",
+      cast: "https://www.google.co.in/search?q=gotham+cast",
+      url: "https://www.netflix.com/title/80020542",
+      vid: "9k08GueQlPg"),
   Detail(
       title: "The 100",
       description:
@@ -1229,11 +1251,47 @@ final detailsList = [
       description:
           "On her first day at high school, Elena meets Stefan and immediately feels a connection with him. However, what she doesn't know is that Stefan and his brother Damon are in fact vampires.",
       rating: 7.7,
-      stream: "Netflix",
+      stream: "Prime Video",
       status: "Finished",
       seasons: 8,
       genre: "Drama, Fantasy, Horror",
       cast: "https://www.google.co.in/search?q=the+vampire+diaries+cast",
-      url: "https://www.netflix.com/title/70143860",
+      url: "https://www.primevideo.com/detail/0FBB0WTYIVNH6QEQSARY38RNOH",
       vid: "D9pIWQBn-Lo"),
+   Detail(
+      title: "Arrow",
+      description:
+          "After mastering the skill of archery on a deserted island, multi-millionaire playboy Oliver Queen returns to his city to take on the vigilante persona of Arrow to fight crime and corruption.",
+      rating: 7.6,
+      stream: "Netflix",
+      status: "Ongoing",
+      seasons: 8,
+      genre: "Drama, Fantasy, Action",
+      cast: "https://www.google.co.in/search?q=arrow+cast",
+      url: "https://www.netflix.com/title/70242081",
+      vid: "XQS7JkQmlx8"),
+     Detail(
+      title: "Agents of S.H.I.E.L.D",
+      description:
+          "Agent Phil Coulson leads a team of highly skilled agents from the global law-enforcement organisation known as S.H.I.E.L.D. Together, they combat extraordinary and inexplicable threats.",
+      rating: 7.5,
+      stream: "Netflix",
+      status: "Ongoing",
+      seasons: 6  ,
+      genre: "Drama, Fantasy, Action",
+      cast: "https://www.google.co.in/search?sa=X&q=agents+of+s.h.i.e.l.d.+cast",
+      url: "https://www.netflix.com/title/70279852",
+      vid: "T3T-evQZiQo"),
+  Detail(
+      title: "Two and a Half Men",
+      description:
+          "Charlie Harper is a jingle writer who leads a hedonistic, carefree life. Everything changes when his good-for-nothing brother, Alan, and 10-year-old nephew, Jake, move into his Malibu beach house.",
+      rating: 7,
+      stream: "Prime Video",
+      status: "Finished",
+      seasons: 12,
+      genre: "Sitcom, Comedy",
+      cast: "https://www.google.co.in/search?q=two+and+a+half+men+cast",
+      url: "https://www.primevideo.com/detail/0GM6ZNFEBHZFBA5KY9J4CIP4OU",
+      vid: "097pUW0L_Xc"),
 ];
