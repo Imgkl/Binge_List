@@ -7,6 +7,7 @@ import 'package:top100/models/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:top100/pages/details.dart';
+import 'package:shimmer/shimmer.dart';
 
 class SeriesCarousalPage extends StatefulWidget {
   @override
@@ -122,7 +123,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                   duration: Duration(milliseconds: 500),
                   child: Image.asset(
                     imageList[currentPage],
-                    fit: BoxFit.fitHeight,
+                    fit: BoxFit.cover,
                     height: double.infinity,
                   ),
                 ),
@@ -628,10 +629,8 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           child: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
             child: ClipRRect(
-              child: Image.asset(
-                imageList[index],
-                fit: BoxFit.fitHeight,
-              ),
+              child: Image.asset(imageList[index],
+              fit: BoxFit.cover,),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20.0),
                 bottomRight: Radius.circular(20.0),
