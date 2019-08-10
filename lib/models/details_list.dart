@@ -834,8 +834,21 @@ final detailsList = [
       status: "Completed",
       seasons: 1,
       genre: "Drama, Action, History",
-      url: "https://www.hotstar.com/tv/band-of-brothers/s-507",
+      url: "https://www.hotstar.com/tv/modern-family/s-572",
       vid: "jeX4SfsC9ws"),
+  Detail(
+      title: "Luther",
+      description:
+          "John Luther, a passionate detective, ends up befriending a psychopath and murderer, whom he could not arrest due to lack of evidence, and they solve various cases together.",
+      rating: 8.5,
+      stream: "Hotstar",
+      cast:
+          "https://www.google.co.in/search?q=luther+cast&stick=H4sIAAAAAAAAAONgFuLSz9U3SCrPSErJUUJia4llJ1vpl5QBUXxBUX56UWKuVXJicckiVu6c0pKM1CIFEG8HKyMAPskHbUMAAAA&sa=X&ved=2ahUKEwj_lJaJvPbjAhVFjuYKHbP7C78QzTooATA3egQIFhAC&biw=1242&bih=608",
+      status: "Ongoing",
+      seasons: 5,
+      genre: "Drama, Action, Crime",
+      url: "https://www.hotstar.com/tv/luther/s-1698",
+      vid: "bmy62bTeakg"),
   Detail(
       title: "Person of Interest",
       description:
@@ -1058,6 +1071,31 @@ final detailsList = [
       url: "https://www.hotstar.com/tv/the-big-bang-theory/s-1665",
       vid: "WBb3fojgW0Q"),
   Detail(
+      title: "HTGAWM",
+      description:
+          "Annalise Keating, a criminal defence lawyer and professor, teaches a group of aspiring law students. However, their lives alter when they get entangled in an aberrant murder.",
+      rating: 8.2,
+      stream: "Netflix",
+      cast:
+          "https://www.google.co.in/search?ei=dkpOXfqaK6SLmgfw5LP4DQ&q=htgawm+cast",
+      status: "Ongoing",
+      seasons: 6,
+      genre: "Crime, Drama, Mystery",
+      url: "https://www.netflix.com/title/80024057",
+      vid: "8OfgUUtt9tM"),
+  Detail(
+      title: "Penny Dreadful",
+      description:
+          "Vanessa Ives recruits Wild West showman Ethan Chandler and big game hunter Sir Malcolm to track down a killer that turns out to be more than human.",
+      rating: 8.2,
+      stream: "Torrent",
+      cast: "https://www.google.co.in/search?sa=X&q=penny+dreadful+cast",
+      status: "Completed",
+      seasons: 3,
+      genre: " Drama, Fantasy, Horror",
+      url: "",
+      vid: "YFXHfEqMcis"),
+  Detail(
       title: "Chuck",
       description:
           "Chuck's life turns upside down after he downloads a few government secrets into his brain. He is then employed by the CIA and the NSA for their secret missions.",
@@ -1083,6 +1121,20 @@ final detailsList = [
       genre: " Crime, Comedy",
       url: "https://www.netflix.com/title/70242311",
       vid: "vY0qzXi5oJg"),
+
+    Detail(
+      title: "The Mentalist",
+      description:
+          "Patrick Jane is an independent consultant with the California Bureau of Investigation (CBI) who has a remarkable track record for solving serious crimes by using his sharp skills of observation.",
+      rating: 8.1,
+      stream: "Prime Video",
+      cast:
+          "https://www.google.co.in/search?q=the+mentalist+cast",
+      status: "Completed",
+      seasons: 7,
+      genre: "Crime, Drama, Mystery",
+      url: "https://www.primevideo.com/detail/0FSCV5FA2QRYVH8KEEHM4EKVSK",
+      vid: "tCpWApgVqbc"),
   Detail(
       title: "American Horror Story",
       description:
@@ -1108,7 +1160,7 @@ final detailsList = [
       seasons: 8,
       genre: "Comedy, Crime, Drama ",
       url: "https://www.primevideo.com/detail/0KAD9HIZMGPDXZC2VJ05WEZ9MY/",
-      vid: "xjrObBtzGYg1"),
+      vid: "xjrObBtzGYg"),
   Detail(
       title: "End Of The F***king World",
       description:
@@ -1123,10 +1175,23 @@ final detailsList = [
       url: "https://www.netflix.com/title/80175722",
       vid: "aV-y3bvYFYA"),
   Detail(
+      title: "Jessica Jones",
+      description:
+          "This Netflix original chronicles the life of one of the darker Marvel characters, the mysterious Jessica Jones. When a tragedy puts an end to her short-lived career as a superhero, Jessica settles in New York City and opens her own detective agency, called Alias Investigations, which seems to be called into cases involving people who have special abilities. Suffering from post-traumatic stress syndrome, Jessica wants to do good, but her primary interest isn't in saving the world, it's saving her apartment and getting through each day. Based on a graphic novel intended for adults, this is not a superhero story for the kids.",
+      rating: 8,
+      stream: "NetFlix",
+      cast:
+          "https://www.google.co.in/search?q=jessica+jones+cast&stick=H4sIAAAAAAAAAONgFuLWz9U3MDRKKUsyTFFC5miJZSdb6ZeUAVF8QVF-elFirlVyYnHJIlahrNTi4szkRIWs_LzUYgWQ4A5WRgA5HZSLTAAAAA&sa=X&ved=2ahUKEwiUkv3iwvbjAhUy6nMBHRDqA2kQzTooATA5egQIFhAC&biw=1242&bih=564",
+      status: "Completed",
+      seasons: 3,
+      genre: " Action, Crime, Drama",
+      url: "https://www.netflix.com/title/80002311",
+      vid: "nWHUjuJ8zxE"),
+  Detail(
       title: "13 Reasons Why",
       description:
           "Newcomer Katherine Langford plays the role of Hannah, a young woman who takes her own life. Two weeks after her tragic death, a classmate named Clay finds a mysterious box on his porch. Inside the box are recordings made by Hannah -- on whom Clay had a crush -- in which she explains the 13 reasons why she chose to commit suicide. If Clay decides to listen to the recordings, he will find out if and how he made the list. This intricate and heart-wrenching tale is told through Clay and Hannah's dual narratives.",
-      rating: 8.0,
+      rating: 7.9,
       stream: "Netflix",
       status: "Ongoing",
       seasons: 2,
@@ -1135,4 +1200,40 @@ final detailsList = [
           "https://www.google.co.in/search?ei=jREqXfyFC8quvgTFipXgBw&q=13+reasons+why+cast&oq=13cast&gs_l=psy-ab.3.0.0i7i30l10.9744.9901..11207...0.0..0.123.241.0j2......0....1..gws-wiz.8GYdmZVFF5Y",
       url: "https://www.netflix.com/title/80117470",
       vid: "toj3CyMhBOs"),
+  Detail(
+      title: "The Flash",
+      description:
+          "Barry Allen, a forensic scientist with the Central City police force, is struck by lightning in a freak accident. When he wakes up after nine months, he discovers that he can achieve great speeds.",
+      rating: 7.8,
+      stream: "Hotstar",
+      status: "Ongoing",
+      seasons: 6,
+      genre: " Action, Adventure, Drama ",
+      cast: "https://www.google.co.in/search?q=the+flash+cast",
+      url: "https://www.hotstar.com/tv/the-flash/s-1672",
+      vid: "KxnMK90wjFg"),
+  Detail(
+      title: "The 100",
+      description:
+          "A nuclear conflict has decimated civilisation. Ninety-seven years later, a spaceship accommodating humanity's lone survivors despatches 100 juvenile delinquents back to the Earth.",
+      rating: 7.7,
+      stream: "Netflix",
+      status: "Ongoing",
+      seasons: 6,
+      genre: "Action, Adventure, Drama",
+      cast: "https://www.google.co.in/search?q=the+100+cast",
+      url: "https://www.netflix.com/title/70283264",
+      vid: "ia1Fbg96vL0"),
+  Detail(
+      title: "The Vampire Diaries",
+      description:
+          "On her first day at high school, Elena meets Stefan and immediately feels a connection with him. However, what she doesn't know is that Stefan and his brother Damon are in fact vampires.",
+      rating: 7.7,
+      stream: "Netflix",
+      status: "Finished",
+      seasons: 8,
+      genre: "Drama, Fantasy, Horror",
+      cast: "https://www.google.co.in/search?q=the+vampire+diaries+cast",
+      url: "https://www.netflix.com/title/70143860",
+      vid: "D9pIWQBn-Lo"),
 ];

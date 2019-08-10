@@ -222,7 +222,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                             elevation: 5,
                             child: Container(
                               color: Colors.black,
-                              height: 212,
+                              height: 280,
                               width: 220,
                               child: Column(
                                 children: <Widget>[
@@ -236,7 +236,7 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                         child: Image.asset(
                                           imageList[index],
                                           width: 120,
-                                          height: 150,
+                                          height: 200,
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -249,15 +249,27 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
                                     padding: const EdgeInsets.only(
                                       right: 10.0,
                                     ),
-                                    child: Container(
-                                      margin: EdgeInsets.only(left: 10),
-                                      child: Text(
-                                        detailsList[index].title,
-                                        style: TextStyle(
-                                            fontFamily: "title",
-                                            fontSize: 16.7,
-                                            fontWeight: FontWeight.bold),
-                                      ),
+                                    child: Column(
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 8.0),
+                                          child: Text(index.toString()),
+                                        ),
+                                        SizedBox(
+                                          height: 3,
+                                        ),
+                                        Container(
+                                          margin: EdgeInsets.only(left: 5),
+                                          child: Text(
+                                            detailsList[index].title,
+                                            style: TextStyle(
+                                                fontFamily: "title",
+                                                fontSize: 16.7,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   )
                                 ],
