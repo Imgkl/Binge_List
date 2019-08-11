@@ -93,14 +93,17 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
     Size size = MediaQuery.of(context).size;
     screenHeight = size.height;
     screenWidth = size.width;
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      resizeToAvoidBottomPadding: false,
-      body: Stack(
-        children: <Widget>[
-          menu(context),
-          dashboard(context),
-        ],
+    return WillPopScope(
+      onWillPop: () => Future.value(false),
+      child: Scaffold(
+        resizeToAvoidBottomInset: false,
+        resizeToAvoidBottomPadding: false,
+        body: Stack(
+          children: <Widget>[
+            menu(context),
+            dashboard(context),
+          ],
+        ),
       ),
     );
   }
@@ -629,8 +632,10 @@ class _SeriesCarousalPageState extends State<SeriesCarousalPage>
           child: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
             child: ClipRRect(
-              child: Image.asset(imageList[index],
-              fit: BoxFit.cover,),
+              child: Image.asset(
+                imageList[index],
+                fit: BoxFit.cover,
+              ),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20.0),
                 bottomRight: Radius.circular(20.0),
