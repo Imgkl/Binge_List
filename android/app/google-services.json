@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "889704846447",
+    "firebase_url": "https://binge-c7b6d.firebaseio.com",
+    "project_id": "binge-c7b6d",
+    "storage_bucket": "binge-c7b6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889704846447:android:e7ecfc11f4bc15f779699a",
+        "android_client_info": {
+          "package_name": "com.example.top100"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889704846447-e0er9svamrkt1pjrj5e1meei3mksq8hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVO4oE0F6LSo1JsbKjYngbcz1YRIjVjxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889704846447-e0er9svamrkt1pjrj5e1meei3mksq8hi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

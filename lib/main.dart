@@ -6,10 +6,9 @@ import 'package:intro_views_flutter/intro_views_flutter.dart';
 import 'models/onboarding.dart';
 
 void main() {
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-      .then((_) {
+ 
     runApp(new MyApp());
-  });
+  
 }
 
 class MyApp extends StatelessWidget {
